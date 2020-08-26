@@ -1,0 +1,77 @@
+.auth-wrap{
+    .bg-side{
+        h1{
+            position: absolute;
+            color: $color-black;
+            text-transform: uppercase;
+            font-size: 40px;
+            margin: 0;
+            padding: 4rem 5rem;
+            &.text-normal{
+                text-transform: none;
+            }
+            span{
+                color: $color-black-darker;
+                font-size: 20px;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+        ul{
+            position: absolute;
+            top: 13em;
+            padding-left: 5rem;
+            list-style: none;
+            li{
+                position: relative;
+                font-size: 18px;
+                font-weight: $font-medium;
+                margin-bottom: 1em;
+                color: $color-black;
+                padding-left: 2em;
+                &:before{
+                    content:'';
+                    background: url(../images/check.svg)no-repeat;
+                    background-size: cover;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            padding: 1rem 5rem;
+        }
+    }
+    .form-side{
+        padding: 4rem 7rem;
+        h4{
+            margin-top: 0;
+        }
+        .btn-solid{
+            margin-bottom: 1.2rem;
+        }
+        .or-divider{
+            border-top: thin solid $color-grey;
+            position: relative;
+            margin: 2em 0;
+            span{
+                padding: 0 5px;
+                background: $color-white;
+                top: -10px;
+                left: 0;
+                right: 0;
+                width: 20px;
+                margin: 0 auto;
+                position: absolute;
+                text-align: center;
+            }
+        }
+    }
+}

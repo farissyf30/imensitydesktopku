@@ -1,0 +1,123 @@
+.contact-page{
+    .single-title{
+        text-align: center;
+        background: url(../images/bg-help.png) repeat-x;
+        background-size: auto 100%;
+        padding: 6em 0 16em;
+        >.wrap-center{
+            background: transparent;
+        }
+        h3{
+            margin: 0;
+        }
+    }
+    .section-contact{
+        margin-top: -10em;
+        .breadcrumb{
+            .grey{
+                color: $color-black-light;
+            }
+        }
+        .mdl-cell--6-col{
+            width: 50%;
+        }
+        .duo-btns{
+            padding: 1.5em 0;
+            .btn{
+                width: 150px;
+                text-align: center;
+            }
+        }
+    }
+    .help-box{
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 4em;
+        .help-img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            vertical-align: middle;
+            display: table;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            .align-middle{
+                display: table-cell;
+                vertical-align: middle;
+            }
+            h5{
+                color: $color-white;
+                margin-bottom: 10px;
+            }
+            p{
+                color: $color-white;
+            }
+        }
+        >p{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: left;
+            padding: 1em 2em;
+            color: $color-white;
+        }
+    }
+    .help-links{
+        padding: 0;
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+        }
+        &.with-dots{
+            margin-top: 0;
+            li{
+                position: relative;
+                padding-left: 1.5em;
+                &:before{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    border: thin solid $color-grey-darker;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                }
+            }
+        }
+    }
+    .help-result{
+        h6{
+            a{
+                font-weight: $font-medium;
+            }
+        }
+        p{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            small{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+.mdl-cell{
+    img{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+.career-list{
+    .expandable-list{
+        border: thin solid $color-grey;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        padding: 0 .5em 1.5em 0;
+        margin-bottom: -1px;
+        overflow: hidden;
+        max-height: calc(70px - 2em);
+        transition: all .3s $easing-mdl;
+        .toggler{
+            position: relative;
+            font-weight: $font-regular;
+            padding: 1.4em 2em;
+            margin: 0;
+            cursor: pointer;
+            font-size: 14px;
+            .icon{
+                font-size: 14px;
+                transform: rotate(45deg);
+                position: absolute;
+                right: 0;
+            }
+        }
+        .spec-desc{
+            padding: 0 2em;
+        }
+        &.open{
+            max-height: 100vh;
+        }
+        &:hover{
+            border-radius: 6px;
+            border: thin solid $color-grey;
+            .toggler{
+                font-weight: $font-medium;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Billing</h5>
+            <hr class="mv-2">
+            <h6>Payment method</h6>
+            <div class="table-bar">
+                <div class="btn btn-darker btn-smaller"><i class="icon icon-amex"></i></div>
+                <div class="btn btn-darker btn-smaller"><i class="icon icon-apple-pay"></i></div>
+                <div class="btn btn-darker btn-smaller"><i class="icon icon-master"></i></div>
+            </div>
+            <br>
+            <a href="#" class="btn-link btn-dialog" show-dialog="dialog-payment">Add payment method</a>
+            <hr class="mv-2">
+            <h6>Billing history</h6>
+            <p>No previous billing statements.</p>
+            <hr>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-payment">
+            <form class="form-filter">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Add payment method</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <div class="field-group">
+                            <label>Payment method</label>
+                            <div class="wrap-flex justify-start">
+                                <label class="radio-label tab-pane" for="debit" data-tab="ccMethod"><input type="radio" name="payment" id="debit"> Debit or credit card</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="radio-label tab-pane" for="paypal" data-tab="paypalMethode"><input type="radio" name="payment" id="paypal"> Paypal</label>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="ccMethod">
+                          <div class="field-group">
+                            <label>Card number</label>
+                            <input type="text">
+                          </div>
+                          <div class="mdl-grid p-0 m-grid">
+                            <div class="mdl-cell mdl-cell--12-col field-group mt-0 mb-0">
+                              <label class="mt-0">Card holder name</label>
+                              <input type="text">
+                            </div>
+                          </div>
+                          <div class="mdl-grid p-0 m-grid">
+                              <div class="mdl-cell mdl-cell--6-col field-group">
+                                  <label for="exp_month">Expiration month</label>
+                                  <select name="exp_month">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--6-col field-group">
+                                  <label for="exp_year">Expiration year</label>
+                                  <select name="exp_year">
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="field-group mt-1 mb-2">
+                              <i class="icon icon-visa"></i>
+                              <i class="icon icon-master"></i>
+                              <i class="icon icon-amex"></i>
+                              <i class="icon icon-apple-pay"></i>
+                              <i class="icon icon-payment_jcb"></i>
+                              <i class="icon icon-payment_alipay"></i>
+                              <i class="icon icon-payment_paypal"></i>
+                              <i class="icon icon-payment_amazon_payment"></i>
+                              <i class="icon icon-payment_discover"></i>
+                          </div>
+                          <p>By entering your card information, you agree to the terms of service.</p>
+                        </div>
+                        <div class="tab-content" id="paypalMethode">
+                          <div class="field-group">
+                            <label>PayPal email</label>
+                            <input type="email">
+                            <p>By entering your PayPal information, you agree to the terms of service.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="dialog-btns wrap-flex">
+                        <button type="submit" class="btn btn-smaller btn-darker btn-solid">Save</button>
+                        <button type="button" class="btn btn-smaller btn-darker btn-close">Cancel</button>
+                    </div>
+                </dialog>
+            </form>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

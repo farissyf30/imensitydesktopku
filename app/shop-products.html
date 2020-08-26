@@ -1,0 +1,457 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Products</h5>
+            <div class="corner-right wrap-flex">
+                <a href="#" class="btn btn-smaller btn-link">Import</a>
+                <a href="shop-product-add.html" class="btn btn-smaller btn-darker">Add product</a>
+            </div>
+            <br>
+            <hr class="mv-2">
+            <div class="table-bar mdl-grid p-0 m-grid">
+                <div class="mdl-cell  mdl-cell--11-col for-search-longer">
+                    <form id="table-search">
+                        <i class="icon icon-search"></i>
+                        <input placeholder="Search products">
+                    </form>
+                </div>
+                <div class="mdl-cell mdl-cell--1-col ">
+                    <button class="btn btn-text btn-dots" type="button" show-for="export-option"><i class="icon icon-menu-dots"></i></button>
+                    <div class="h-dropdown" id="export-option">
+                        <h6>Export current view</h6>
+                        <ul>
+                            <li><a href="#">CSV</a></li>
+                            <li><a href="#">Excel</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <table class="table-list table-products" id="product-table">
+                <tr>
+                    <th>
+                        <div class="wrap-flex">
+                            <div class="">
+                                <div class="btn btn-check-row btn-dropdown" show-for=""><input type="checkbox" name="select_all"> <span class="m-0 pr-1">0 selected</span></div>
+                            </div>
+                            <div class="wrap-flex bulk-checkbox">
+                            <div class="">
+                                <a href="#" class="btn b-0 pl-0 pr-1 btn-clear-check">Clear all</a>
+                            </div>
+                            <div class="">
+                                <button class="btn btn-link btn-dropdown" type="button" show-for="action-option">Bulk Action</button>
+                                <div class="h-dropdown" id="action-option">
+                                    <h6>Edit</h6>
+                                    <ul>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-edit-category">Category</a></li>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-navigation">Navigation</a></li>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-delete">Delete</a></li>
+                                    </ul>
+                                    <hr>
+                                    <h6>Price</h6>
+                                    <ul>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-saleprice">Set sale price</a></li>
+                                    </ul>
+                                    <hr>
+                                    <h6>Visibility</h6>
+                                    <ul>
+                                        <li><a href="#" class="action-visibility">Hide</a></li>
+                                        <li><a href="#" class="action-visibility">Show</a></li>
+                                    </ul>
+                                    <hr>
+                                    <h6>Inventory</h6>
+                                    <ul>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-inventory">Quantity</a></li>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-inventory">SKU</a></li>
+                                        <li><a href="#" class="btn-dialog" show-dialog="dialog-inventory">Barcode</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </th>
+                    <th><span>Title</span>
+
+                    </th>
+                    <th>Price</th>
+                    <th>Last modified</th>
+                    <th style="width: 108px;">SKU</th>
+                    <th>Quantity</th>
+                    <th>Visible</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <td><label class="label-check"><input type="checkbox" name="select_row"></label></td>
+                    <td>
+                        <a href="shop-product-edit.html">
+                            <div class="product-img"><img src="./assets/images/special11.png"></div>
+                            <div class="product-title">Nautical Beach Wooden Boat Ship</div>
+                        </a>
+                    </td>
+                    <td>15.00 USD</td>
+                    <td>Feb 15, 2018, 12:20 PM</td>
+                    <td>PP1KH</td>
+                    <td><span class="product-qty"></span></td>
+                    <td><span class="product-status visible"></span></td>
+                    <td><a href="#" class="btn btn-smaller btn-darker btn-dialog btn-share" show-dialog="dialog-shareproduct">Share</a></td>
+                </tr>
+                <tr>
+                    <td><label class="label-check"><input type="checkbox" name="select_row"></label></td>
+                    <td>
+                        <a href="shop-product-edit.html">
+                            <div class="product-img"><img src="./assets/images/special9.png"></div>
+                            <div class="product-title">Green Sea Turtle Wall Decor</div>
+                        </a>
+                    </td>
+                    <td>18.00 USD</td>
+                    <td>Feb 15, 2018, 12:20 PM</td>
+                    <td>PP1KH</td>
+                    <td><span class="product-qty"></span></td>
+                    <td><span class="product-status"></span></td>
+                    <td><a href="#" class="btn btn-smaller btn-darker btn-dialog btn-share" show-dialog="dialog-shareproduct">Share</a></td>
+                </tr>
+            </table>
+            <div class="table-pagination">
+                <div class="page-numbers">1 - 2 of 2</div>
+                <div class="page-arrows">
+                    <a href="#"><i class="icon icon-chevron-left"></i></a>
+                    <a href="#"><i class="icon icon-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-shareproduct">
+    <form class="form-filter">
+        <dialog class="mdl-dialog">
+            <div class="dialog-title">
+                <h3>Share Nautical Beach Wooden Boat Ship</h3>
+                <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+            </div>
+            <div class="dialog-content">
+                <p>Share Nautical Beach Wooden Boat Ship with friends and social media followers by copyin and sharing the link below!</p>
+                <div class="refer-friend p-0">
+                    <form class="refer-form">
+                        <div class="field-group wrap-flex">
+                            <input type="email" value="https://imensity.com.au/4UGAQ" readonly>
+                            <button type="button" class="btn btn-darker btn-smaller btn-solid copy-link ml-1">Copy Link</button>
+                        </div>
+                    </form>
+                    <br>
+                    <p>More ways to share</p>
+                    <div class="wrap-flex share-btns">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//imensity.kodeku.net" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=400'); return false;" class="btn btn-darker btn-smaller">Facebook</a>
+                        <a href="mailto:?subject=Share [PRODUCT NAME]&amp;body=Check out this [PRODUCT NAME]" class="btn btn-darker btn-smaller">Email</a>
+                        <a href="fb-messenger://share/?link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fsharing%2Freference%2Fsend-dialog&app_id=123456789" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=400'); return false;" class="btn btn-darker btn-smaller">Messenger</a>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </form>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-saleprice">
+    <form class="form-saleprice">
+        <dialog class="mdl-dialog">
+            <div class="dialog-title">
+                <h3>Set Sale Price</h3>
+                <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+            </div>
+            <div class="dialog-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell--6-col">
+                        &nbsp;
+                    </div>
+                    <div class="mdl-cell--3-col"><label><b>Price</b> in USD</label></div>
+                    <div class="mdl-cell--3-col"><label><b>Sale price</b> in USD</label></div>
+                </div>
+                <div class="saleprice-items">
+                    <div class="mdl-grid saleprice-item">
+                        <div class="mdl-cell--6-col">
+                            <p>Nautical Beach Wooden Boat Ship</p>
+                        </div>
+                        <div class="mdl-cell--3-col">
+                            <div class="field-group">
+                                <input type="text" class="w-100-fit">
+                            </div>
+                        </div>
+                        <div class="mdl-cell--3-col">
+                            <div class="field-group">
+                                <input type="text" class="w-100-fit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid saleprice-item">
+                        <div class="mdl-cell--6-col">
+                            <p>Green Sea Turtle Wall Decor</p>
+                        </div>
+                        <div class="mdl-cell--3-col">
+                            <div class="field-group">
+                                <input type="text" class="w-100-fit">
+                            </div>
+                        </div>
+                        <div class="mdl-cell--3-col">
+                            <div class="field-group">
+                                <input type="text" class="w-100-fit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dialog-btns b-0 pb-2">
+                <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                <button type="button" class="btn btn-smaller btn-close ml-1">Save</button>
+            </div>
+        </dialog>
+    </form>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-inventory">
+    <form class="form-saleprice">
+        <dialog class="mdl-dialog">
+            <div class="dialog-title">
+                <h3>Set Quantity, SKU and Barcode</h3>
+                <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+            </div>
+            <div class="dialog-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col mt-0 mb-0">
+                        &nbsp;
+                    </div>
+                    <div class="mdl-cell mdl-cell--8-col mt-0 mb-0">
+                        <div class="mdl-grid">
+                          <div class="mdl-cell mdl-cell--2-col mt-0 mb-0 ml-0"><label><b>Quantity</b></label></div>
+                          <div class="mdl-cell mdl-cell--5-col mt-0 mb-0"><label><b>SKU (Stock Keeping Unit)</b></label></div>
+                          <div class="mdl-cell mdl-cell--5-col mt-0 mb-0"><label><b>Barcode (ISBN, UPC, GTIN)</b></label></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="saleprice-items">
+                    <div class="mdl-grid saleprice-item pt-0 pb-0">
+                        <div class="mdl-cell mdl-cell--4-col mt-0 mb-0">
+                            <p>Nautical Beach Wooden Boat Ship</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col mt-0 mb-0">
+                            <div class="mdl-grid">
+                              <div class="mdl-cell mdl-cell--2-col mt-0 mb-0 ml-0">
+                                <div class="field-group">
+                                    <input type="number" class="w-100-fit">
+                                </div>
+                              </div>
+                              <div class="mdl-cell mdl-cell--5-col mt-0 mb-0">
+                                <div class="field-group">
+                                    <input type="text" class="w-100-fit">
+                                </div>
+                              </div>
+                              <div class="mdl-cell mdl-cell--5-col mt-0 mb-0">
+                                  <div class="field-group">
+                                      <input type="text" class="w-100-fit">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mdl-grid saleprice-item pt-0 pb-0">
+                        <div class="mdl-cell mdl-cell--4-col mt-0 mb-0">
+                            <div class="pl-2">
+                                <p>Variations :</p>
+                                <p>Green Sea Turtle Wall Decor</p>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col mt-0 mb-0">
+                          <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col mt-0 mb-0 ml-0">
+                              <div class="field-group">
+                                  <input type="number" class="w-100-fit">
+                              </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--5-col mt-0 mb-0">
+                              <div class="field-group">
+                                  <input type="text" class="w-100-fit">
+                              </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--5-col mt-0 mb-0">
+                                <div class="field-group">
+                                    <input type="text" class="w-100-fit">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid saleprice-item pt-0 pb-0">
+                        <div class="mdl-cell mdl-cell--4-col mt-0 mb-0">
+                            <p>Nautical Beach Wooden Boat Ship</p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col mt-0 mb-0">
+                          <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--2-col mt-0 mb-0 ml-0">
+                              <div class="field-group">
+                                  <input type="number" class="w-100-fit">
+                              </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--5-col mt-0 mb-0">
+                              <div class="field-group">
+                                  <input type="text" class="w-100-fit">
+                              </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--5-col mt-0 mb-0">
+                                <div class="field-group">
+                                    <input type="text" class="w-100-fit">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dialog-btns b-0 pb-2">
+                <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                <button type="button" class="btn btn-smaller btn-close ml-1">Save</button>
+            </div>
+        </dialog>
+    </form>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-delete">
+    <form class="">
+        <dialog class="mdl-dialog">
+            <div class="dialog-title">
+                <h3>Delete all products</h3>
+                <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+            </div>
+            <div class="dialog-content">
+                <p>Are you sure you want to delete all products?</p>
+            </div>
+            <div class="dialog-btns b-0 pb-2">
+                <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                <button type="button" class="btn btn-smaller btn-close ml-1">Confirm</button>
+            </div>
+        </dialog>
+    </form>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-edit-category">
+    <form class="">
+        <dialog class="mdl-dialog">
+            <div class="dialog-title">
+                <h3>Bulk Edit Category</h3>
+                <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+            </div>
+            <div class="dialog-content">
+                <h6>Category</h6>
+                <div class="mdl-grid">
+                    <div class="mdl-cell--6-col">
+                        <select>
+                            <option>Womens Fashion</option>
+                            <option>Mens Fashion</option>
+                            <option>Electronics</option>
+                            <option>Home & Decoration</option>
+                            <option>Sports</option>
+                        </select>
+                    </div>
+                    <div class="mdl-cell--6-col">
+                        <select>
+                            <option>Unspecified</option>
+                            <option>Dresses</option>
+                            <option>Bags</option>
+                            <option>Accessories</option>
+                            <option>Skirts</option>
+                            <option>Shirts</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-btns b-0 pb-2">
+                <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                <button type="button" class="btn btn-smaller btn-close ml-1">Save</button>
+            </div>
+        </dialog>
+    </form>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-navigation">
+    <dialog class="mdl-dialog">
+        <div class="dialog-title">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <h3 class="left-title">Main menu</h3>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <h3 class="right-title"><span id="mainmenu-title">Jewelry</span>&nbsp;&nbsp;&nbsp; Sub menu</h3>
+                </div>
+            </div>
+            <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+        </div>
+        <div class="dialog-content">
+            <form class="form-general">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col pr-2" style="border-right: thin solid #aaa;">
+                        <div class="field-group navigation-wrapper">
+                            <table class="sortable">
+                                <tbody>
+                                    <tr class="" nav-for="sub-nav1">
+                                        <td>
+                                            <div class="field-agreement ml-1">
+                                                <label class="label-check">
+                                                    <input type="checkbox" name="menu_state">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="" placeholder="Menu Title" value="Jewelry"></td>
+                                        <td>
+                                            <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="" nav-for="sub-nav2">
+                                        <td>
+                                            <div class="field-agreement ml-1">
+                                                <label class="label-check">
+                                                    <input type="checkbox" name="menu_state">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td><input type="text" class="" placeholder="Menu Title" value="Accessories"></td>
+                                        <td>
+                                            <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <a href="#" class="btn-link with-border" id="add-navigation">+ Add menu item</a><br>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col pl-2" id="sub-navigation-groups">
+                        <div class="field-group navigation-wrapper-sub" id="sub-nav1">
+                            <table class="sortable">
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <br>
+                            <a href="#" class="btn-link with-border add-navigation-sub">+ Add submenu item</a><br>
+                        </div>
+                        <div class="field-group navigation-wrapper-sub" id="sub-nav2">
+                            <table class="sortable">
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <br>
+                            <a href="#" class="btn-link with-border add-navigation-sub">+ Add submenu item</a><br>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="dialog-btns wrap-flex">
+            <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+            <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-options">Save</button>
+        </div>
+    </dialog>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

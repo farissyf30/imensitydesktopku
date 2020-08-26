@@ -1,0 +1,129 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="blocks-wrapper purchase-wrapper">
+    <div class="wrap-center">
+        <h5>My Purchases</h5>
+        <div class="blocks">
+            <div class="block-item">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="shop-preview.html"><span class="product-seller">fashionStore</span></a>
+                            <div class="date">January 12, 2018</div>
+                        </td>
+                        <td>
+                            <a href="product-detail.html"><div class="product-img"><img src="./assets/images/special6.png"></div></a>
+                        </td>
+                        <td>
+                            <a href="product-detail.html"><div class="product-title">Handpainted Jumpsuit</div></a>
+                        </td>
+                        <td>
+                            <a href="shop-talk.html" class="link-icon"><i class="icon icon-menu-talk"></i>Contact shop</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="purchase-bottom-bar">
+                    <form>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--3-col m-0">
+                                <h6>How was your order?</h6>
+                                <div class="review-box">
+                                    <label class="rating active">
+                                        <input type="radio" name="rate-star" id="star5" checked>
+                                        <span class="stars star-5">
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                        </span>
+                                        <span>Excellent</span>
+                                    </label>
+                                    <label class="rating">
+                                        <input type="radio" name="rate-star" id="star4">
+                                        <span class="stars star-4">
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star"></i>
+                                        </span>
+                                        <span>Good</span>
+                                    </label>
+                                    <label class="rating">
+                                        <input type="radio" name="rate-star" id="star3">
+                                        <span class="stars star-3">
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </span>
+                                        <span>Okay</span>
+                                    </label>
+                                    <label class="rating">
+                                        <input type="radio" name="rate-star" id="star2">
+                                        <span class="stars star-2">
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </span>
+                                        <span>Bad</span>
+                                    </label>
+                                    <label class="rating">
+                                        <input type="radio" name="rate-star" id="star1">
+                                        <span class="stars star-1">
+                                            <i class="icon icon-star yellow"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </span>
+                                        <span>Terrible</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col m-0">
+                                <h6>What went well?</h6>
+                                <div class="review-box">
+                                    <label class="label-check" for="fast">
+                                        <input type="checkbox" id="fast">
+                                        Fast Shipping
+                                    </label>
+                                    <label class="label-check" for="excellent">
+                                        <input type="checkbox" id="excellent">
+                                        Excellent Service
+                                    </label>
+                                    <label class="label-check" for="great">
+                                        <input type="checkbox" id="great">
+                                        Great Products
+                                    </label>
+                                    <label class="label-check" for="true">
+                                        <input type="checkbox" id="true">
+                                        True to size
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--5-col m-0">
+                                <h6>Tell us more about your experience</h6>
+                                <div class="review-box" style="height: auto;">
+                                    <textarea rows="9"></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-solid btn-darker" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

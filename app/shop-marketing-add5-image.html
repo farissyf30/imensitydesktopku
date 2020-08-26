@@ -1,0 +1,69 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Send promotion 5/5</h5>
+            <p>You're ready to send this promotion to 1 people. Your cutomers and/or followers will receive this promotion both in email and as a Talk message.</p>
+            <hr class="mv-2">
+            <h6>Summary</h6>
+            <table class="table-list m-0">
+                <tr>
+                    <td style="width:200px;">
+                        <p class="m-0"><b>Recipients</b></p>
+                        <p class="mt-min">Followers (1)</p>
+                    </td>
+                    <td>
+                        <p class="m-0"><b>Promotion Type</b></p>
+                        <p class="mt-min">Discount</p>
+                    </td>
+                </tr>
+            </table>
+            <h6>Preview</h6>
+            <div class="promotion-preview">
+                <p><b>TODAY ONLY<br> FREE SHIPPING ON ALL ORDERS</b></p>
+                <hr>
+                <img src="http://picsum.photos/400/410">
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="shop-step-form">
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid pl-0">
+                            <a href="shop-marketing-add4-discount.html" class="btn btn-darker btn-smaller">Back</a>
+                        <a href="shop-marketing-promotion.html" class="btn btn-darker btn-solid btn-smaller" onclick="showSuccess();">Send Promotion</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mdl-dialog-wrap" id="dialog-success">
+    <dialog class="mdl-dialog">
+        <div class="dialog-title b-0">
+            <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+        </div>
+        <div class="dialog-content">
+            <div class="center-title">
+                <p class="form-message">Instructions sent! Please check your email inbox for a link to reset your password.</p>
+            </div>
+        </div>
+    </dialog>
+</div>
+
+
+<script>
+function showSuccess(){
+    setTimeout(function(){
+    $('#dialog-success').addClass('open');
+    }, 3000);
+}
+</script>
+
+@@include('./layout/components/_foot.html')

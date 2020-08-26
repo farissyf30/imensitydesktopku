@@ -1,0 +1,797 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-before.html')
+
+<div class="mdl-dialog-wrap dialog-signup open">
+    <dialog class="mdl-dialog">
+        <form action="shop-steps.html">
+            <h4 class="mdl-dialog__title">Sign Up</h4>
+            <ul class="step-indicator">
+                <li class="complete" step-for="step1"></li>
+                <li step-for="step2"></li>
+                <li step-for="step3"></li>
+            </ul>
+            <div class="steps-wrapper" current-step="step1">
+                <div class="signup-step open" id="step1">
+                    <p class="step-number">1 of 3</p>
+                    <div class="mdl-dialog__content">
+                        <h5>Welcome to imensity!</h5>
+                        <p>To personalize your shopping experience, tell us a bit about yourself.</p>
+                        <div class="field-group">
+                            <label>How old are you?</label>
+                            <input type="number">
+                        </div>
+                        <div class="field-group">
+                            <label>What gender do you identify with?</label>
+                            <label class="radio-label" for="female"><input type="radio" name="gender" id="female"> Female</label>
+                            <label class="radio-label" for="male"><input type="radio" name="gender" id="male"> Male</label>
+                            <label class="radio-label" for="transgender"><input type="radio" name="gender" id="transgender"> I prefer to self-identify</label>
+                            <label class="radio-label" for="lgbt"><input type="radio" name="gender" id="lgbt"> I'd prefer not to say</label>
+                        </div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="btn btn-solid btn-darker btn-full btn-step" goto-step="step2">Next</button>
+                    </div>
+                </div>
+                <div class="signup-step" id="step2">
+                    <button type="button" class="btn btn-icon btn-step" goto-step="step1"><i class="icon icon-chevron-left"></i></button>
+                    <p class="step-number">2 of 3</p>
+                    <div class="mdl-dialog__content">
+                        <h5>Next, tell us where you're located</h5>
+                        <p>Please confirm your country and language.</p>
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option value="au">Australia</option>
+                                <option value="sg">Singapore</option>
+                                <option value="id">Indonesia</option>
+                                <option value="my">Malaysia</option>
+                                <option value="in">India</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label>Language</label>
+                            <select>
+                                <option value="en">English</option>
+                                <option value="id">Indonesian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="btn btn-solid btn-darker btn-full btn-step" goto-step="step3">Next</button>
+                    </div>
+                </div>
+                <div class="signup-step" id="step3">
+                    <button type="button" class="btn btn-icon btn-step" goto-step="step2"><i class="icon icon-chevron-left"></i></button>
+                    <p class="step-number">3 of 3</p>
+                    <div class="mdl-dialog__content">
+                        <h5>Lastly, choose on or more categories you're interested in.</h5>
+                        <ul class="category-options">
+                            <li>
+                                <input type="checkbox" name="men-accessories">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Mens Accessories</p>
+                                </div>
+                                <img src="https://picsum.photos/100/100">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="men-bags">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Men-Bags</p>
+                                </div>
+                                <img src="https://picsum.photos/101/101">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="men-watch">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Men Watch</p>
+                                </div>
+                                <img src="https://picsum.photos/101/100">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="men-clothing">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Mens Clothing</p>
+                                </div>
+                                <img src="https://picsum.photos/100/101">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="electronic">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Electronic</p>
+                                </div>
+                                <img src="https://picsum.photos/100/102">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="art">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Art</p>
+                                </div>
+                                <img src="https://picsum.photos/102/102">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="women-clothing">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Women Clothing</p>
+                                </div>
+                                <img src="https://picsum.photos/105/105">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="jewellery">
+                                <div class="overlay">
+                                    <i class="fa fa-check"></i>
+                                    <p>Jewellery</p>
+                                </div>
+                                <img src="https://picsum.photos/103/103">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="submit" class="btn btn-darker btn-full" id="btn-choose-category">Pick one or more</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </dialog>
+</div>
+
+<div class="home-products">
+    <section class="section-hero wrap-center">
+        <div class="hero-product">
+            <div class="hero-slide">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--7-col">
+                        <img src="./assets/images/slide1.png">
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="product-info">
+                            <span class="product-badge">Best Price</span>
+                            <div class="product-title">Spark Controller Combo (Alpine White)</div>
+                            <div class="product-price">AUD 650.00</div>
+                            <a href="product-detail.html" class="btn btn-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--7-col">
+                        <img src="./assets/images/slide1.png">
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="product-info">
+                            <span class="product-badge">Best Price</span>
+                            <div class="product-title">Spark Controller Combo (Alpine Black)</div>
+                            <div class="product-price">AUD 750.00</div>
+                            <a href="product-detail.html" class="btn btn-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--7-col">
+                        <img src="./assets/images/slide1.png">
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="product-info">
+                            <span class="product-badge">Best Price</span>
+                            <div class="product-title">Spark Controller Medium (Alpine White)</div>
+                            <div class="product-price">AUD 550.00</div>
+                            <a href="product-detail.html" class="btn btn-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Building a brand of your own? <a href="#">Start selling on imensity.</a></h1>
+    </section>
+    <section class="section-promotion">
+        <div class="wrap-center mdl-grid plr-0">
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured1.png">
+                    <div class="product-info">
+                        <div class="product-title">Sitflip Tre - Skateboard furniture</div>
+                        <div class="product-price">
+                            <span class="price-strike">$12.99</span>
+                            <span class="price-promo">$221.00</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured2.png">
+                    <div class="product-info">
+                        <div class="product-title">Mini Outdoor Survival Knife</div>
+                        <div class="product-price">
+                            <span class="price-strike">$12.99</span>
+                            <span class="price-promo">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured3.png">
+                    <div class="product-info">
+                        <div class="product-title">Campfire Vega</div>
+                        <div class="product-price">
+                            <span class="price-strike">$1640.00</span>
+                            <span class="price-promo">$1300.00</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured4.png">
+                    <div class="product-info">
+                        <div class="product-title">Rainbow Enamel Brooch</div>
+                        <div class="product-price">
+                            <span class="price-strike">$12.99</span>
+                            <span class="price-promo">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured5.png">
+                    <div class="product-info">
+                        <div class="product-title">Biker Jacket</div>
+                        <div class="product-price">
+                            <span class="price-strike">$12.99</span>
+                            <span class="price-promo">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured6.png">
+                    <div class="product-info">
+                        <div class="product-title">Demomodel Hifiman Edition X v2</div>
+                        <div class="product-price">
+                            <span class="price-strike">$1640.00</span>
+                            <span class="price-promo">$1240.00</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured7.png">
+                    <div class="product-info">
+                        <div class="product-title">Rainbow Enamel Brooch</div>
+                        <div class="product-price">
+                            <span class="price-strike">$12.99</span>
+                            <span class="price-promo">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured8.png">
+                    <div class="product-info">
+                        <div class="product-title">Mini Outdoor Knife</div>
+                        <div class="product-price">
+                            <span class="price-strike">$12.99</span>
+                            <span class="price-promo">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <a href="product-detail.html">
+                <div class="product-box">
+                    <img src="./assets/images/featured9.png">
+                    <div class="product-info">
+                        <div class="product-title">ESFootwear - Square Three</div>
+                        <div class="product-price">
+                            <span class="price-strike">$1640.00</span>
+                            <span class="price-promo">$1240.00</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section-categorized-promotion in-home-only">
+        <div class="wrap-center">
+          <div class="products-group products-hot">
+            <h3>Hot Collections</h3>
+            <div class="product-mini-nav">
+                <button type="button" class="btn-arrow btn-slick-prev"><i class="icon icon-chevron-left"></i></button>
+                <button type="button" class="btn-arrow btn-slick-next"><i class="icon icon-chevron-right"></i></button>
+                <a href="product-detail.html">SEE ALL</a>
+            </div>
+            <div class="product-mini-slider">
+                <div>
+                  <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot1.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">25% OFF AT CHECKOUT</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot2.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="product-item sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot3.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot4.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot5.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="product-item sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot3.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/hot2.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="products-group products-featured">
+            <h3>Featured Product</h3>
+            <div class="product-mini-nav">
+                <button type="button" class="btn-arrow btn-slick-prev"><i class="icon icon-chevron-left"></i></button>
+                <button type="button" class="btn-arrow btn-slick-next"><i class="icon icon-chevron-right"></i></button>
+                <a href="product-detail.html">SEE ALL</a>
+            </div>
+            <div class="product-mini-slider">
+              <div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat1.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat2.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">25% OFF AT CHECKOUT</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat3.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat4.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat5.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat3.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/feat2.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="products-group products-special">
+            <h3>Special for you</h3>
+            <div class="product-mini mdl-grid p-0">
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special1.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special2.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special3.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special4.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special5.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">25% OFF AT CHECKOUT</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special6.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special7.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special8.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special9.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special10.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">25% OFF AT CHECKOUT</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special11.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special12.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col sold-out">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special13.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">SOLD OUT</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special14.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price">AUD 145.60</p>
+                            <p class="label">NEW</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item mdl-cell mdl-cell--2-col">
+                    <a href="product-detail.html">
+                        <div class="product-img"><img src="./assets/images/special15.png"></div>
+                    </a>
+                    <div class="product-caption">
+                        <a class="btn-love"><i class="icon icon-love"></i></a>
+                        <a href="product-detail.html">
+                            <p class="store">Lemone Indonesia</p>
+                            <p class="product-name">Casual Business Stand Collar Coat</p>
+                            <p class="product-price"><span class="price-strike">AUD 145.80</span> AUD 145.60</p>
+                            <p class="label">25% OFF AT CHECKOUT</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-load-more">
+                <a href="#">Load More</a>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_cookies.html')
+@@include('./layout/components/_foot.html')

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>imensity</title>
+
+    
+    <meta name="msapplication-tap-highlight" content="no">
+
+    
+    <link rel="manifest" href="manifest.json">
+
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Imensity">
+    <link rel="icon" sizes="192x192" href="./assets/images/favicon-new.png">
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Imensity">
+    <link rel="apple-touch-icon" href="./assets/images/favicon-new.png">
+
+    
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#0d849c">
+
+    
+    <meta name="theme-color" content="#0d849c">
+
+    
+    
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/vendor.min.css">
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+  </head>
+  <body>
+
+
+<header>
+        <div class="main-header">
+            <div class="header-top">
+                <div class="wrap-center">
+                    <div class="mdl-grid m-grid justify-start">
+                        <div class="mdl-cell mdl-cell--3-col m-0 wrap-flex">
+                            <div class="menu-expander">
+                                <a href="#"><i class="icon icon-category"></i></a>
+                            </div>
+                            <div class="logo-wrap">
+                                <a href="index.html"><img src="./assets/images/logo-imensity-new.svg"></a>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--5-col m-0">
+                            <form class="main-search" autocomplete="off">
+                                <input type="search" name="search-input" id="search-main" placeholder="Search for an item, user or store">
+                            </form>
+                            <div class="mdl-dialog-wrap full-dialog" id="dialog-search">
+    <dialog class="mdl-dialog">
+        <div class="dialog-content pt-0">
+            <ul class="suggest">
+                <li class="suggest-list with-border"><a href="category-sub.html">Jacket <i>in Candle Holders & Candlesticks</i></a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span></a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jackets</span></a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> in women</a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> in men</a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> where is my mind</a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> windbreakers</a></li>
+            </ul>
+        </div>
+    </dialog>
+</div>
+
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col m-0 wrap-flex">
+                                <div class="menu-icons">
+                                    <a href="#" show-for="auth-dropdown"><span class="user-photo"><img src="http://i.pravatar.cc/150"></span></a>
+                                    <a href="#" show-for="notif-dropdown"><i class="icon icon-notif"></i></a>
+                                    <a href="cart-empty.html"><i class="icon icon-cart"></i></a>
+                                </div>
+                                <a href="signup-seller.html" class="btn btn-sell" show-for="shop-dropdown"><span>Bootyswitch</span>
+                                    <span class="logo-seller"><img src="http://i.pravatar.cc/100"></span>
+                                </a>
+
+                                <div class="h-dropdown logged-in" id="auth-dropdown">
+                                    <p>Marketplace</p>
+                                    <div class="group-dropdown">
+                                        <a href="new-arrival.html">
+                                            <i class="icon icon-menu-star"></i>
+                                            <span>New</span>
+                                        </a>
+                                        <a href="profile-shop-owner.html">
+                                            <i class="icon icon-profile"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                        <a href="purchase.html">
+                                            <i class="icon icon-menu-purchase"></i>
+                                            <span>Purchase</span>
+                                        </a>
+                                        <a href="setting-profile.html">
+                                            <i class="icon icon-menu-setting"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                        <a href="logout.html">
+                                            <i class="icon icon-menu-logout"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="h-dropdown logged-in p-0" id="notif-dropdown">
+                                    <h6>Notifications</h6>
+                                    <div class="notif-tab">
+                                        <button type="button" class="btn-toggle active" to-show="notif-shopper">Shopper</button>
+                                        <button type="button" class="btn-toggle" to-show="notif-myshop">My Shop</button>
+                                    </div>
+                                    <div class="notif-wrapper">
+                                        <div class="notif-box toggled-item open" id="notif-shopper">
+                                            <div class="notif-item read">
+                                                <h6 class="notif-date">September 27</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/100"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Eksa</b></a> just made a purchase</p>
+                                                            <p>September 27, 2018</p>
+                                                            <div class="tiny-preview">
+                                                                <img src="./assets/images/special2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notif-item">
+                                                <h6 class="notif-date">September 25</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/50"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Yusup</b></a> just followed you</p>
+                                                            <p>September 25, 2018</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notif-box toggled-item" id="notif-myshop">
+                                            <div class="notif-item">
+                                                <h6 class="notif-date">September 28</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/50"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Vany</b></a> just followed you</p>
+                                                            <p>September 28, 2018</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notif-item read">
+                                                <h6 class="notif-date">September 27</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/100"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Eksa</b></a> just made a purchase</p>
+                                                            <p>September 27, 2018</p>
+                                                            <div class="tiny-preview">
+                                                                <img src="./assets/images/special2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="h-dropdown" id="shop-dropdown">
+                                    <form>
+                                        <div class="field-group">
+                                            <h6>Preview</h6>
+                                            <p>Marketplace shop</p>
+                                            <input type="url" value="https://imensity.com.au/bootyswitch" readonly onclick="window.location='shop-preview.html'">
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <h6>Manage Bootyswitch</h6>
+                                    <div class="group-dropdown">
+                                        <a href="shop-preview.html">
+                                            <i class="icon icon-menu-home"></i>
+                                            <span>Home</span>
+                                        </a>
+                                        <a href="shop-orders.html">
+                                            <i class="icon icon-orders"></i>
+                                            <span>Orders</span>
+                                        </a>
+                                        <a href="shop-products.html">
+                                            <i class="icon icon-products"></i>
+                                            <span>Products</span>
+                                        </a>
+                                        <a href="shop-marketing-customer.html">
+                                            <i class="icon icon-customer"></i>
+                                            <span>Customer</span>
+                                        </a>
+                                        <a href="shop-analytics.html">
+                                            <i class="icon icon-analytic"></i>
+                                            <span>Analytic</span>
+                                        </a>
+                                        <a href="shop-marketing-discount.html">
+                                            <i class="icon icon-discount-coupon"></i>
+                                            <span>Discounts</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="wrap-center">
+                    <ul class="categories-list-main">
+                        <li><a href="shop-dashboard.html">Dashboard</a></li>
+                        <li><a href="shop-orders.html">Orders</a></li>
+                        <li><a href="shop-products.html">Products</a></li>
+                        <li><a href="shop-analytics.html">Analytics</a></li>
+                        <li><a href="shop-marketing-customer.html" show-for="marketing-dropdown">Marketing</a></li>
+                        <li><a href="shop-payouts.html">Payouts</a></li>
+                    </ul>
+                    <ul class="categories-list-main fl-right">
+                        <li><a href="shop-talk.html">Talk</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="shop-setting-general.html" show-for="setting-dropdown">Setting</a></li>
+                    </ul>
+
+                    <div class="h-dropdown" id="marketing-dropdown">
+                        <div class="group-dropdown">
+                            <a href="shop-marketing-customer.html">
+                                <i class="icon icon-customer"></i>
+                                <span>Customer</span>
+                            </a>
+                            <a href="shop-marketing-promotion.html">
+                                <i class="icon icon-menu-promotion"></i>
+                                <span>Promotion</span>
+                            </a>
+                            <a href="shop-marketing-discount.html">
+                                <i class="icon icon-discount-coupon"></i>
+                                <span>Discounts</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-dropdown" id="setting-dropdown">
+                        <div class="group-dropdown">
+                            <a href="shop-setting-general.html">
+                                <i class="icon icon-menu-setting"></i>
+                                <span>General</span>
+                            </a>
+                            <a href="shop-setting-shipping.html">
+                                <i class="icon icon-menu-shipping"></i>
+                                <span>Shipping</span>
+                            </a>
+                            <a href="shop-setting-location.html">
+                                <i class="icon icon-menu-location"></i>
+                                <span>Location</span>
+                            </a>
+                            <a href="shop-setting-staff.html">
+                                <i class="icon icon-menu-staff"></i>
+                                <span>Staff</span>
+                            </a>
+                            <a href="shop-setting-billing.html">
+                                <i class="icon icon-menu-billing"></i>
+                                <span>Billing</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="sidemenu-wrapper">
+    <div class="sidemenu">
+        <button type="button" class="btn-close"><i class="icon icon-close"></i></button>
+        <ul class="top">
+            <li><a href="index.html"><i class="icon icon-menu-home"></i> <span>Home</span></a></li>
+            <li><a href="category.html"><i class="icon icon-menu-category"></i> <span>All Categories</span></a></li>
+            <li><a href="sales.html"><i class="icon icon-discount-coupon"></i> <span>Sales</span></a></li>
+            <li><a href="editor-picks.html"><i class="icon icon-menu-picks"></i> <span>Editor Pick's</span></a></li>
+            <li><a href="featured.html"><i class="icon icon-menu-featured"></i> <span>Featured Product</span></a></li>
+            <li><a href="preloved.html"><i class="icon icon-menu-preloved"></i> <span>Preloved</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="help.html"><i class="icon icon-menu-help"></i> <span>Help Center</span></a></li>
+            <li><a href="contact.html"><i class="icon icon-menu-contact"></i> <span>Contact Us</span></a></li>
+            <li><a href="about.html"><i class="icon icon-menu-about"></i> <span>About</span></a></li>
+            <li><a href="career.html"><i class="icon icon-menu-career"></i> <span>Career</span></a></li>
+        </ul>
+        <div class="bottom-part">
+            <ul>
+                <li><a href="terms.html"><i class="icon icon-menu-terms"></i> <span>Terms & Conditions</span></a></li>
+                <li><a href="privacy.html"><i class="icon icon-menu-privacy"></i> <span>Privacy & Policy</span></a></li>
+            </ul>
+            <p>
+                Copyright &copy; 2018 imensity Inc.<br>
+                All RIghts Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Talk</h5>
+            <div class="talk-tabs">
+                <a href="shop-talk.html" class="active">Coversation (2)</a>
+                <a href="shop-talk-promotion.html">Promotions</a>
+            </div>
+            <div class="talk-wrapper mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--4-col m-0">
+                    <ul id="talk-msg-list">
+                        <li class="active">
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/100">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">John Mayers</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/70">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Mary Jane</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/55">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">David James</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                        <img src="http://i.pravatar.cc/65">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Andrey Bill</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/60">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">John Cena</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/90">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Zeb Ahmedova</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/80">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Mike Takeuchi</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col m-0">
+                    <div id="talk-empty-box">
+                        <p>Please select a talk to start messaging</p>
+                    </div>
+                    <div id="talk-msg-box" class="show">
+                        <a href="#" class="btn-link btn-talk-close btn-dialog" show-dialog="dialog-markspam"><i class="material-icons">warning</i> <span>Mark as spam</span></a>
+                        <div id="talk-msg-user">
+                            <div class="user-info-current">
+                                
+                                <h5 id="current-name">John Mayers</h5>
+                            </div>
+                        </div>
+                        <div id="talk-msg-content">
+                            <ul>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Hello...</p>
+                                        <span class="msg-date">03:25 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Hello</p>
+                                        <span class="msg-date">03:28 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Shipping worlwide?</p>
+                                        <span class="msg-date">03:29 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Curently shipping for Australia & Indonesia only</p>
+                                        <span class="msg-date">03:29 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Ah ok</p>
+                                        <span class="msg-date">03:30 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Can i help you?</p>
+                                        <span class="msg-date">03:31 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">I'm looking for vintage goods.</p>
+                                        <span class="msg-date">03:31 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Well you're in the right place</p>
+                                        <span class="msg-date">03:32 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Let me check your products </p>
+                                        <span class="msg-date">03:32 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Sure!</p>
+                                        <span class="msg-date">03:35 am</span>
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <form action="" method="POST" id="talk-msg-field">
+                            <textarea id="talk-field" name="area-talk" placeholder="Type your message here..." rows="1" onclick="this.focus();this.select()"></textarea>
+                            <button type="submit" class="submit-talk">
+                                Send
+                            </button>
+                            <div class="talk-actions">
+                                <button type="button" class="btn btn-smaller btn-darker file-upload">Photo
+                                  <input class="upload" type="file">
+                                </button>
+                                <a href="#" class="btn btn-smaller btn-darker btn-dialog" show-dialog="dialog-exception">Products</a>
+                                <a href="#" class="btn btn-smaller btn-darker btn-dialog" show-dialog="dialog-discount">Discounts</a>
+                            </div>
+                            <div class="mdl-dialog-wrap dialog-container" id="dialog-exception">
+                              <dialog class="mdl-dialog">
+                                  <div class="dialog-title">
+                                      <h3 class="align-center">Select products</h3>
+                                      <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                                  </div>
+                                  <div class="dialog-content">
+                                      <form class="form-general">
+                                          <div class="exception-search">
+                                              <input type="search">
+                                              <button type="button"><i class="icon icon-search"></i></button>
+                                          </div>
+                                          <div class="exception-products">
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot1.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Rossie Glasses</b><br>
+                                                          <span>AUD 49.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot2.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Night Fury</b><br>
+                                                          <span>AUD 149.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot3.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Light Scarf</b><br>
+                                                          <span>AUD 9.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot5.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Roxanes Veil</b><br>
+                                                          <span>AUD 69.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="dialog-btns wrap-flex">
+                                      <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                                      <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-exception">Add</button>
+                                  </div>
+                              </dialog>
+                            </div>
+                            <div class="mdl-dialog-wrap dialog-container" id="dialog-discount">
+                              <dialog class="mdl-dialog">
+                                  <div class="dialog-title">
+                                      <h3 class="align-center">Select Discounts</h3>
+                                      <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                                  </div>
+                                  <div class="dialog-content">
+                                      <form class="form-general">
+                                          <div class="exception-search">
+                                              <input type="search">
+                                              <button type="button"><i class="icon icon-search"></i></button>
+                                          </div>
+                                          <div class="exception-products">
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </label></div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="dialog-btns wrap-flex">
+                                      <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                                      <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-exception">Add</button>
+                                  </div>
+                              </dialog>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-markspam">
+            <form class="form-filter">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Mark as spam</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <p>Marking this conversation as spam will remove the conversation from your inbox, and block all future messages from this user. This action will also notify imensity support.</p>
+                    </div>
+                    <div class="dialog-btns wrap-flex justify-start b-0">
+                        <button type="button" class="btn btn-smaller btn-close">Close</button>
+                        <button type="submit" class="btn btn-smaller btn-darker">Mark as spam</button>
+                    </div>
+                </dialog>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script src="assets/vendor/vendor.min.js"></script>
+<script src="assets/scripts/main.min.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

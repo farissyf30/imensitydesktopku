@@ -1,0 +1,111 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="settings-page">
+    <div class="wrap-center">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col">
+                <h5>Settings</h5>
+                <ul class="list-setting">
+                    <li><a href="setting-profile.html">Profile</a></li>
+                    <li class="active"><a href="setting-shopping.html">Shopping details</a></li>
+                    <li><a href="setting-email.html">Email</a></li>
+                    <li><a href="setting-account.html">Account</a></li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--5-col pt-2">
+                <div class="field-group">
+                    <label>My saved address</label><br><br>
+                    <p class="saved-address">69 Brows Street,<br> OSBORNE PARK<br> New South Wales<br> Australia</p>
+                </div>
+                <div class="field-btns">
+                    <a href="#" class="btn btn-smaller btn-dialog" show-dialog="dialog-save-address" id="btn-address-edit">Edit</a>
+                    <a href="#" class="btn btn-smaller" id="btn-address-remove">Remove</a>
+                </div>
+                <br>
+                <div class="field-group">
+                    <label>My saved payment method</label><br><br>
+                    <div class="saved-payment"><i class="icon icon-paypal"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-dialog-wrap" id="dialog-save-address">
+        <form class="form-filter">
+            <dialog class="mdl-dialog">
+                <div class="dialog-title">
+                    <h3>Edit Shipping Address</h3>
+                    <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                </div>
+                <div class="dialog-content">
+                    <form class="form-general" id="form-address">
+                        <div class="mdl-grid m-grid p-0">
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label for="title">First name</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label for="title">Last name</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="field-group">
+                                <label>Address</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label>City</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label>Postal code</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label>Country</label>
+                                <select>
+                                    <option>Indonesia</option>
+                                    <option>Australia</option>
+                                    <option>Singapore</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label>State/Territory</label>
+                                <select>
+                                    <option>East Java</option>
+                                    <option>West Java</option>
+                                    <option>Bali</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <div class="field-group">
+                                <label>Phone number</label>
+                                <input type="number" name="phone">
+                            </div>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-smaller btn-darker">Save</button>
+                    </form>
+                </div>
+            </dialog>
+        </form>
+    </div>
+</div>
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

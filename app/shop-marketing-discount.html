@@ -1,0 +1,50 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Discounts</h5>
+            <div class="corner-right wrap-flex">
+                <a href="shop-marketing-discount-add.html" class="btn btn-smaller">Add discount</a>
+            </div>
+            <hr class="mt-2">
+            <div class="table-bar mdl-grid p-0 m-grid">
+                <div class="mdl-cell"><a href="#" class="btn btn-smaller btn-darker">All Discounts</a></div>
+                <div class="mdl-cell"><a href="#" class="btn btn-smaller btn-darker">Active</a></div>
+                <div class="mdl-cell"><a href="#" class="btn btn-smaller btn-darker">Inactive</a></div>
+                <div class="mdl-cell for-search">
+                    <form id="table-search">
+                        <i class="icon icon-search"></i>
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+            <table class="table-list table-products">
+                <tr>
+                    <th><button type="button" class="btn btn-check" show-for=""><input type="checkbox" name="select_all"></button></th>
+                    <th>Details</th>
+                    <th>Used</th>
+                    <th>Start</th>
+                    <th>End</th>
+                </tr>
+                <tr onclick="window.location='shop-marketing-discount-edit.html'">
+                    <td><label class="label-check"><input type="checkbox" name="select_row"></label></td>
+                    <td>
+                        <div><b>SUMMER DISCOUNT</b></div>
+                        <div>5% off on all orders using SUMMERDISC.</div>
+                    </td>
+                    <td>0/1</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

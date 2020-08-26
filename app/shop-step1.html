@@ -1,0 +1,483 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="shop-steps-1done.html">
+            <div class="wrap-center">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h5>Add shop information</h5>
+                        <p class="m-0">Personalize your shop by adding a name, description, and cover image.</p>
+                    </div>
+                </div>
+                <hr class="mv-2">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="m-0">Country & currency</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="country">Country</label>
+                            <select name="country">
+                                <option value="0"></option>
+                                <option value="id">Indonesia</option>
+                                <option value="au">Australia</option>
+                                <option value="sg">Singapore</option>
+                            </select>
+                        </div>
+                        <p>Please select the country where your business is based.<br>
+                            This should also be the country in which you have a registered bank account.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="currency">Currency</label>
+                            <select name="currency">
+                                <option value="0"></option>
+                                <option value="id">Indonesian Rupiah (IDR)</option>
+                                <option value="au">Australian Dollar (AUD)</option>
+                                <option value="sg">Singaporean Dollar (SGD)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="mt-0">Account type &nbsp;&nbsp;
+                            <span class="f-13 tooltip-help">Help
+                                <span class="tooltiptext tooltip-right">Account type help dummy text</span>
+                            </span>
+                        </h6>
+                        <div class="field-group">
+                            <label>Type</label>
+                            <div class="shipping-radios" id="account-type">
+                                <label class="radio-label" for="account_business"><input type="radio" name="account_type" id="account_business" checked> Business</label>
+                                <label class="radio-label" for="account_personal"><input type="radio" name="account_type" id="account_personal"> Personal</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0 show" id="abn-details">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="field-group">
+                            <h6 class="mt-0">ABN/ACN Details</h6>
+                            <div class="shipping-radios" id="abn-type">
+                                <label class="radio-label" for="abn_number"><input type="radio" name="abn-type" id="abn_number" checked> ABN</label>
+                                <label class="radio-label" for="acn_number"><input type="radio" name="abn-type" id="acn_number"> ACN</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Legal name of business</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col show" id="abn">
+                        <div class="field-group">
+                            <label>ABN Number</label>
+                            <input type="number" maxlength="11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col" id="acn">
+                        <div class="field-group">
+                            <label>ACN Number</label>
+                            <input type="number" maxlength="9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Phone</label>
+                            <input type="number" id="phone" style="width: calc(100% - 1em)">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Postal code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option>Indonesia</option>
+                                <option>Australia</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>State/Territory</label>
+                            <select>
+                                <option>East Java</option>
+                                <option>West Java</option>
+                                <option>Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0" id="personal-details">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="m-0">Personal information</h6>
+                        <p>Only your address will be shown on receipts and in your Terms & Conditions. Personal information will no be visible to anyone but you.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">First name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Last name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="field-group">
+                          <label>Date of Birth</label>
+                          <div class="mdl-grid p-0">
+                              <div class="mdl-cell mdl-cell--4-col ml-0 mt-0">
+                                  <select class="w-100">
+                                      <option>Year</option>
+                                      <option>1995</option>
+                                      <option>1994</option>
+                                      <option>1993</option>
+                                      <option>1992</option>
+                                      <option>1991</option>
+                                      <option>1990</option>
+                                      <option>1989</option>
+                                      <option>1988</option>
+                                      <option>1987</option>
+                                      <option>1981</option>
+                                      <option>1986</option>
+                                      <option>1985</option>
+                                      <option>1984</option>
+                                      <option>1983</option>
+                                      <option>1982</option>
+                                      <option>1980</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--4-col mt-0">
+                                  <select class="w-100">
+                                      <option>Month</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--4-col mt-0">
+                                  <select class="w-100-cs">
+                                      <option>Day</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                      <option>13</option>
+                                      <option>14</option>
+                                      <option>15</option>
+                                      <option>16</option>
+                                      <option>17</option>
+                                      <option>18</option>
+                                      <option>19</option>
+                                      <option>20</option>
+                                      <option>21</option>
+                                      <option>22</option>
+                                      <option>23</option>
+                                      <option>24</option>
+                                      <option>25</option>
+                                      <option>26</option>
+                                      <option>27</option>
+                                      <option>28</option>
+                                      <option>29</option>
+                                      <option>30</option>
+                                      <option>31</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Postal code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option>Indonesia</option>
+                                <option>Australia</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>State/Territory</label>
+                            <select>
+                                <option>East Java</option>
+                                <option>West Java</option>
+                                <option>Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="m-0">Shop info</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="name">Account Email</label>
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="shop">Shop handle</label>
+                            <div class="shop-url">
+                                <span>imensity.com/</span>
+                                <input type="text" name="shop">
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="desc">Short description</label>
+                            <textarea name="desc" rows="5"></textarea>
+                        </div>
+                        <p>A short introduction to your shop that will be shown in the marketplace.</p>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="about">About</label>
+                            <textarea name="about" rows="5" maxlength="150" id="textcount"></textarea>
+                        </div>
+                        <div class="mdl-grid m-0 p-0">
+                          <div class="mdl-cell mdl-cell--10-col m-0">
+                              <p>What do you sell? Why should customers visit your shop and buy your products? </p>
+                          </div>
+                          <div class="mdl-cell mdl-cell--2-col col-sda">
+                              <p class="text-right result-count">150</p>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="mt-0">Logo</h6>
+                        <div class="field-group">
+                            <p>Your logo will be visible across the platform. Please avoid uploading transparent images with the white graphics, as they will not appear properly on the marketplace. <a href="help.html">Learn more</a></p>
+                            <div class="photo-wrapper">
+                                <button type="button" class="btn-photo show">
+                                    <i class="icon icon-upload"></i>
+                                </button>
+                                <input type="file" class="photo-file" id="photo-file">
+                                <img class="img-preview" id="photo-preview" src="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="mt-0">Cover photo</h6>
+                        <div class="field-group">
+                            <p>This cover photo is a way to add branding to your marketplace shop. <a href="help.html">Learn more</a>.</p>
+                            <div class="photo-wrapper cover">
+                                <button type="button" class="btn-photo show">
+                                    <i class="icon icon-upload"></i>
+                                </button>
+                                <input type="file" class="photo-file" id="cover-file">
+                                <img class="img-preview" id="cover-preview" src="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h6 class="mt-0">Choose how will you get paid</h6>
+                        <div class="field-group">
+                            <p>Imensity payments gives buyers the most payment options and gives Imensity's seller protection.</p>
+                        </div>
+                        <div class="field-group mt-2 mb-4">
+                            <a href="#" class="btn-link btn-dialog" show-dialog="dialog-payment">Add payment method</a>
+                        </div>
+                        <div class="mdl-dialog-wrap" id="dialog-payment">
+                            <form class="form-filter">
+                                <dialog class="mdl-dialog">
+                                    <div class="dialog-title">
+                                        <h3>Add payment method</h3>
+                                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                                    </div>
+                                    <div class="dialog-content">
+                                        <div class="field-group">
+                                            <label>Payment method</label>
+                                            <div class="wrap-flex justify-start">
+                                                <label class="radio-label tab-pane" for="debit" data-tab="ccMethod"><input type="radio" name="payment" id="debit"> Debit or credit card</label>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <label class="radio-label tab-pane" for="paypal" data-tab="paypalMethode"><input type="radio" name="payment" id="paypal"> Paypal</label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content" id="ccMethod">
+                                          <div class="field-group">
+                                            <label>Card number</label>
+                                            <input type="text">
+                                          </div>
+                                          <div class="mdl-grid p-0 m-grid">
+                                            <div class="mdl-cell mdl-cell--12-col field-group mt-0 mb-0">
+                                              <label class="mt-0">Card holder name</label>
+                                              <input type="text">
+                                            </div>
+                                          </div>
+                                          <div class="mdl-grid p-0 m-grid">
+                                              <div class="mdl-cell mdl-cell--6-col field-group">
+                                                  <label for="exp_month">Expiration month</label>
+                                                  <select name="exp_month">
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                    <option>April</option>
+                                                    <option>May</option>
+                                                    <option>June</option>
+                                                    <option>July</option>
+                                                    <option>August</option>
+                                                    <option>September</option>
+                                                    <option>October</option>
+                                                    <option>November</option>
+                                                    <option>December</option>
+                                                  </select>
+                                              </div>
+                                              <div class="mdl-cell mdl-cell--6-col field-group">
+                                                  <label for="exp_year">Expiration year</label>
+                                                  <select name="exp_year">
+                                                    <option>2019</option>
+                                                    <option>2020</option>
+                                                    <option>2021</option>
+                                                    <option>2022</option>
+                                                    <option>2023</option>
+                                                    <option>2024</option>
+                                                    <option>2025</option>
+                                                    <option>2026</option>
+                                                    <option>2027</option>
+                                                    <option>2028</option>
+                                                    <option>2029</option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                          <div class="field-group mt-1 mb-2">
+                                              <i class="icon icon-visa"></i>
+                                              <i class="icon icon-master"></i>
+                                              <i class="icon icon-amex"></i>
+                                              <i class="icon icon-apple-pay"></i>
+                                              <i class="icon icon-payment_jcb"></i>
+                                              <i class="icon icon-payment_alipay"></i>
+                                              <i class="icon icon-payment_paypal"></i>
+                                              <i class="icon icon-payment_amazon_payment"></i>
+                                              <i class="icon icon-payment_discover"></i>
+                                          </div>
+                                          <div class="field-group mt-2">
+                                              <i class="icon-secure-ssl mr-1"></i>
+                                              <i class="icon-secure ml-1"></i>
+                                          </div>
+                                          <p class="mt-2">By entering your card information, you agree to the terms of service.</p>
+                                        </div>
+                                        <div class="tab-content" id="paypalMethode">
+                                          <div class="field-group">
+                                            <label>PayPal email</label>
+                                            <input type="email">
+                                          </div>
+                                          <div class="field-group mt-2">
+                                            <i class="icon-secure-ssl mr-1"></i>
+                                            <i class="icon-secure ml-1"></i>
+                                        </div>
+                                        <p class="mt-2">By entering your card information, you agree to the terms of service.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dialog-btns wrap-flex">
+                                        <button type="submit" class="btn btn-smaller btn-darker btn-solid">Save</button>
+                                        <button type="button" class="btn btn-smaller btn-darker btn-close">Cancel</button>
+                                    </div>
+                                </dialog>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid">
+                        <button type="submit" class="btn btn-darker">SAVE</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

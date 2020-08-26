@@ -1,0 +1,368 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Talk</h5>
+            <div class="talk-tabs">
+                <a href="shop-talk.html" class="active">Coversation (2)</a>
+                <a href="shop-talk-promotion.html">Promotions</a>
+            </div>
+            <div class="talk-wrapper mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--4-col m-0">
+                    <ul id="talk-msg-list">
+                        <li class="active">
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/100">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">John Mayers</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/70">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Mary Jane</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/55">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">David James</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                        <img src="http://i.pravatar.cc/65">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Andrey Bill</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/60">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">John Cena</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/90">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Zeb Ahmedova</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="http://i.pravatar.cc/80">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Mike Takeuchi</div>
+                                    <div class="user-message">Lorem Ipsum ist nicht nur ein zufälliger Text. Er hat Wurzeln aus </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col m-0">
+                    <div id="talk-empty-box" class="">
+                        <p>Please select a talk to start messaging</p>
+                    </div>
+                    <div id="talk-msg-box" class="show">
+                        <a href="#" class="btn-link btn-talk-close btn-dialog" show-dialog="dialog-markspam"><i class="material-icons">warning</i> <span>Mark as spam</span></a>
+                        <div id="talk-msg-user">
+                            <div class="user-info-current">
+                                <!-- <span class="user-img-status online"></span> -->
+                                <h5 id="current-name">John Mayers</h5>
+                            </div>
+                        </div>
+                        <div id="talk-msg-content">
+                            <ul>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Hello...</p>
+                                        <span class="msg-date">03:25 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Hello</p>
+                                        <span class="msg-date">03:28 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Shipping worlwide?</p>
+                                        <span class="msg-date">03:29 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Curently shipping for Australia & Indonesia only</p>
+                                        <span class="msg-date">03:29 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Ah ok</p>
+                                        <span class="msg-date">03:30 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Can i help you?</p>
+                                        <span class="msg-date">03:31 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">I'm looking for vintage goods.</p>
+                                        <span class="msg-date">03:31 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Well you're in the right place</p>
+                                        <span class="msg-date">03:32 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-in">
+                                    <span class="msg-profile"><img src="http://i.pravatar.cc/100"></span>
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Let me check your products </p>
+                                        <span class="msg-date">03:32 am</span>
+                                    </span>
+                                </li>
+                                <li class="msg-out">
+                                    <span class="msg-bubble">
+                                        <p class="msg-text">Sure!</p>
+                                        <span class="msg-date">03:35 am</span>
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <form action="" method="POST" id="talk-msg-field">
+                            <textarea id="talk-field" name="area-talk" placeholder="Type your message here..." rows="1" onclick="this.focus();this.select()"></textarea>
+                            <button type="submit" class="submit-talk">
+                                Send
+                            </button>
+                            <div class="talk-actions">
+                                <button type="button" class="btn btn-smaller btn-darker file-upload">Photo
+                                  <input class="upload" type="file" />
+                                </button>
+                                <a href="#" class="btn btn-smaller btn-darker btn-dialog" show-dialog="dialog-exception">Products</a>
+                                <a href="#" class="btn btn-smaller btn-darker btn-dialog" show-dialog="dialog-discount">Discounts</a>
+                            </div>
+                            <div class="mdl-dialog-wrap dialog-container" id="dialog-exception">
+                              <dialog class="mdl-dialog">
+                                  <div class="dialog-title">
+                                      <h3 class="align-center">Select products</h3>
+                                      <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                                  </div>
+                                  <div class="dialog-content">
+                                      <form class="form-general">
+                                          <div class="exception-search">
+                                              <input type="search">
+                                              <button type="button"><i class="icon icon-search"></i></button>
+                                          </div>
+                                          <div class="exception-products">
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot1.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Rossie Glasses</b><br>
+                                                          <span>AUD 49.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot2.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Night Fury</b><br>
+                                                          <span>AUD 149.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot3.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Light Scarf</b><br>
+                                                          <span>AUD 9.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-wrap">
+                                                          <img src="./assets/images/hot5.png">
+                                                      </div>
+                                                      <div class="img-name">
+                                                          <b>Roxanes Veil</b><br>
+                                                          <span>AUD 69.00</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="cta-box">
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="dialog-btns wrap-flex">
+                                      <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                                      <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-exception">Add</button>
+                                  </div>
+                              </dialog>
+                            </div>
+                            <div class="mdl-dialog-wrap dialog-container" id="dialog-discount">
+                              <dialog class="mdl-dialog">
+                                  <div class="dialog-title">
+                                      <h3 class="align-center">Select Discounts</h3>
+                                      <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                                  </div>
+                                  <div class="dialog-content">
+                                      <form class="form-general">
+                                          <div class="exception-search">
+                                              <input type="search">
+                                              <button type="button"><i class="icon icon-search"></i></button>
+                                          </div>
+                                          <div class="exception-products">
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                              <div class="exception-item wrap-flex justify-between">
+                                                  <div class="p-item wrap-flex">
+                                                      <div class="img-name">
+                                                          <b>SUMMER DISCOUNT</b><br>
+                                                          <span>5% off on all orders using SUMMERDISC.</span>
+                                                      </div>
+                                                  </div>
+                                                  <div>
+                                                      <label class="checkbox-label"><input type="checkbox" name="">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="dialog-btns wrap-flex">
+                                      <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                                      <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-exception">Add</button>
+                                  </div>
+                              </dialog>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-markspam">
+            <form class="form-filter">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Mark as spam</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <p>Marking this conversation as spam will remove the conversation from your inbox, and block all future messages from this user. This action will also notify imensity support.</p>
+                    </div>
+                    <div class="dialog-btns wrap-flex justify-start b-0">
+                        <button type="button" class="btn btn-smaller btn-close">Close</button>
+                        <button type="submit" class="btn btn-smaller btn-darker">Mark as spam</button>
+                    </div>
+                </dialog>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

@@ -1,0 +1,91 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Staff members</h5>
+            <div class="corner-right wrap-flex">
+                <a href="#" class="btn btn-smaller btn-dialog" show-dialog="dialog-staff">Invite staff member</a>
+            </div>
+            <hr class="mv-2">
+            <table class="table-list table-products m-0">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Type</th>
+                    <th>Added on</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="customer-img"><img src="http://i.pravatar.cc/100"></div>
+                        <div class="customer-name">Eksa</div>
+                    </td>
+                    <td>eksa@gmail.com</td>
+                    <td>Follower</td>
+                    <td>Sep 24, 2018</td>
+                </tr>
+            </table>
+            <br>
+            <p class="align-center mt-1"><i class="icon icon-menu-help mr-1"></i>Learn more about <a href="help.html" class="btn-link">Staff members</a></p>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-staff">
+            <form class="form-filter">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Invite staff member</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <p>Give staff members access to your shop by sending them an invitation.<br>
+                        The invitation will be valid for 24 hours.</p>
+                        <div class="field-group">
+                            <label>Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="field-group">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                    </div>
+                    <div class="dialog-btns wrap-flex">
+                        <button type="submit" class="btn btn-smaller btn-darker">Invite</button>
+                    </div>
+                </dialog>
+            </form>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-share">
+            <form class="form-filter">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Share Eksa's shop</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <p>Encourage your friends and social media audience to follow your imensity shop by copying and sharing the link below! Followers will receive updates on new arrivals, sales, and promotions.</p>
+                        <div class="refer-friend p-0">
+                            <form class="refer-form">
+                                <div class="field-group wrap-flex">
+                                    <input type="email" value="https://imensity.com.au/4UGAQ" readonly>
+                                    <button type="button" class="btn btn-darker btn-smaller btn-solid copy-link ml-1">Copy Link</button>
+                                </div>
+                            </form>
+                            <br>
+                            <p>More ways to share</p>
+                            <div class="wrap-flex share-btns">
+                                <a href="http://facebook.com/imensityaustralia" class="btn btn-darker btn-smaller">Facebook</a>
+                                <a href="http://mail.gmail.com" class="btn btn-darker btn-smaller">Email</a>
+                                <a href="http://m.me/imensityaustralia" class="btn btn-darker btn-smaller">Messenger</a>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+            </form>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

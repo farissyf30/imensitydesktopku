@@ -1,0 +1,97 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-before.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="auth-wrap wrap-center">
+    <div class="mdl-grid p-0">
+        <div class="mdl-cell mdl-cell--6-col m-0">
+            <div class="bg-side">
+                <h1>Australia's <br>Biggest<span>Online Retails Partner</span></h1>
+                <img src="./assets/images/bg-login.png">
+                <p>The greatest online shopping in Australia.<br>
+                    Find the best item on every imensity product you need!</p>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col m-0">
+            <div class="form-side">
+                <h4>Login</h4>
+                <p>Save the shops and products you love.</p>
+                <a href="#" class="btn btn-solid btn-dark">
+                    <i class="fa fa-facebook"></i>
+                    <span>Continue with Facebook</span>
+                </a>
+                <a href="#" class="btn btn-solid btn-dark">
+                    <i class="fa fa-google-plus"></i>
+                    <span>Continue with Google</span>
+                </a>
+                <p class="text-center"><small>We will never post anything on your behalf</small></p>
+                <div class="or-divider"><span>or</span></div>
+
+                <form class="auth-form" action="index-after.html">
+                    <p><b>Log in with email</b></p>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password">
+                    </div>
+                    <input type="submit" value="Log In" class="btn btn-solid btn-grey">
+                    <label>New in imensity? <a href="signup.html">Create new account</a></label>
+                    <hr>
+                    <label><a href="#" class="btn-dialog" show-dialog="dialog-forgot">Forgot Password?</a></label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mdl-dialog-wrap" id="dialog-forgot">
+    <dialog class="mdl-dialog">
+        <div class="dialog-title b-0">
+            <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+        </div>
+        <div class="dialog-content">
+            <div class="center-title">
+                <h5>Forgot Password</h5>
+                <p>Reset your password</p>
+            </div>
+
+            <form class="form-general pl-2 pr-2 align-left">
+                <p>Enter your email address, and we'll send instructions on how to create a new password.</p>
+
+                <div class="field-group">
+                    <input type="email" placeholder="" style="width: calc(100% - 2em)">
+                </div>
+                <button type="button" class="btn btn-smaller btn-darker btn-full align-center btn-solid btn-close" onclick="showPasswordSuccess();">Send instructions</button>
+                <button type="button" class="btn btn-full b-0 align-center btn-close mt-1">Back to Login</button>
+            </form>
+        </div>
+    </dialog>
+</div>
+
+<div class="mdl-dialog-wrap" id="dialog-success-password">
+    <dialog class="mdl-dialog">
+        <div class="dialog-title b-0">
+            <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+        </div>
+        <div class="dialog-content">
+            <div class="center-title">
+                <p class="form-message">Instructions sent! Please check your email inbox for a link to reset your password.</p>
+            </div>
+        </div>
+    </dialog>
+</div>
+
+
+<script>
+function showPasswordSuccess(){
+    setTimeout(function(){
+    $('#dialog-success-password').addClass('open');
+    }, 3000);
+}
+</script>
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

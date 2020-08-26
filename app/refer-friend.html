@@ -1,0 +1,71 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="home-products">
+    <section class="single-page">
+        <div class="wrap-center">
+            <div class="refer-friend">
+                <h3 class="mt-0">Refer a friend</h3>
+                <p>Refer a friend to imensity and get 10% off your next purchase once they've placed their first order. (They'll get 10% off, too). <a href="#" class="btn-link btn-dialog" show-dialog="dialog-learnmore"><b>Learn more</b></a></p>
+                <form class="refer-form" action="refer-link.html">
+                    <div class="field-group wrap-flex">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-darker btn-smaller" onclick="showSuccess();">Start Sharing</button>
+                    </div>
+                </form>
+                <p><small>You'll only get emails from us when you've received a discount code.</small></p>
+                <br><br>
+                <p>New to imensity? <a href="signup.html"><b>Sign up</b></a></p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="mdl-dialog-wrap" id="dialog-learnmore">
+    <dialog class="mdl-dialog">
+        <div class="dialog-title b-0">
+            <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+        </div>
+        <div class="dialog-content">
+            <div class="center-title">
+                <h5>How it Works</h5>
+            </div>
+            <ul class="list-icon">
+                <li><i class="icon icon-email"></i> <span>Enter your email to get started.</span></li>
+                <li><i class="icon icon-invite"></i> <span>Spread the word! Invite your friends to imensity.</span></li>
+                <li><i class="icon icon-ribbon"></i> <span>Your friends get 10% off their first purchases.</span></li>
+                <li><i class="icon icon-discount-coupon"></i> <span>You receive a 10% discount code for each friend who places an order.</span></li>
+            </ul>
+            <div class="align-center">
+                <a href="terms.html" class="btn btn-smaller align-center mt-1">Terms of Service</a>
+            </div>
+
+        </div>
+    </dialog>
+</div>
+
+<div class="mdl-dialog-wrap" id="dialog-success">
+    <dialog class="mdl-dialog">
+        <div class="dialog-title b-0">
+            <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+        </div>
+        <div class="dialog-content">
+            <div class="center-title">
+                <p class="form-message">Instructions sent! Please check your email inbox for a link to reset your password.</p>
+            </div>
+        </div>
+    </dialog>
+</div>
+
+
+<script>
+function showSuccess(){
+    setTimeout(function(){
+    $('#dialog-success').addClass('open');
+    }, 3000);
+}
+</script>
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

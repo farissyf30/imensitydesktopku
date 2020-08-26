@@ -1,0 +1,221 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="">
+        <div class="wrap-center">
+            <h5>General</h5>
+            <hr class="mt-0">
+
+            <h6>Shop info</h6>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group with-url">
+                        <label for="shop">Shop handle</label>
+                        <input type="text" name="shop">
+                        <p><span class="grey-text">imensity.com/</span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Short description</label>
+                        <textarea rows="5"></textarea>
+                        <p>A short introduction to your shop that will be shown in the marketplace.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>About</label>
+                        <textarea name="about" rows="5" maxlength="150" id="textcount"></textarea>
+                    </div>
+                    <div class="mdl-grid m-0 p-0">
+                      <div class="mdl-cell mdl-cell--10-col m-0">
+                          <p>What do you sell? Why should customers visit your shop and buy your products? </p>
+                      </div>
+                      <div class="mdl-cell mdl-cell--2-col col-sda">
+                          <p class="text-right result-count">150</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Shipping and policies</label>
+                        <textarea name="shippingPolicy" rows="5"></textarea>
+                    </div>
+                    <div class="mdl-grid m-0 p-0">
+                      <div class="mdl-cell mdl-cell--12-col m-0">
+                        <p>Describe your Shipping and policies that will be shown in every product detail and your shop page </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Return policy</label>
+                        <textarea name="return" rows="5"></textarea>
+                    </div>
+                    <div class="mdl-grid m-0 p-0">
+                      <div class="mdl-cell mdl-cell--12-col m-0">
+                        <p>What is your return policy?</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6 class="mt-0">Logo</h6>
+                    <div class="field-group">
+                        <p>Your logo will be visible across the platform. Please avoid uploading transparent images with the white graphics, as they will not appear properly on the marketplace. <a href="help.html">Learn more</a></p>
+                        <div class="photo-wrapper">
+                            <button type="button" class="btn-photo show">
+                                <i class="icon icon-upload"></i>
+                            </button>
+                            <input type="file" class="photo-file" id="photo-file">
+                            <img class="img-preview" id="photo-preview" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6 class="mt-0">Cover photo</h6>
+                    <div class="field-group">
+                        <p>This cover photo is a way to add branding to your marketplace shop. <a href="help.html">Learn more</a>.</p>
+                        <div class="photo-wrapper cover">
+                            <button type="button" class="btn-photo show">
+                                <i class="icon icon-upload"></i>
+                            </button>
+                            <input type="file" class="photo-file" id="cover-file">
+                            <img class="img-preview" id="cover-preview" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <h6 class="mt-0">Social</h6>
+                    <div class="field-group">
+                        <label>Contact email</label>
+                        <input type="email">
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <div class="field-group">
+                        <label>Instagram account</label>
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col">
+                    <div class="field-group">
+                        <label>Twitter account</label>
+                        <a href="#" class="btn btn-darker btn-solid">Twitter Connect</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col">
+                    <div class="field-group">
+                        <label>Facebook account</label>
+                        <a href="#" class="btn btn-darker btn-solid">Facebook Connect</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6><i class="icon icon-paypal"></i></h6>
+                    <h6 class="mt-0">Accept payments with Paypal</h6>
+                    <p>PayPal allows your customers to pay with either a credit or debit card, or a Paypal account. Payments processed through Paypal will be transferred directly to your PayPal account. <a href="#">Learn More</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <input type="email">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="field-group">
+                        <h6>Status</h6>
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                            <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+                            <span class="mdl-switch__label"></span>
+                        </label>
+                        <br>
+                        <p>Please note that making your shop unavailable to customers will put it temporary offline, an action that will affect its visibility when you reopen. Going on vacation? <a href="#">Read more here</a>.</p>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col">
+                    <a href="#" class="btn-link btn-dialog" show-dialog="dialog-closeshop">
+                        <div class="field-group">
+                            <h6>Close shop</h6>
+                            <p>Closing your shop is a permanent action. Once confirmed, you will not be able to restore your settings in the future. <br>Just want to hit pause? Here's how to temporary disable your shop.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-closeshop">
+            <dialog class="mdl-dialog">
+                <div class="dialog-title">
+                    <h3>Close Shop</h3>
+                    <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                </div>
+                <form class="form-general" action="">
+                    <div class="dialog-content">
+                        <p>You're about to close Eksa's shop, an action that can't be undone.</p>
+                        <p><b>Please tell us why you're closing your shop </b></p>
+
+                        <div class="field-group">
+                            <label class="radio-label" for="reason1"><input type="radio" name="reason" id="reason1" checked> I'm not using this shop</label>
+                            <label class="radio-label" for="reason2"><input type="radio" name="reason" id="reason2"> I don't have enough sales</label>
+                            <label class="radio-label" for="reason3"><input type="radio" name="reason" id="reason3"> It's too difficult to use imensity</label>
+                            <label class="radio-label" for="reason4"><input type="radio" name="reason" id="reason4"> I'm missing important features</label>
+                            <label class="radio-label" for="reason5"><input type="radio" name="reason" id="reason5"> I don't want to use imensity payments</label>
+                            <label class="radio-label" for="reason6"><input type="radio" name="reason" id="reason6"> Imensity is too expensive</label>
+                            <label class="radio-label" for="reason7"><input type="radio" name="reason" id="reason7"> Other</label>
+                        </div>
+
+                    </div>
+                    <div class="dialog-btns wrap-flex">
+                        <button type="submit" class="btn btn-smaller btn-solid btn-darker">Continue</button>
+                        <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+        <br><br><br>
+        <div class="step-btns">
+            <div class="wrap-center">
+                <div class="mdl-grid">
+                    <button type="submit" class="btn btn-darker btn-smaller">SAVE</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

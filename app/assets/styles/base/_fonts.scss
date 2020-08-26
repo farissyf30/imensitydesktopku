@@ -1,0 +1,438 @@
+$rubik: 'Rubik', sans-serif;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+  // @font-face {
+  //   font-family: 'imensity-icon';
+  //   src:  url('../fonts/imensity-icon.eot?2tc79c');
+  //   src:  url('../fonts/imensity-icon.eot?2tc79c#iefix') format('embedded-opentype'),
+  //     url('../fonts/imensity-icon.ttf?2tc79c') format('truetype'),
+  //     url('../fonts/imensity-icon.woff?2tc79c') format('woff'),
+  //     url('../fonts/imensity-icon.svg?2tc79c#imensity-icon') format('svg');
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?973f37');
+    src:  url('../fonts/icomoon.eot?973f37#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?973f37') format('truetype'),
+      url('../fonts/icomoon.woff?973f37') format('woff'),
+      url('../fonts/icomoon.svg?973f37#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-upload:before {
+    content: "\e951";
+  }
+  .icon-email:before {
+    content: "\e94e";
+    color: #5c5c5c;
+  }
+  .icon-invite:before {
+    content: "\e94f";
+    color: #5c5c5c;
+  }
+  .icon-ribbon:before {
+    content: "\e950";
+    color: #5c5c5c;
+  }
+
+.icon-cancel:before {
+  content: "\e941";
+}
+.icon-chat:before {
+  content: "\e942";
+}
+.icon-print:before {
+  content: "\e943";
+}
+.icon-user:before {
+  content: "\e944";
+}
+.icon-payment_alipay:before {
+  content: "\e945";
+  color: #5b5b5c;
+}
+.icon-payment_amazon_payment:before {
+  content: "\e946";
+  color: #5b5b5c;
+}
+.icon-payment_amex:before {
+  content: "\e947";
+  color: #5b5b5c;
+}
+.icon-payment_apple_pay:before {
+  content: "\e948";
+  color: #5b5b5c;
+}
+.icon-payment_discover:before {
+  content: "\e949";
+  color: #5b5b5c;
+}
+.icon-payment_jcb:before {
+  content: "\e94a";
+  color: #5b5b5c;
+}
+.icon-payment_master_card:before {
+  content: "\e94b";
+  color: #5b5b5c;
+}
+.icon-payment_paypal:before {
+  content: "\e94c";
+  color: #5b5b5c;
+}
+.icon-payment_visa:before {
+  content: "\e94d";
+  color: #5b5b5c;
+}
+
+.icon-view:before {
+  content: "\e940";
+}
+.icon-analytic:before {
+  content: "\e91f";
+}
+.icon-budget:before {
+  content: "\e939";
+  color: #5c5c5c;
+}
+.icon-customer:before {
+  content: "\e93a";
+}
+.icon-discount-coupon:before {
+  content: "\e93b";
+}
+.icon-heart:before {
+  content: "\e93c";
+  color: #5c5c5c;
+}
+.icon-orders:before {
+  content: "\e93d";
+}
+.icon-products:before {
+  content: "\e93e";
+}
+.icon-profile:before {
+  content: "\e93f";
+  color: #5c5c5c;
+}
+.icon-menu-billing:before {
+  content: "\e933";
+  color: #5c5c5c;
+}
+.icon-menu-location:before {
+  content: "\e934";
+}
+.icon-menu-share:before {
+  content: "\e935";
+  color: #4a4a4a;
+}
+.icon-menu-shipping:before {
+  content: "\e936";
+}
+.icon-menu-staff:before {
+  content: "\e937";
+}
+.icon-menu-talk:before {
+  content: "\e938";
+  color: #4a4a4a;
+}
+.icon-menu-analytic:before {
+  content: "\e926";
+  color: #4a4a4a;
+}
+.icon-menu-customer:before {
+  content: "\e927";
+  color: #4a4a4a;
+}
+.icon-menu-dashboard:before {
+  content: "\e928";
+  color: #4a4a4a;
+}
+.icon-menu-discount:before {
+  content: "\e929";
+}
+.icon-menu-logout:before {
+  content: "\e92a";
+  color: #5c5c5c;
+}
+.icon-menu-marketing:before {
+  content: "\e92b";
+  color: #4a4a4a;
+}
+.icon-menu-order:before {
+  content: "\e92c";
+  color: #4a4a4a;
+}
+.icon-menu-payout:before {
+  content: "\e92d";
+  color: #4a4a4a;
+}
+.icon-menu-product:before {
+  content: "\e92e";
+  color: #4a4a4a;
+}
+.icon-menu-promotion:before {
+  content: "\e92f";
+  color: #4a4a4a;
+}
+.icon-menu-purchase:before {
+  content: "\e930";
+  color: #5c5c5c;
+}
+.icon-menu-setting:before {
+  content: "\e931";
+  color: #5c5c5c;
+}
+.icon-menu-star:before {
+  content: "\e932";
+  color: #5c5c5c;
+}
+.icon-love-red:before {
+  content: "\e925";
+  color: #d80027;
+}
+.icon-close-o:before {
+  content: "\e922";
+}
+.icon-filter:before {
+  content: "\e923";
+  color: #6a6a6a;
+}
+.icon-menu-dots:before {
+  content: "\e924";
+  color: #c5c5c5;
+}
+.icon-menu-about:before {
+  content: "\e915";
+  color: #5c5c5c;
+}
+.icon-menu-career:before {
+  content: "\e916";
+  color: #5c5c5c;
+}
+.icon-menu-category:before {
+  content: "\e917";
+  color: #5c5c5c;
+}
+.icon-menu-contact:before {
+  content: "\e918";
+  color: #5c5c5c;
+}
+.icon-menu-featured:before {
+  content: "\e919";
+  color: #5c5c5c;
+}
+.icon-menu-help:before {
+  content: "\e91a";
+  color: #5c5c5c;
+}
+.icon-menu-home:before {
+  content: "\e91b";
+  color: #5c5c5c;
+}
+.icon-menu-picks:before {
+  content: "\e91c";
+  color: #5c5c5c;
+}
+.icon-menu-preloved:before {
+  content: "\e91d";
+  color: #5c5c5c;
+}
+.icon-menu-privacy:before {
+  content: "\e91e";
+  color: #5c5c5c;
+}
+.icon-menu-terms:before {
+  content: "\e920";
+  color: #5c5c5c;
+}
+.icon-star:before {
+  content: "\e921";
+  color: #d9d9d9;
+}
+.icon-close:before {
+  content: "\e900";
+}
+.icon-amex:before {
+  content: "\e901";
+  color: #5c5c5c;
+}
+.icon-apple-pay:before {
+  content: "\e902";
+  color: #5c5c5c;
+}
+.icon-blog:before {
+  content: "\e903";
+  color: #5c5c5c;
+}
+.icon-cart:before {
+  content: "\e904";
+  color: #5c5c5c;
+}
+.icon-category:before {
+  content: "\e905";
+}
+.icon-chevron-left:before {
+  content: "\e906";
+}
+.icon-chevron-right:before {
+  content: "\e907";
+}
+.icon-fb:before {
+  content: "\e908";
+  color: #5c5c5c;
+}
+.icon-ig:before {
+  content: "\e909";
+  color: #5c5c5c;
+}
+.icon-love:before {
+  content: "\e90a";
+}
+.icon-market:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-master:before {
+  content: "\e90c";
+  color: #5c5c5c;
+}
+.icon-notif:before {
+  content: "\e90d";
+  color: #5c5c5c;
+}
+.icon-paypal:before {
+  content: "\e90e";
+  color: #5c5c5c;
+}
+.icon-profile-add:before {
+  content: "\e90f";
+  color: #5c5c5c;
+}
+.icon-profile:before {
+  content: "\e910";
+  color: #5c5c5c;
+}
+.icon-search:before {
+  content: "\e911";
+  color: #5c5c5c;
+}
+.icon-trash:before {
+  content: "\e912";
+  color: #939393;
+}
+.icon-twitter:before {
+  content: "\e913";
+  color: #5c5c5c;
+}
+.icon-visa:before {
+  content: "\e914";
+  color: #5c5c5c;
+}
+.icon-arrow-down:before{
+  content:'';
+  width: 10px;
+  height: 6px;
+  background: url(../images/icon-arrow-down.svg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.icon.icon-dark{
+  &:before{
+    color: #444;
+  }
+}
+
+
+html, body {
+    font-family: $rubik;
+    font-weight: $font-regular;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $rubik;
+    font-weight: $font-medium;
+    letter-spacing: 0;
+    span{
+      font-weight: $font-regular;
+    }
+}
+p{
+    font-size: 14px;
+    line-height: 22px;
+    &.limit{
+        overflow: hidden;
+        position: relative;
+        &:after{
+            content: '...';
+            display: block;
+            padding: 2px 10px;
+            background: #fff;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    b, strong{
+      font-weight: $font-medium;
+    }
+}
+b, strong{
+  font-weight: $font-medium;
+}
+
+.icon-place{
+  background: url(../images/icon-place.svg) no-repeat center center;
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background-size: contain;
+}
+
+.icon-secure-ssl{
+  background: url(../images/icon_secure_ssl.svg) no-repeat center center;
+  display: inline-block;
+  width: 113px;
+  height: 37px;
+  background-size: contain;
+}
+
+.icon-secure{
+  background: url(../images/icon_secure_payment.svg) no-repeat center center;
+  display: inline-block;
+  width: 113px;
+  height: 35px;
+  background-size: contain;
+}
+
+.icon-shop{
+  background: url(../images/shop.svg) no-repeat center center;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-size: contain;
+  vertical-align: sub;
+}

@@ -1,0 +1,101 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Yusup</h5>
+            <div class="corner-right wrap-flex">
+                <a href="#" class="btn btn-smaller btn-dialog" show-dialog="dialog-share">Share</a>
+            </div>
+            <div class="table-tabs">
+                <a href="user-profile.html" class="btn btn-link active"><i class="icon icon-view"></i> &nbsp;<span>View profile</span></a>
+            </div>
+            <hr class="mt-0">
+            <h6>Details</h6>
+            <div class="customer-detail">
+                <div class="customer-img">
+                    <img src="http://i.pravatar.cc/100">
+                </div>
+                <div class="customer-info">
+                    <p class="name"><b>Yusup</b> <a href="#" class="btn btn-x-small">Follower</a></p>
+                    <p class="country">Australia <i class="icon icon-flag-au"></i></p>
+                    <p>Following since Sep 25, 2018</p>
+                </div>
+                <div class="customer-link">
+                    <p><b>Tags</b></p>
+                    <a href="#" class="btn-link with-border">Create new tag</a>
+                </div>
+            </div>
+            <h6 class="mt-2">Shipping address</h6>
+            <div class="customer-detail">
+                <div class="customer-info">
+                    <p>Jl. Wijaya Kusuma G2 Malang<br>
+                    Jawa Timur 65156<br>
+                    Indonesia
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <h6>Order history</h6>
+            <!-- <p>You haven't received any order from this follower yet.</p> -->
+            <table class="table-list table-products">
+              <tbody>
+                <tr>
+                  <td>
+                      <p class="mb-1">Dec 7 <span class="order-status yellow ml-1">UNFINISHED</span></p>
+                      <p class="m-0">5.00 USD #112234</p>
+                  </td>
+                  <td class="align-right">
+                      <div class="product-img"><img src="./assets/images/special11.png"></div>
+                  </td>
+
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="shop-step-form">
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid pl-0">
+                        <a href="#" class="btn btn-darker btn-solid">Contact</a>
+                        <a href="shop-marketing-customer.html" class="btn btn-darker">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-dialog-wrap" id="dialog-share">
+            <form class="form-filter">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Share Eksa's shop</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <p>Encourage your friends and social media audience to follow your imensity shop by copying and sharing the link below! Followers will receive updates on new arrivals, sales, and promotions.</p>
+                        <div class="refer-friend p-0">
+                            <form class="refer-form">
+                                <div class="field-group wrap-flex">
+                                    <input type="email" value="https://imensity.com.au/4UGAQ" readonly>
+                                    <button type="button" class="btn btn-darker btn-smaller btn-solid copy-link ml-1">Copy Link</button>
+                                </div>
+                            </form>
+                            <br>
+                            <p>More ways to share</p>
+                            <div class="wrap-flex share-btns">
+                                <a href="http://facebook.com/imensityaustralia" class="btn btn-darker btn-smaller">Facebook</a>
+                                <a href="http://mail.gmail.com" class="btn btn-darker btn-smaller">Email</a>
+                                <a href="http://m.me/imensityaustralia" class="btn btn-darker btn-smaller">Messenger</a>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+            </form>
+        </div>
+    </div>
+</div>
+
+@@include('./layout/components/_foot.html')

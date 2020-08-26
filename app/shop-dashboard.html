@@ -1,0 +1,197 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Welcome Eksa</h5>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-order.svg">
+                        </div>
+                        <div class="right-side">
+                            <h6>Orders</h6>
+                            <p>Last 7 days</p>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 7</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min min-balance">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-account.svg">
+                        </div>
+                        <div class="right-side">
+                            <h6>Account Balance</h6>
+                            <p>in USD</p>
+                            <h3 class="dash-number">0.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min min-follower">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-follower.svg">
+                            <a href="shop-preview.html#followers" class="text-center"><p class="mb-0">View All</p></a>
+                        </div>
+                        <div class="right-side">
+                            <h6>Follower</h6>
+                            <p>Total</p>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 2</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-saves.svg">
+                        </div>
+                        <div class="right-side">
+                            <h6>Saves</h6>
+                            <p>Total</p>
+                            <h3 class="dash-number">9 <span class="number-plus">+ 3</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block">
+                        <div class="left-side">
+                            <h6>Impressions</h6>
+                            <p>Last 7 days</p>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 10%</span></h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-impressions"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block">
+                        <div class="left-side">
+                            <h6>Views</h6>
+                            <p>Last 7 days</p>
+                            <h3 class="dash-number">211 <span class="number-plus">+ 10%</span></h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-views"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="dash-box with-head">
+                        <h6>Recent orders</h6>
+                        <a href="shop-order-detail.html">
+                          <div class="dash-content">
+                            <div class="left-side">
+                                <p>Wahyu Setianto placed an order of 0.00 USD</p>
+                                <span>Sep 27, 2:15 PM</span>
+                            </div>
+                            <div class="right-side product-img">
+                                <img src="./assets/images/special14.png">
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="dash-box with-head">
+                        <h6>Reviews</h6>
+                        <div class="mdl-grid p-0 no-scroll">
+                            <div class="brand-items review-shop-items">
+                                <div class="mdl-grid p-0">
+                                    <div class="mdl-cell mdl-cell--4-col col-store-pp m-0">
+                                        <div class="store-photo">
+                                        <img src="http://i.pravatar.cc/155" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--4-col m-0 col-store-img">
+                                        <p class="name mb-0">LG Electronic <span class="date-review">2 day ago</span></p>
+                                        <p class="rate-contain">
+                                            <span class="product-rating">
+                                                <label class="star"><input type="radio" name="rating" id="star1"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star2"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star3"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star4"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star5"><i class="icon icon-star"></i></label>
+                                            </span>
+                                        </p>
+                                        <p class="mb-0"><b>I like it. Fast shipping</b></p>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quia optio laudantium rerum saepe tempore nam sint
+                                        </p>
+                                        <a href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brand-items review-shop-items">
+                                <div class="mdl-grid p-0">
+                                    <div class="mdl-cell mdl-cell--4-col col-store-pp m-0">
+                                        <div class="store-photo">
+                                        <img src="http://i.pravatar.cc/145" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--4-col m-0 col-store-img">
+                                        <p class="name mb-0">LG Electronic <span class="date-review">2 day ago</span></p>
+                                        <p class="rate-contain">
+                                            <span class="product-rating">
+                                                <label class="star"><input type="radio" name="rating" id="star1"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star2"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star3"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star4"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star5"><i class="icon icon-star"></i></label>
+                                            </span>
+                                        </p>
+                                        <p class="mb-0"><b>I like it. Fast shipping</b></p>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quia optio laudantium rerum saepe tempore nam sint
+                                        </p>
+                                        <a href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brand-items review-shop-items">
+                                <div class="mdl-grid p-0">
+                                    <div class="mdl-cell mdl-cell--4-col col-store-pp m-0">
+                                        <div class="store-photo">
+                                        <img src="http://i.pravatar.cc/157" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--4-col m-0 col-store-img">
+                                        <p class="name mb-0">LG Electronic <span class="date-review">2 day ago</span></p>
+                                        <p class="rate-contain">
+                                            <span class="product-rating">
+                                                <label class="star"><input type="radio" name="rating" id="star1"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star2"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star3"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star4"><i class="icon icon-star yellow"></i></label>
+                                                <label class="star"><input type="radio" name="rating" id="star5"><i class="icon icon-star"></i></label>
+                                            </span>
+                                        </p>
+                                        <p class="mb-0"><b>I like it. Fast shipping</b></p>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quia optio laudantium rerum saepe tempore nam sint
+                                        </p>
+                                        <a href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

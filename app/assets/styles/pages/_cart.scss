@@ -1,0 +1,123 @@
+.cart-empty{
+    padding: 8em 0;
+    text-align: center;
+    .icon-wrap{
+        position: relative;
+        width: 50px;
+        margin: auto;
+        .icon{
+            line-height: 40px;
+            font-size: 24px;
+            width: 40px;
+            border: thin solid #ddd;
+            display: block;
+            margin: 0 auto .5em;
+            border-radius: 5px;
+        }
+        span{
+            position: absolute;
+            background: #d2a542;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -5px;
+            right: 0;
+            text-align: center;
+            display: block;
+            font-family: 'Roboto';
+            padding: 2px;
+        }
+    }
+    p{
+        margin: 1em 0 1.5em;
+    }
+}
+
+.cart-wrapper{
+    border: thin solid $color-grey;
+    padding: 2em;
+    h5{
+        margin:0;
+        padding-bottom: 1em;
+        border-bottom: thin solid $color-grey;
+    }
+    p{
+        b{
+            font-weight: $font-medium;
+        }
+    }
+    table{
+        width: 100%;
+        tr{
+            th{
+                font-weight: $font-medium;
+                text-align: left;
+                padding: 2em 0 0;
+                &:last-child{
+                    text-align: right;
+                    width: 150px;
+                }
+            }
+            td{
+                border-bottom: thin solid $color-grey;
+                padding: 2em 0;
+                &:last-child{
+                    text-align: right;
+                    width: 150px;
+                }
+                b{
+                    font-weight: $font-medium;
+                }
+                &.product-img{
+                    width: 130px;
+                    height: 100px;
+                    img{
+                        max-height: 100px;
+                        border: thin solid $color-grey-light;
+                    }
+                }
+                &.product-title{
+                    p{
+                        font-size: 16px;
+                        margin-bottom: 7px;
+                    }
+                    span{
+                        font-size: 13px;
+                    }
+                }
+                &.product-prices{
+                    font-size: 16px;
+                }
+                &.product-subtotal{
+                    font-size: 16px;
+                }
+                .btn-remove{
+                    border: 0;
+                    .icon{
+                        font-size: 22px;
+                    }
+                }
+                .product-total{
+                    font-size: 20px;
+                    font-weight: $font-medium;
+                    span{
+                        font-size: 14px
+                    }
+                }
+            }
+        }
+    }
+    .cart-info{
+        padding: 1em;
+        margin: -2px 0 2em 0;
+        background: $color-grey-light;
+    }
+    .cart-btns{
+        display: flex;
+        justify-content: flex-end;
+        .btn{
+            margin: 0;
+            margin-left: 1em;
+        }
+    }
+}

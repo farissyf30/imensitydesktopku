@@ -1,0 +1,62 @@
+@@include('./layout/components/_head.html')
+
+
+<div class="product-wrapper product-embed">
+    <div class="wrap-center mdl-grid">
+        <div class="mdl-cell mdl-cell--7-col left-side">
+            <h2><span>Embed</span> Handpainted Sneakers - Black Panthom</h2>
+            <p>Embed a shiny product card by copying and psting the HTML snippet below to our blog or website.</p>
+
+            <h6>HTML Snippet</h6>
+            <textarea rows="5" readonly
+                id="embed-code"><iframe src="http://localhost:3000/product-embed-code.html" name="Imensity" scrolling="No" height="600px" width="100%" style="border: none;"></iframe></textarea>
+            <button type="button" class="btn btn-solid btn-grey btn-full copy-code" >Copy
+                Code</button>
+            <hr>
+            <!-- <h6 class="code-option-toggle">Customize your Code <i class="icon icon-chevron-right"></i></h6>
+            <div class="field-group checkbox-group code-option">
+                <label class="checkbox-label" for="1"><input type="checkbox" name="" id="1"> Hide reviews & saves</label>
+                <label class="checkbox-label" for="2"><input type="checkbox" name="" id="2"> Show logotype</label>
+                <label class="checkbox-label" for="3"><input type="checkbox" name="" id="3"> Add nofollow rel</label>
+                <label class="checkbox-label" for="4"><input type="checkbox" name="" id="4"> Link to marketplace</label>
+            </div> -->
+        </div>
+        <div class="mdl-cell mdl-cell--5-col right-side">
+            <div class="product-preview">
+                <h5>Product Card Preview</h5>
+                <div class="preview-box">
+                    <div class="preview-img">
+                        <img src="assets/images/slide1.png">
+                    </div>
+                    <div class="preview-desc">
+                        <p>Handpainted Sneakers - black Phantom</p>
+                        <p>Claudia Saquillo's shop</p>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="product-rate wrap-flex">
+                        <span class="product-rating">
+                            <label class="star"><i class="icon icon-star yellow"></i></label>
+                            <label class="star"><i class="icon icon-star yellow"></i></label>
+                            <label class="star"><i class="icon icon-star yellow"></i></label>
+                            <label class="star"><i class="icon icon-star yellow"></i></label>
+                            <label class="star"><i class="icon icon-star"></i></label>
+                            94
+                        </span>
+                        <span>19 followers</span>
+                    </div>
+                    <a href="product-detail.html" class="btn btn-darker btn-smaller btn-full">Go to product</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./layout/components/_foot.html')
+
+<script>
+$('.copy-code').click(function(){
+    $("#embed-code").select();
+    document.execCommand('copy');
+});
+</script>

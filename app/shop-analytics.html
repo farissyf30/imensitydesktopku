@@ -1,0 +1,343 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Analytics</h5>
+            <div class="corner-right">
+                <form class="filter-data mdl-grid mdl-grid p-0 m-grid flex-end">
+                    <div class="mdl-cell field-group datepicker-selector">
+                        <input type="text" placeholder="mm/dd/yyyy" class="w-100-fit" data-type="date" id="date-start">
+                    </div>
+                    <div class="mdl-cell w-auto">
+                        <span>-</span>
+                    </div>
+                    <div class="mdl-cell field-group datepicker-selector">
+                        <input type="text" placeholder="mm/dd/yyyy" data-type="date" id="date-end">
+                    </div>
+                    <div class="mdl-cell field-group">
+                        <select class="select-day">
+                            <option value="0">Today</option>
+                            <option value="1" selected>7 days</option>
+                            <option value="2">30 days</option>
+                            <option value="3">60 days</option>
+                            <option value="4">1 Year</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block">
+                        <div class="left-side">
+                            <h6>Impression</h6>
+                            <div class="wrap-flex">
+                                <div>
+                                    <p class="pv-grid">Marketplace</p>
+                                    <p>5 <span class="analytics-plus">+ 2%</span></p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-impression">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-impression">
+                                Impressions shows the total number of times that your products have been featured on the marketplace, e.g. on category pages and in search.
+                            </div>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-impressions"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block">
+                        <div class="left-side">
+                            <h6>View</h6>
+                            <div class="wrap-flex">
+                                <div>
+                                    <p class="pv-grid">Marketplace</p>
+                                    <p>5 <span class="analytics-plus">+ 2%</span></p>
+                                </div>
+                                <div class="pl-3">
+                                    <p class="pv-grid">Total</p>
+                                    <p>5 <span class="analytics-plus">+ 5%</span></p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-view">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-view">
+                                Views shows the total number of pages that visitors have viewed on yout custom shop or brand pae and product pages on the marketplace.
+                            </div>
+                        </div>
+                        <div class="right-side chart-wrapper">
+                            <canvas id="chart-views"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block">
+                        <div class="left-side">
+                            <h6>Users</h6>
+                            <div class="wrap-flex">
+                                <div>
+                                    <p class="pv-grid">Marketplace</p>
+                                    <p>2</p>
+                                </div>
+                                <div class="pl-3">
+                                    <p class="pv-grid">Total</p>
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-user">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-user">
+                                users hows the total number of people who have visited your custom shop or brand page and product pages on the marketplace.
+                            </div>
+                        </div>
+                        <div class="right-side chart-wrapper">
+                            <canvas id="chart-users"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block">
+                        <div class="left-side">
+                            <h6>Orders</h6>
+                            <div class="wrap-flex">
+                                <div>
+                                    <p class="pv-grid">Marketplace</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="pl-3">
+                                    <p class="pv-grid">Total</p>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-order">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-order">
+                                Orders shows the total number or orders you've received within a selected time period.
+                            </div>
+                        </div>
+                        <div class="right-side chart-wrapper">
+                            <canvas id="chart-orders"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box dash-box-block big big-contain">
+                        <div class="left-side">
+                            <h6>Revenue <span>in USD</span></h6>
+                            <div class="wrap-flex">
+                                <div>
+                                    <p class="pv-grid">Marketplace</p>
+                                    <p>0.00</p>
+                                </div>
+                                <div class="pl-3">
+                                    <p class="pv-grid">Total</p>
+                                    <p>0.00</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-revenue">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-revenue">
+                                Revenue shows the total value of orders(excluding refunds) received within a selected time period.
+                            </div>
+                        </div>
+                        <div class="right-side chart-wrapper">
+                            <canvas id="chart-revenue"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min value-box box-val-dash">
+                        <div class="left-side">
+                            <h6>Followers</h6>
+                            <h3 class="dash-number">20 <span class="number-plus">+ 12</span></h3>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-follower">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-follower">
+                                Followers shows your total number of followers during a selected time period, from both your custom shop and the marketplace.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash-box min value-box box-val-dash mt-2">
+                        <div class="left-side">
+                            <h6>Saves</h6>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 2</span></h3>
+                            <a href="#" class="btn-link btn-popup btn-help" show-for="help-saves">Help</a>
+                            <div class="h-dropdown h-tooltip" id="help-saves">
+                                Saves shows the total number of saves your products have received through the marketplace during a selected time period.
+                            </div>
+                        </div>
+                        <div class="right-side mt-2 align-right">
+                            <p>You have no new saves for the selected time period.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--12-col mt-1">
+                    <div class="dash-box with-values">
+                        <div class="dash-content pb-0">
+                            <div class="left-side">
+                                <h6>Top Products</h6>
+                            </div>
+                            <div class="right-side mdl-grid p-0 m-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="#" class="btn-link btn-popup btn-help" show-for="help-topproduct">Help</a>
+                                    <div class="h-dropdown h-tooltip" id="help-topproduct">
+                                        Top Products shows your best performing products, sorted by views, saves, or sales.
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--8-col">
+                                    <select>
+                                        <option value="0">Sales</option>
+                                        <option value="1">Review</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-content pt-0">
+                            <div class="left-side">
+                                <div class="product-img">
+                                    <img src="./assets/images/special14.png">
+                                </div>
+                                <div class="product-title">Handpainted Jumpsuit</div>
+                            </div>
+                            <div class="right-side">
+                                <div class="product-qty">2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box with-values">
+                        <div class="dash-content pb-0">
+                            <div class="left-side">
+                                <h6>Top Navigations</h6>
+                            </div>
+                            <div class="right-side mdl-grid p-0 m-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="#" class="btn-link btn-popup btn-help" show-for="help-topnavi">Help</a>
+                                    <div class="h-dropdown h-tooltip" id="help-topnavi">
+                                        Top Navigations shows your best performing product listings, sorted by views and users.
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--8-col">
+                                    <select>
+                                        <option value="0">Views</option>
+                                        <option value="1">Followers</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-content pt-0">
+                            <p class="pl-1">You have no metrics for the selected time period.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box with-values">
+                        <div class="dash-content pb-0">
+                            <div class="left-side">
+                                <h6>Top Referrers</h6>
+                            </div>
+                            <div class="right-side mdl-grid p-0 m-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="#" class="btn-link btn-popup btn-help" show-for="help-referrer">Help</a>
+                                    <div class="h-dropdown h-tooltip" id="help-referrer">
+                                        Top Referrers shows where people are coming from when they go to your shop, sorted by views or users.
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--8-col">
+                                    <select>
+                                        <option value="0">Views</option>
+                                        <option value="1">Reviews</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-list pt-0">
+                            <table class="table-list">
+                                <tr>
+                                    <td>(Direct)</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>land-book.com</td>
+                                    <td>2</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--12-col mt-1">
+                    <div class="dash-box with-values">
+                        <div class="dash-content pb-0">
+                            <div class="left-side">
+                                <h6>Top Countries</h6>
+                            </div>
+                            <div class="right-side mdl-grid p-0 m-grid">
+                                <div class="mdl-cell mdl-cell--4-col">
+                                    <a href="#" class="btn-link btn-popup btn-help" show-for="help-topproduct">Help</a>
+                                    <div class="h-dropdown h-tooltip" id="help-topproduct">
+                                        Top Countries shows where in the world people are coming from when they go to your shop, sorted by views.
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--8-col">
+                                    <select>
+                                        <option value="0">Views</option>
+                                        <option value="1">Followers</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-content pt-0">
+                            <div id="countries_map" style="width: 900px; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {
+    'packages':['geochart'],
+    // Note: you will need to get a mapsApiKey for your project.
+    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+    'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+        ['Country', 'Views'],
+        ['China', 30],
+        ['Australia', 80],
+        ['Indonesia', 50],
+        ['Russia', 10],
+        ['Denmark', 70],
+        ['Brazil', 70],
+        ['Saudi Arabia', 50],
+        ['Malaysia', 30]
+    ]);
+
+    var options = {
+        colorAxis: {colors: ['#f1e2c1', '#d2a542']}
+    };
+
+    var chart = new google.visualization.GeoChart(document.getElementById('countries_map'));
+
+    chart.draw(data, options);
+    }
+</script>
+
+@@include('./layout/components/_foot.html')

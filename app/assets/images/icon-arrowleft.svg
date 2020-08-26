@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Triangle 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-48.0%" y="-48.0%" width="196.0%" height="196.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.607843137   0 0 0 0 0.607843137   0 0 0 0 0.607843137  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Billing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.602921196">
+        <g id="Billing-Type-Admin" transform="translate(-1348.000000, -126.000000)" fill="#9B9B9B">
+            <g id="Group-3" transform="translate(245.000000, 105.000000)">
+                <g id="Group-12">
+                    <g id="Group-9" filter="url(#filter-1)" transform="translate(1112.500000, 30.500000) scale(-1, 1) translate(-1112.500000, -30.500000) translate(1100.000000, 18.000000)">
+                        <polygon id="Triangle-2" transform="translate(13.500000, 13.395833) rotate(90.000000) translate(-13.500000, -13.395833) " points="13.5 10.1875 18.3125 16.6041667 8.6875 16.6041667"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

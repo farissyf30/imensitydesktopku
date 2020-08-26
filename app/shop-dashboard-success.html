@@ -1,0 +1,128 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <div class="dash-box shop-success close-wrap mt-2">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--7-col p-1">
+                        <h5 class="mt-0">Congratulations!</h5>
+                        <p>Now that you've your imensity shop, start spreading the word to friends and social media followers. One easy way to start (and to maximize sales!) is to connect your shop to your Instagram account, which will allow followers to shop products from your feed instantly. <br>Connecting your account is 100% free.</p>
+                        <br>
+                        <div class="wrap-flex">
+                            <a href="help.html" class="btn btn-smaller btn-darker btn-solid">Learn more</a>
+                            <button type="button" class="btn btn-smaller btn-text close-btn">Skip</button>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--5-col">
+                        <img src="./assets/images/shop-success.png">
+                    </div>
+                </div>
+            </div>
+            <h5>Welcome Eksa</h5>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-order.svg">
+                        </div>
+                        <div class="right-side">
+                            <h6>Orders</h6>
+                            <p>Last 7 days</p>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 7</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min min-balance">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-account.svg">
+                        </div>
+                        <div class="right-side">
+                            <h6>Account Balance</h6>
+                            <p>in USD</p>
+                            <h3 class="dash-number">0.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min min-follower">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-follower.svg">
+                            <a href="#" class="text-center"><p class="mb-0">View All</p></a>
+                        </div>
+                        <div class="right-side">
+                            <h6>Follower</h6>
+                            <p>Total</p>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 2</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div class="dash-box min">
+                        <div class="left-side">
+                            <img src="./assets/images/dashicon-saves.svg">
+                        </div>
+                        <div class="right-side">
+                            <h6>Saves</h6>
+                            <p>Total</p>
+                            <h3 class="dash-number">9 <span class="number-plus">+ 3</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid2">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box">
+                        <div class="left-side">
+                            <h6>Impressions</h6>
+                            <p>Last 7 days</p>
+                            <h3 class="dash-number">0 <span class="number-plus">+ 10%</span></h3>
+                        </div>
+                        <div class="right-side chart-wrapper">
+                            <canvas id="chart-impressions"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="dash-box min chart-box">
+                        <div class="left-side">
+                            <h6>Views</h6>
+                            <p>Last 7 days</p>
+                            <h3 class="dash-number">211 <span class="number-plus">+ 10%</span></h3>
+                        </div>
+                        <div class="right-side chart-wrapper">
+                            <canvas id="chart-views"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="dash-box with-head">
+                        <h6>Recent orders</h6>
+                        <div class="dash-content">
+                            <p>Your don't have any orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 m-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="dash-box with-head">
+                        <h6>Reviews</h6>
+                        <div class="dash-content">
+                            <p>Your don't have any orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

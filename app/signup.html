@@ -1,0 +1,56 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-before.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="auth-wrap wrap-center">
+    <div class="mdl-grid p-0">
+        <div class="mdl-cell mdl-cell--6-col m-0">
+            <div class="bg-side">
+                <h1 class="text-normal">Join the Greatest <br>Online Shopping <br>in Australia</h1>
+                <img src="./assets/images/bg-signup.png">
+                <p>Find the best item on every imensity product you need!</p>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col m-0">
+            <div class="form-side">
+                <h4>Create Account</h4>
+                <p>Save the shops and products you love.</p>
+                <a href="#" class="btn btn-solid btn-dark">
+                    <i class="fa fa-facebook"></i>
+                    <span>Continue with Facebook</span>
+                </a>
+                <a href="#" class="btn btn-solid btn-dark">
+                    <i class="fa fa-google-plus"></i>
+                    <span>Continue with Google</span>
+                </a>
+                <p class="text-center"><small>We will never post anything on your behalf</small></p>
+                <div class="or-divider"><span>or</span></div>
+
+                <form class="auth-form" action="index-on-signup.html">
+                    <p><b>Create account with email</b></p>
+                    <div class="field-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password">
+                    </div>
+                    <input type="submit" value="Create" class="btn btn-solid btn-grey">
+                    <label>Already on imensity? <a href="login.html">Log in</a></label>
+                    <hr>
+                    <label>By signing up, I agree to the <a href="terms.html">Terms of Service</a> and the <a href="privacy.html">Privacy Policy</a>.</label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

@@ -1,0 +1,268 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="shop-payouts.html">
+            <div class="wrap-center">
+                <h5>Edit Account details</h5>
+                <hr>
+                <br>
+                <div class="info-box">
+                    Your imensity account currently not have a password (as you signed up with an external account such as Facebook). In order to do changes to this form, a password is required. <br>Reset your Imensity password to reset a password.
+                </div>
+                <br>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col m-0">
+                        <h6 class="mt-0">Account type</h6>
+                        <div class="field-group">
+                            <div class="shipping-radios" id="account-type">
+                                <label class="radio-label" for="account_business"><input type="radio" name="account_type" id="account_business" checked> Business</label>
+                                <label class="radio-label" for="account_personal"><input type="radio" name="account_type" id="account_personal"> Personal</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0 show" id="abn-details">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="mt-0">ABN Details</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Legal name of business</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>ABN Number</label>
+                            <input type="number" maxlength="11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Phone</label>
+                            <input type="number" id="phone" style="width: calc(100% - 1em)">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Postal code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option>Indonesia</option>
+                                <option>Australia</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>State/Territory</label>
+                            <select>
+                                <option>East Java</option>
+                                <option>West Java</option>
+                                <option>Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0" id="personal-details">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="m-0">Personal information</h6>
+                        <p>Only your address will be shown on receipts and in your Terms & Conditions. Personal information will no be visible to anyone but you.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">First name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Last name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="field-group">
+                          <label>Date of Birth</label>
+                          <div class="mdl-grid p-0">
+                              <div class="mdl-cell mdl-cell--4-col ml-0 mt-0">
+                                  <select class="w-100">
+                                      <option>Year</option>
+                                      <option>1995</option>
+                                      <option>1994</option>
+                                      <option>1993</option>
+                                      <option>1992</option>
+                                      <option>1991</option>
+                                      <option>1990</option>
+                                      <option>1989</option>
+                                      <option>1988</option>
+                                      <option>1987</option>
+                                      <option>1981</option>
+                                      <option>1986</option>
+                                      <option>1985</option>
+                                      <option>1984</option>
+                                      <option>1983</option>
+                                      <option>1982</option>
+                                      <option>1980</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--4-col mt-0">
+                                  <select class="w-100">
+                                      <option>Month</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--4-col mt-0">
+                                  <select class="w-100-cs">
+                                      <option>Day</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                      <option>13</option>
+                                      <option>14</option>
+                                      <option>15</option>
+                                      <option>16</option>
+                                      <option>17</option>
+                                      <option>18</option>
+                                      <option>19</option>
+                                      <option>20</option>
+                                      <option>21</option>
+                                      <option>22</option>
+                                      <option>23</option>
+                                      <option>24</option>
+                                      <option>25</option>
+                                      <option>26</option>
+                                      <option>27</option>
+                                      <option>28</option>
+                                      <option>29</option>
+                                      <option>30</option>
+                                      <option>31</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Postal code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option>Indonesia</option>
+                                <option>Australia</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>State/Territory</label>
+                            <select>
+                                <option>East Java</option>
+                                <option>West Java</option>
+                                <option>Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6>Bank account &nbsp;&nbsp;<span class="f-13"><a href="#" class="">Help</a></span></h6>
+                        <p>Connect the bank account you'd like to use for receiving payout.The account must be based in Australia. To receive payouts in AUD, your bank must be able to process payouts in that currency.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">BSB</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">&nbsp;</div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Account number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Confirm account number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid">
+                        <button type="submit" class="btn btn-darker btn-solid btn-smaller">Submit</button>
+                        <a href="shop-payouts.html" class="btn btn-darker btn-smaller">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

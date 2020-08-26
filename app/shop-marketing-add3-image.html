@@ -1,0 +1,43 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="form-general">
+            <div class="wrap-center">
+                <h5>Select an image 3/5</h5>
+                <p>Select an image to accompany your promotion</p>
+                <hr class="mv-2">
+                <br><br>
+                <div class="promotion-preview" style="padding: 15px">
+                    <div class="field-group w-100">
+                        <textarea placeholder="Write a message" rows="2" class="align-center w-100-fit"></textarea>
+                    </div>
+                    <div class="photo-wrapper">
+                        <button type="button" class="btn-photo show">
+                            <i class="icon icon-upload"></i>
+                        </button>
+                        <input type="file" class="photo-file" id="photo-file">
+                        <img class="img-preview" id="photo-preview" src="">
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="shop-step-form">
+                <div class="step-btns">
+                    <div class="wrap-center">
+                        <div class="mdl-grid pl-0">
+
+                            <a href="shop-marketing-add2.html" class="btn btn-darker btn-smaller">Back</a>
+                            <a href="shop-marketing-add5-image.html" class="btn btn-darker btn-solid btn-smaller">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@@include('./layout/components/_foot.html')

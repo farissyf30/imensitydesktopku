@@ -1,0 +1,64 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="settings-page">
+    <div class="wrap-center">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col">
+                <h5>Settings</h5>
+                <ul class="list-setting">
+                    <li class="active"><a href="setting-profile.html">Profile</a></li>
+                    <li><a href="setting-shopping.html">Shopping details</a></li>
+                    <li><a href="setting-email.html">Email</a></li>
+                    <li><a href="setting-account.html">Account</a></li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--5-col">
+                <form action="#">
+                    <div class="field-group">
+                        <label>Photo</label>
+                        <div class="change-photo">
+                            <div class="profile-photo">
+                                <img src="http://i.pravatar.cc/150" id="profile-img">
+                                <input type="file" id="profile-file">
+                            </div>
+                            <div class="change-photo-act">
+                                <a href="#" class="btn btn-smaller btn-change-photo">Change Photo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="fullname">Full name</label>
+                        <input type="text" name="fullname">
+                    </div>
+                    <div class="field-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username">
+                    </div>
+                    <div class="field-group">
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" rows="4" placeholder="Write something about"></textarea>
+                    </div>
+                    <div class="field-group">
+                        <label for="website">Website</label>
+                        <input type="text" name="website" placeholder="http://example.com">
+                    </div>
+                    <div class="field-agreement">
+                        <label class="label-check" for="private">
+                            <input type="checkbox" id="private">
+                            Make shopper private profile
+                        </label>
+                        <a href="help.html" class="link-help">Help</a>
+                    </div>
+                    <br>
+                    <input type="submit" value="Save" class="btn btn-smaller">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

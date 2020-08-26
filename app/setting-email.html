@@ -1,0 +1,70 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="settings-page">
+    <div class="wrap-center">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col">
+                <h5>Settings</h5>
+                <ul class="list-setting">
+                    <li><a href="setting-profile.html">Profile</a></li>
+                    <li><a href="setting-shopping.html">Shopping details</a></li>
+                    <li class="active"><a href="setting-email.html">Email</a></li>
+                    <li><a href="setting-account.html">Account</a></li>
+                </ul>
+            </div>
+            <div class="mdl-cell mdl-cell--5-col pt-2">
+                <div class="field-group">
+                    <label>I'd like to receive emails</label><br><br>
+                    <div class="review-box b-0 email-checklist">
+                        <label class="label-check" for="1">
+                            <input type="checkbox" id="1">
+                            New features and tips for improving my shop
+                        </label>
+                        <label class="label-check" for="2">
+                            <input type="checkbox" id="2">
+                            Weekly updates on what’s new for me
+                        </label>
+                        <label class="label-check" for="3">
+                            <input type="checkbox" id="3">
+                            Products I’ve saved that have gone on sale, or are back in stock
+                        </label>
+                        <label class="label-check" for="4">
+                            <input type="checkbox" id="4">
+                            Products I’ve left in my shopping bag
+                        </label>
+                        <label class="label-check" for="5">
+                            <input type="checkbox" id="5">
+                            Opportunities to rate and review my purchases
+                        </label>
+                        <label class="label-check" for="6">
+                            <input type="checkbox" id="6">
+                            Imensity’s brick-and-mortar shop in NYC
+                        </label>
+                        <label class="label-check" for="7">
+                            <input type="checkbox" id="7">
+                            Sales and promotions from brands I follow
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="field-group">
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                            <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+                            <span class="mdl-switch__label">Receive emails</span>
+                        </label>
+                    </div>
+                    <div class="field-group">
+                        <input type="submit" class="btn btn-smaller" value="Save">
+                    </div>
+
+                    <p>Note: It may take 1-2 days for your updated email preferences to take effect. Your will continue to receive receipts and other transactional emails from Imensity, even if you’ve unsubscribed from the emails above.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

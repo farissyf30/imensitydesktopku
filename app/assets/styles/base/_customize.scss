@@ -1,0 +1,77 @@
+.ui-datepicker{
+    z-index: 4 !important;
+}
+
+.btn-bottom-action{
+    background: #f5f5f5;
+    padding: 1em;
+    margin-bottom: -25px;
+    display: none;
+    &.show{
+        display: block;
+    }
+}
+.tag-filter{
+    display: none;
+    &.show{
+        display: inline-block;
+    }
+}
+
+.mdl-dialog.mdl-dialog-center {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
+.filter-name{
+    width: calc(100% - 2.14em) !important;
+}
+
+#save-filter label {
+    line-height: 11px;
+    margin-bottom: 10px;
+}
+
+.profile-page .profile-bar h5 {
+    a{
+        margin-left: 0;
+        display: inline-block;
+    }
+    span{
+        margin-right: 1rem;
+        display: inline-block;
+
+    }
+}
+
+.profile-page .profile-bar > .mdl-grid {
+    max-width: 1165px;
+}
+
+.profile-page .profile-bar .profile-photo {
+    width: 130px;
+    height: 130px;
+    img{
+        width: 130px;
+        height: 130px; 
+        object-fit: cover;
+    }
+}
+
+.dash-box-block.min{
+    display: block;
+    .chart-wrapper{
+        padding-left: 15px;
+        height: 200px;
+        padding-top: 0;
+    }
+
+    &.dash-box.chart-box.big .chart-wrapper {
+        padding-top: 7px;
+    }
+}
+
+.dash-box.min.value-box.box-val-dash {
+    height: 134px;
+}

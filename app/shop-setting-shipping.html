@@ -1,0 +1,286 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+    <form class="shop-step-form" action="">
+        <div class="wrap-center">
+            <h5>Shipping</h5>
+            <!-- <div class="corner-right wrap-flex">
+                <a href="shop-setting-shipping-option.html" class="btn btn-smaller">Add shipping option</a>
+            </div> -->
+            <hr class="mv-2">
+            <!-- <table class="table-list table-products">
+                <tr>
+                    <th>Title</th>
+                    <th><button type="button" class="btn btn-check no-border">Type</button></th>
+                    <th>Delivery destinations</th>
+                    <th>Delivery time</th>
+                </tr>
+                <tr class="table-link" data-href="shop-setting-shipping-option.html">
+                    <td>TNT Aus</td>
+                    <td>Charge flat rate</td>
+                    <td>Australia</td>
+                    <td>3-7 days</td>
+                </tr>
+            </table>
+            <br>
+            <p><a href="#">Learn more about shipping</a></p>
+            <hr> -->
+            <!-- <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <h6>Message template</h6>
+                        <textarea rows="5"></textarea>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <p>We'll use this template to generate the message sent when you shop an order. Text in brackets are variables which are replaced with actual values when the message is sent. Supported variables are {customer_name}, {store_name}, {store_email}, and {store_url}.</p>
+                </div>
+            </div> -->
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6>Shipping origin</h6>
+                    <p>Tell us where you'll be shipping from. This information will be displayed on your product pages in the marketplace.</p>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="field-group">
+                        <label>Address</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Address line 2 (Apartment, suite,floor, etc)</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div> -->
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>City</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Postal code</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Country</label>
+                        <select>
+                            <option>Indonesia</option>
+                            <option>Australia</option>
+                            <option>Singapore</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>State/Territory</label>
+                        <select>
+                            <option>East Java</option>
+                            <option>West Java</option>
+                            <option>Bali</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="field-group">
+                        <label>Phone number</label>
+                        <input type="number" id="phone">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6>Shipping Vendor</h6>
+                    <p>Now that shoppers know what you're selling, help them figure out how they'll receive their order.</p>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6>Domestic delivery <a href="#" class="btn-help help-btn-small">Help</a></h6>
+                </div>
+            </div>
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="logo-expedition">
+                        <img src="assets/images/australia-post.jpg" style="width: 117px" alt="">
+                    </div>
+                    <p>Standard Services</p>
+                    <div class="review-box  box-shipping b-0 email-checklist expedition-checklist">
+                        <label class="label-check font-normal" for="1">
+                            <input type="checkbox" id="1">
+                            Australia Post Standard (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="2">
+                            <input type="checkbox" id="2">
+                            Australia Post Standard + Signature (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="3">
+                            <input type="checkbox" id="3">
+                            Australia Post Standard Small Box/SatcheI (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="4">
+                            <input type="checkbox" id="4">
+                            Australia Post Standard Small Box/Satchel + Signature (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="5">
+                            <input type="checkbox" id="5">
+                            Australia Post Standard Medium Box/Satchel (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="6">
+                            <input type="checkbox" id="6">
+                            Australia Post Standard Medium Box/Satchel + Signature (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="7">
+                            <input type="checkbox" id="7">
+                            Australia Post Standard Large Box/Satchel (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="8">
+                            <input type="checkbox" id="8">
+                            Australia Post Standard Large Box/Satchel + Signature (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="9">
+                            <input type="checkbox" id="9">
+                            Australia Post Standard Extra Large Box/Satchel (2 to 6 business days)
+                        </label>
+                        <label class="label-check font-normal" for="10">
+                            <input type="checkbox" id="10">
+                            Australia Post Standard Extra Large Box/Satchel + Signature (2 to 6 business days) 
+                        </label>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="logo-expedition">
+                        <img src="assets/images/australia-post.jpg" style="width: 117px" alt="">
+                    </div>
+                    <p>Express Services</p>
+                    <div class="review-box  box-shipping b-0 email-checklist expedition-checklist">
+                        <label class="label-check font-normal" for="11">
+                            <input type="checkbox" id="11">
+                            Sendle Parcel Delivery (1 to 5 business days)
+                        </label>
+                        <label class="label-check font-normal" for="12">
+                            <input type="checkbox" id="12">
+                            Australia Post Express (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="13">
+                            <input type="checkbox" id="13">
+                            Australia Post Express + Signature (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="14">
+                            <input type="checkbox" id="14">
+                            Australia Post Express Small Box/Satchel (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="15">
+                            <input type="checkbox" id="15">
+                            Australia Post Express Small Box/Satchel + Signature (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="16">
+                            <input type="checkbox" id="16">
+                            Australia Post Express Medium Box/Satchel (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="17">
+                            <input type="checkbox" id="17">
+                            Australia Post Express Medium Box/Satchel + Signature (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="18">
+                            <input type="checkbox" id="18">
+                            Australia Post Express Large Box/Satchel (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="19">
+                            <input type="checkbox" id="19">
+                            Australia post Express Large Box/Satchel + Signature (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="20">
+                            <input type="checkbox" id="20">
+                            Australia post Express Extra Large Box/satchel (1 to 3 business days)
+                        </label>
+                        <label class="label-check font-normal" for="21">
+                            <input type="checkbox" id="21">
+                            Australia post Express Extra Large Box/Satchel + Signature (1 to 3 business days)
+                        </label>
+                                
+                    </div>
+                </div>
+               
+            </div>
+            <hr>
+            <div class="mdl-grid p-0 grid-normalize">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h6>International delivery <a href="#" class="btn-help help-btn-small">Help</a></h6>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <div class="logo-expedition">
+                        <img src="assets/images/australia-post.jpg" style="width: 117px" alt="">
+                    </div>
+                    <p>International delivery</p>
+                    <div class="review-box  box-shipping b-0 email-checklist expedition-checklist">
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia post International Standard
+                        </label>
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia post International Express
+                        </label>
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia post International Express prepaid Envelope (Medium)
+                        </label>
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia post International Express Prepaid Envelope (Large)
+                        </label>
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia Post International Courier
+                        </label>
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia Post International Economy Air
+                        </label>
+                        <label class="label-check font-normal" for="22">
+                            <input type="checkbox" id="22">
+                            Australia Post International Economy Sea 
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <br><br><br>
+        <div class="step-btns">
+            <div class="wrap-center">
+                <div class="mdl-grid">
+                    <button type="submit" class="btn btn-darker btn-smaller">SAVE</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+
+@@include('./layout/components/_foot.html')
+
+<script>
+    $(".table-link").click(function() {
+        window.location = $(this).data("href");
+    });
+</script>

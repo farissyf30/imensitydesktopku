@@ -1,0 +1,147 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form">
+            <div class="wrap-center">
+                <h5>Payouts</h5>
+                <hr class="mv-2">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <p>Congrats! You are all set to receive orders trough Imensity Payments. What's next?</p>
+                        <ul class="list-check">
+                            <li>Get ready to receive orders</li> <!-- Add class checked to enable icon check -->
+                            <li>Enable payouts by connecting a bank account and adding account details</li>
+                            <li>Receive your first order and get your first payout</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h6 class="m-0">Account balance</h6>
+                        <h6 class="grey mv-min">0.00 AUD</h6>
+                        <p>New orders will be held for 5 business days before eligible for payout.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h6 class="m-0">Payout schedule</h6>
+                        <h6 class="grey mv-min">Weekly <a href="#" class="btn-link with-border btn-dialog ml-1 f-13" show-dialog="dialog-schedule">Change</a></h6>
+                        <p>Available funds will be paid out every Monday. <br>Please <a href="shop-payouts-account.html" class="btn-link with-border">add account details</a> to enable payouts.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="m-0">Transactions</h6>
+                        <div class="field-agreement">
+                            <!-- No transaction label  -->
+                            <!-- <p>No previous transactions yet.</p> -->
+                        </div>
+                        <div class="tansaction-table">
+                            <div class="btn btn-darker">Export to CSV</div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Date</th>
+                                        <th>Notes</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                               <tbody>
+                                    <tr>
+                                        <td>1234</td>
+                                        <td>Feb 15, 2018, 12:20 PM</td>
+                                        <td>Payout for 2020-10-10 - 2020-12-30</td>
+                                        <td>15.00 USD</td>
+                                        <td>Requested</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1235</td>
+                                        <td>Feb 15, 2018, 12:20 PM</td>
+                                        <td>Payout for 2020-10-10 - 2020-12-30</td>
+                                        <td>15.00 USD</td>
+                                        <td>Failed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1235</td>
+                                        <td>Feb 15, 2018, 12:20 PM</td>
+                                        <td>Payout for 2020-10-10 - 2020-12-30</td>
+                                        <td>15.00 USD</td>
+                                        <td>Succeeded</td>
+                                    </tr>
+                               </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h6>Monthly report</h6>
+                        <p>There is not enough data to generate a monthly report yet. Please check back here next month.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h6 class="mt-0">Account details</h6>
+                        <label>Pricing plan</label>
+                        <table class="mv-min">
+                            <tr>
+                                <td style="width: 200px;">Transaction fee:</td><td>3.50% + 0.35 AUD</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px;">Marketplace commission:</td><td>10%</td>
+                            </tr>
+                        </table>
+                        <a href="shop-payouts-account.html" class="btn-link with-border">Add account details</a> <br><br>
+                        <a href="shop-payouts-account-edit.html" class="btn-link with-border">Edit account details</a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="mdl-dialog-wrap" id="dialog-schedule">
+                <dialog class="mdl-dialog">
+                    <div class="dialog-title">
+                        <h3>Payout schedule</h3>
+                        <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                    </div>
+                    <div class="dialog-content">
+                        <div class="field-group">
+                            <label class="radio-label" for="weekly">
+                                <input type="radio" name="schedule" id="weekly">
+                                Weekly
+                            </label>
+                            <label class="radio-label" for="monthly">
+                                <input type="radio" name="schedule" id="monthly">
+                                Monthly
+                            </label>
+                        </div>
+                        <div class="field-group">
+                            <label>Choose payout day</label>
+                            <select>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dialog-btns wrap-flex">
+                        <button type="submit" class="btn btn-smaller btn-solid btn-darker">Save</button>
+                        <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                    </div>
+                </dialog>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

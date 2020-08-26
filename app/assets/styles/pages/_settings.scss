@@ -1,0 +1,223 @@
+.list-setting{
+    padding: 0;
+    padding-top: 1em;
+    list-style: none;
+    li{
+        padding: 5px 0;
+        &.active{
+            a{
+                font-weight: $font-medium;
+            }
+        }
+    }
+}
+
+
+.settings-page{
+    >.wrap-center{
+        >.mdl-grid{
+            >.mdl-cell--5-col{
+                padding-top: 4em;
+            }
+        }
+    }
+    .change-photo{
+        display: flex;
+        label{
+            display: block;
+        }
+        .profile-photo{
+            overflow: hidden;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            img{
+                width: 100%;
+            }
+        }
+        .change-photo-act{
+            padding: 3em;
+        }
+    }
+    .field-group{
+        margin-bottom: 1.5em;
+        .saved-payment{
+            .icon{
+                font-size: 20px;
+            }
+        }
+        .field-info{
+            color: $color-grey-text;
+            margin: 10px 0 0;
+        }
+    }
+    label{
+        font-weight: $font-medium;
+    }
+    form{
+        padding: 1em;
+    }
+    .field-btns{
+        .btn{
+            margin-right: 10px;
+        }
+    }
+}
+.field-agreement{
+    .link-help{
+        float: right;
+        margin: 10px 0;
+    }
+    .label-check{
+        padding: .8em 0;
+        cursor: pointer;
+        line-height: 20px;
+        padding-left: 35px;
+        position: relative;
+        display: inline-block;
+        input[type="checkbox"]{
+            appearance: none;
+            -webkit-appearance: none;
+            background: transparent;
+            border: thin solid $color-black-text;
+            border-radius: 5px;
+            width: 20px;
+            height: 20px;
+            transition: none;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            padding: 0;
+            &:checked{
+                background: url(../images/icon-check.svg) no-repeat center;
+                background-size: 70%;
+            }
+        }
+    }
+}
+.review-box.email-checklist{
+    height: auto;
+    .label-check{
+        font-weight: $font-regular;
+        font-size: 13px;
+        line-height: 22px;
+        padding-left: 30px;
+        input[type="checkbox"]{
+            left: 0;
+        }
+    }
+    &.box-shipping{
+        input[type="checkbox"]{
+            top: 3px;
+            margin-left: 0;
+        }
+    }
+}
+
+#dialog-exception .exception-search{
+  position: relative;
+  margin: 1em 0 2em;
+  input{
+      border: thin solid $color-grey;
+      border-radius: 6px;
+      display: block;
+      font-size: 13px;
+      padding: 10px;
+      padding-right: 30px;
+      width: 100%;
+      -webkit-appearance: none;
+  }
+  button{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 11px;
+      border: 0;
+      background: transparent;
+      .icon{
+          font-size: 16px;
+      }
+  }
+}
+.dialog-container .exception-search{
+  position: relative;
+  margin: 1em 0 2em;
+  input{
+      border: thin solid $color-grey;
+      border-radius: 6px;
+      display: block;
+      font-size: 13px;
+      padding: 10px;
+      padding-right: 30px;
+      width: 100%;
+      -webkit-appearance: none;
+  }
+  button{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 11px;
+      border: 0;
+      background: transparent;
+      .icon{
+          font-size: 16px;
+      }
+  }
+}
+.exception-products{
+  .exception-item{
+      position: relative;
+      padding: 1em 0;
+      border-bottom: thin solid $color-grey-light;
+      .img-wrap{
+          width: 80px;
+          height: 100px;
+          overflow: hidden;
+          // vertical-align: top;
+          margin-right: 1em;
+          background: #ddd;
+          border: thin solid $color-grey-light;
+          img{
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+          }
+      }
+      .img-name{
+          padding-top: 3px;
+          align-self: center;
+      }
+      .cta-box{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .checkbox-label input[type="checkbox"]{
+        position: relative;
+      }
+  }
+}
+
+.help-btn-small{
+    color: #d2a542;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.font-normal{
+    font-weight: normal !important;
+}
+
+.logo-expedition{
+    margin-bottom: 20px;
+}
+
+.review-box.expedition-checklist .label-check{
+    padding: .4em 1.5em;
+    padding-left: 30px;
+}
+
+.opt-numb{
+    font-weight: 500 !important;
+}

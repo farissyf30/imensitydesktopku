@@ -1,0 +1,289 @@
+.shop-page .steps-wrapper{
+    padding: 1em 0 0;
+    &.longer{
+        padding: 5em 0;
+    }
+    >.wrap-center{
+        min-height: 450px;
+    }
+    .info-box{
+        border: thin solid $color-grey-darker;
+        background: $color-grey-light;
+        padding: 1rem;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+    .shop-step-form{
+        label{
+            font-weight: $font-medium;
+            color: $color-black-text;
+            font-size: 14px;
+            span{
+                font-weight: $font-regular;
+            }
+            .btn-link{
+                margin-left: 1.5rem;
+                font-weight: $font-regular;
+            }
+        }
+        .shop-url{
+            position: relative;
+            span{
+                position: absolute;
+                font-weight: $font-medium;
+                color: $color-grey-darker;
+                left: 1em;
+                top: 12px;
+            }
+            input{
+                padding-left: 8em;
+                width: calc(100% - 10.05em);
+            }
+        }
+        .photo-wrapper{
+            position: relative;
+            width: 180px;
+            height: 180px;
+            border: thin solid $color-black-text;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-right: 15px;
+            .btn-photo{
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background: transparent;
+                border:0;
+                opacity: 0;
+                z-index: 1;
+                &.show{
+                    opacity: 1;
+                }
+                .icon-upload{
+                    font-size: 20px;
+                }
+            }
+            .img-preview{
+                min-height: 100%;
+                min-width: 100%;
+                opacity: 0;
+                object-fit: cover;
+                object-position: center;
+                &.product-preview{
+                    opacity: 1;
+                }
+            }
+            .photo-file{
+                display: none;
+            }
+            &.cover{
+                width: 360px;
+            }
+            .btn-remove-img{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: $color-white;
+                border-radius: 50px;
+                width: 18px;
+                height: 18px;
+                .icon{
+                    font-size: 18px;
+                    color: $color-yellow;
+                }
+            }
+            &.drop-photo{
+                width: 100%;
+                height: auto;
+                min-height: 180px;
+                border-style: dashed;
+            }
+        }
+        .product-photos{
+            .photo-wrapper{
+                margin-bottom: 12px;
+                float: left;
+                // .product-preview{
+                //     max-width: none;
+                // }
+            }
+        }
+        .step-btns{
+            background: $color-grey-light;
+            padding: 1em;
+            .btn{
+                padding: 0 2.5em;
+                font-weight: $font-medium;
+                margin-right: 1em;
+                text-align: center
+            }
+        }
+        .btn-link{
+            display: inline-block;
+        }
+        .shipping-radios{
+            display: flex;
+            label{
+                margin-right: 2em;
+            }
+        }
+        .select-with-sub{
+            .select-sub{
+                visibility: hidden;
+            }
+            &.open-sub{
+                .select-sub{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    #abn-details, #personal-details{
+        display: none;
+        &.show{
+            display: flex;
+        }
+    }
+}
+#more-variation-btn{
+    visibility: hidden;
+    &.show{
+        visibility: visible;
+    }
+}
+.category-2-content, .category-3-content, .category-4-content{
+  display: none;
+  &.category-sub-2, &.category-sub-3, &.category-sub-4{
+    display: block;
+  }
+}
+
+
+
+.radio-target{
+    display: none;
+    &.open{
+        display: block;
+    }
+}
+.shop-steps{
+    padding: 5em 0;
+    .step-item{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 1.5em;
+        border-bottom: thin solid $color-grey-darker;
+        &:first-child{
+            border-top: thin solid $color-grey-darker;
+        }
+        .left-side, .right-side{
+            height: 40px;
+        }
+        p{
+            color: $color-grey-darker;
+            margin: 0;
+            line-height: 40px;
+        }
+        .btn-link{
+            line-height: 40px;
+            display: inline-block;
+            margin-left: 1em;
+            &.thin{
+                font-weight: $font-regular;
+            }
+        }
+        &.step-current{
+            border: thin solid $color-black-light;
+            border-radius: 8px;
+            position: relative;
+            &:before{
+                content: '';
+                border-top: 2px solid $color-white;
+                top: -3px;
+                display: block;
+                position: absolute;
+                left: 0; right:0;
+            }
+            p{
+                font-weight: $font-medium;
+                color: $color-black-text;
+            }
+        }
+        &.step-complete{
+            position: relative;
+            &:before{
+                content: "";
+                width: 20px;
+                height: 20px;
+                border: 2px solid #d2a542;
+                border-radius: 50%;
+                background: url(../images/icon-check-yellow.svg) no-repeat 50%;
+                background-size: 70%;
+                position: absolute;
+                left: -3em;
+                top: 1.5em;
+            }
+        }
+    }
+}
+
+.saleprice-items{
+    .saleprice-item{
+        align-items: center;
+        p{
+            margin: 0;
+        }
+        .field-group{
+            margin: 0;
+        }
+    }
+}
+
+.quality-container{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  height: 41px;
+  .quality-start{
+    position: absolute;
+    left: 15px;
+    top: 13px;
+  }
+  .quality-end{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+  .tooltip{
+    top: -23px;
+    position: absolute;
+    font-weight: normal;
+    color: #5c5c5c;
+    left: -15px;
+    width: 46px;
+    text-align: center;
+  }
+
+}
+#result-quality{
+  margin-top: 10px;
+}
+
+input[disabled] {
+  background: #f5f5f5;
+}
+
+.field-inventory.disabled{
+  opacity: .7;
+}
+
+.field-table{
+  display: none;
+  &.show{
+      display: revert;
+  }
+}

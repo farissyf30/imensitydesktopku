@@ -1,0 +1,90 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Talk</h5>
+            <div class="talk-tabs">
+                <a href="shop-talk.html">Coversation (2)</a>
+                <a href="shop-talk-promotion.html" class="active">Promotions</a>
+            </div>
+            <div class="talk-wrapper mdl-grid p-0">
+                <div class="mdl-cell mdl-cell--4-col m-0">
+                    <ul id="talk-msg-list">
+                        <li class="active">
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="./assets/images/featured6.png">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Nautical Blue Wallet</div>
+                                    <div class="user-message">Seen by Wahyu </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="user-img">
+                                    <img src="./assets/images/featured5.png">
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-name">Green Wall Decor</div>
+                                    <div class="user-message">Seen by Yusup </div>
+                                    <div class="user-time">3 min ago</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col m-0">
+                    <div id="talk-empty-box" class="">
+                        <p>Please select a talk to start messaging</p>
+                    </div>
+                    <div id="talk-msg-box" class="show">
+                        <a href="shop-marketing-promotion.html" class="btn btn-promo btn-smaller btn-talk-close">New Promotion</a>
+                        <div id="talk-msg-user">
+                            <div class="user-info-current">
+                                <h5 id="current-name">&nbsp;</h5>
+                            </div>
+                        </div>
+                        <div id="talk-msg-content" class="for-promotion">
+                            <p>Sent on 9/26/2018</p>
+                            <table class="table-plain">
+                                <tr>
+                                    <td>
+                                        <h6>Sent to : Followers</h6>
+                                        <p>People who follow but have not yet purchased from your shop.</p>
+                                    </td>
+                                    <td><h5>1</h5></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Seen by</h6>
+                                        <p>People who have seen your promotion.</p>
+                                    </td>
+                                    <td><h5>0</h5></td>
+                                </tr>
+                            </table>
+                            <div class="promotion-preview promo-product mt-2">
+                                <p>Sale up to 50% for Montre Marbre Argentee Collections.</p>
+                                <hr>
+                                <img src="./assets/images/special14.png">
+                                <p><b>Montre Marbre Argentee Sale</b></p>
+                                <p class="prmo-price">5.00 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

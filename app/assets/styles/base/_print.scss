@@ -1,0 +1,14 @@
+@media print{
+    header, footer{
+        display: none;
+    }
+    .step-btns{
+        display: none;
+    }
+    .show-print{
+        display: block;
+    }
+    .hide-print{
+        display: none;
+    }
+}

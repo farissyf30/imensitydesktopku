@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>imensity</title>
+
+    
+    <meta name="msapplication-tap-highlight" content="no">
+
+    
+    <link rel="manifest" href="manifest.json">
+
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Imensity">
+    <link rel="icon" sizes="192x192" href="./assets/images/favicon-new.png">
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Imensity">
+    <link rel="apple-touch-icon" href="./assets/images/favicon-new.png">
+
+    
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#0d849c">
+
+    
+    <meta name="theme-color" content="#0d849c">
+
+    
+    
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/vendor.min.css">
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+  </head>
+  <body>
+
+
+<header>
+        <div class="main-header">
+            <div class="header-top">
+                <div class="wrap-center">
+                    <div class="mdl-grid m-grid justify-start">
+                        <div class="mdl-cell mdl-cell--3-col m-0 wrap-flex">
+                            <div class="menu-expander">
+                                <a href="#"><i class="icon icon-category"></i></a>
+                            </div>
+                            <div class="logo-wrap">
+                                <a href="index.html"><img src="./assets/images/logo-imensity-new.svg"></a>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--5-col m-0">
+                            <form class="main-search" autocomplete="off">
+                                <input type="search" name="search-input" id="search-main" placeholder="Search for an item, user or store">
+                            </form>
+                            <div class="mdl-dialog-wrap full-dialog" id="dialog-search">
+    <dialog class="mdl-dialog">
+        <div class="dialog-content pt-0">
+            <ul class="suggest">
+                <li class="suggest-list with-border"><a href="category-sub.html">Jacket <i>in Candle Holders & Candlesticks</i></a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span></a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jackets</span></a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> in women</a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> in men</a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> where is my mind</a></li>
+                <li class="suggest-list"><a href="category-sub.html"><span>Jacket</span> windbreakers</a></li>
+            </ul>
+        </div>
+    </dialog>
+</div>
+
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col m-0 wrap-flex">
+                                <div class="menu-icons">
+                                    <a href="#" show-for="auth-dropdown"><span class="user-photo"><img src="http://i.pravatar.cc/150"></span></a>
+                                    <a href="#" show-for="notif-dropdown"><i class="icon icon-notif"></i></a>
+                                    <a href="cart-empty.html"><i class="icon icon-cart"></i></a>
+                                </div>
+                                <a href="signup-seller.html" class="btn btn-sell" show-for="shop-dropdown"><span>Bootyswitch</span>
+                                    <span class="logo-seller"><img src="http://i.pravatar.cc/100"></span>
+                                </a>
+
+                                <div class="h-dropdown logged-in" id="auth-dropdown">
+                                    <p>Marketplace</p>
+                                    <div class="group-dropdown">
+                                        <a href="new-arrival.html">
+                                            <i class="icon icon-menu-star"></i>
+                                            <span>New</span>
+                                        </a>
+                                        <a href="profile-shop-owner.html">
+                                            <i class="icon icon-profile"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                        <a href="purchase.html">
+                                            <i class="icon icon-menu-purchase"></i>
+                                            <span>Purchase</span>
+                                        </a>
+                                        <a href="setting-profile.html">
+                                            <i class="icon icon-menu-setting"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                        <a href="logout.html">
+                                            <i class="icon icon-menu-logout"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="h-dropdown logged-in p-0" id="notif-dropdown">
+                                    <h6>Notifications</h6>
+                                    <div class="notif-tab">
+                                        <button type="button" class="btn-toggle active" to-show="notif-shopper">Shopper</button>
+                                        <button type="button" class="btn-toggle" to-show="notif-myshop">My Shop</button>
+                                    </div>
+                                    <div class="notif-wrapper">
+                                        <div class="notif-box toggled-item open" id="notif-shopper">
+                                            <div class="notif-item read">
+                                                <h6 class="notif-date">September 27</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/100"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Eksa</b></a> just made a purchase</p>
+                                                            <p>September 27, 2018</p>
+                                                            <div class="tiny-preview">
+                                                                <img src="./assets/images/special2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notif-item">
+                                                <h6 class="notif-date">September 25</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/50"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Yusup</b></a> just followed you</p>
+                                                            <p>September 25, 2018</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notif-box toggled-item" id="notif-myshop">
+                                            <div class="notif-item">
+                                                <h6 class="notif-date">September 28</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/50"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Vany</b></a> just followed you</p>
+                                                            <p>September 28, 2018</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notif-item read">
+                                                <h6 class="notif-date">September 27</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/100"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Eksa</b></a> just made a purchase</p>
+                                                            <p>September 27, 2018</p>
+                                                            <div class="tiny-preview">
+                                                                <img src="./assets/images/special2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="h-dropdown" id="shop-dropdown">
+                                    <form>
+                                        <div class="field-group">
+                                            <h6>Preview</h6>
+                                            <p>Marketplace shop</p>
+                                            <input type="url" value="https://imensity.com.au/bootyswitch" readonly onclick="window.location='shop-preview.html'">
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <h6>Manage Bootyswitch</h6>
+                                    <div class="group-dropdown">
+                                        <a href="shop-preview.html">
+                                            <i class="icon icon-menu-home"></i>
+                                            <span>Home</span>
+                                        </a>
+                                        <a href="shop-orders.html">
+                                            <i class="icon icon-orders"></i>
+                                            <span>Orders</span>
+                                        </a>
+                                        <a href="shop-products.html">
+                                            <i class="icon icon-products"></i>
+                                            <span>Products</span>
+                                        </a>
+                                        <a href="shop-marketing-customer.html">
+                                            <i class="icon icon-customer"></i>
+                                            <span>Customer</span>
+                                        </a>
+                                        <a href="shop-analytics.html">
+                                            <i class="icon icon-analytic"></i>
+                                            <span>Analytic</span>
+                                        </a>
+                                        <a href="shop-marketing-discount.html">
+                                            <i class="icon icon-discount-coupon"></i>
+                                            <span>Discounts</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="wrap-center">
+                    <ul class="categories-list-main">
+                        <li><a href="shop-dashboard.html">Dashboard</a></li>
+                        <li><a href="shop-orders.html">Orders</a></li>
+                        <li><a href="shop-products.html">Products</a></li>
+                        <li><a href="shop-analytics.html">Analytics</a></li>
+                        <li><a href="shop-marketing-customer.html" show-for="marketing-dropdown">Marketing</a></li>
+                        <li><a href="shop-payouts.html">Payouts</a></li>
+                    </ul>
+                    <ul class="categories-list-main fl-right">
+                        <li><a href="shop-talk.html">Talk</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="shop-setting-general.html" show-for="setting-dropdown">Setting</a></li>
+                    </ul>
+
+                    <div class="h-dropdown" id="marketing-dropdown">
+                        <div class="group-dropdown">
+                            <a href="shop-marketing-customer.html">
+                                <i class="icon icon-customer"></i>
+                                <span>Customer</span>
+                            </a>
+                            <a href="shop-marketing-promotion.html">
+                                <i class="icon icon-menu-promotion"></i>
+                                <span>Promotion</span>
+                            </a>
+                            <a href="shop-marketing-discount.html">
+                                <i class="icon icon-discount-coupon"></i>
+                                <span>Discounts</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-dropdown" id="setting-dropdown">
+                        <div class="group-dropdown">
+                            <a href="shop-setting-general.html">
+                                <i class="icon icon-menu-setting"></i>
+                                <span>General</span>
+                            </a>
+                            <a href="shop-setting-shipping.html">
+                                <i class="icon icon-menu-shipping"></i>
+                                <span>Shipping</span>
+                            </a>
+                            <a href="shop-setting-location.html">
+                                <i class="icon icon-menu-location"></i>
+                                <span>Location</span>
+                            </a>
+                            <a href="shop-setting-staff.html">
+                                <i class="icon icon-menu-staff"></i>
+                                <span>Staff</span>
+                            </a>
+                            <a href="shop-setting-billing.html">
+                                <i class="icon icon-menu-billing"></i>
+                                <span>Billing</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="sidemenu-wrapper">
+    <div class="sidemenu">
+        <button type="button" class="btn-close"><i class="icon icon-close"></i></button>
+        <ul class="top">
+            <li><a href="index.html"><i class="icon icon-menu-home"></i> <span>Home</span></a></li>
+            <li><a href="category.html"><i class="icon icon-menu-category"></i> <span>All Categories</span></a></li>
+            <li><a href="sales.html"><i class="icon icon-discount-coupon"></i> <span>Sales</span></a></li>
+            <li><a href="editor-picks.html"><i class="icon icon-menu-picks"></i> <span>Editor Pick's</span></a></li>
+            <li><a href="featured.html"><i class="icon icon-menu-featured"></i> <span>Featured Product</span></a></li>
+            <li><a href="preloved.html"><i class="icon icon-menu-preloved"></i> <span>Preloved</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="help.html"><i class="icon icon-menu-help"></i> <span>Help Center</span></a></li>
+            <li><a href="contact.html"><i class="icon icon-menu-contact"></i> <span>Contact Us</span></a></li>
+            <li><a href="about.html"><i class="icon icon-menu-about"></i> <span>About</span></a></li>
+            <li><a href="career.html"><i class="icon icon-menu-career"></i> <span>Career</span></a></li>
+        </ul>
+        <div class="bottom-part">
+            <ul>
+                <li><a href="terms.html"><i class="icon icon-menu-terms"></i> <span>Terms & Conditions</span></a></li>
+                <li><a href="privacy.html"><i class="icon icon-menu-privacy"></i> <span>Privacy & Policy</span></a></li>
+            </ul>
+            <p>
+                Copyright &copy; 2018 imensity Inc.<br>
+                All RIghts Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="shop-payouts.html">
+            <div class="wrap-center">
+                <h5>Edit Account details</h5>
+                <hr>
+                <br>
+                <div class="info-box">
+                    Your imensity account currently not have a password (as you signed up with an external account such as Facebook). In order to do changes to this form, a password is required. <br>Reset your Imensity password to reset a password.
+                </div>
+                <br>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col m-0">
+                        <h6 class="mt-0">Account type</h6>
+                        <div class="field-group">
+                            <div class="shipping-radios" id="account-type">
+                                <label class="radio-label" for="account_business"><input type="radio" name="account_type" id="account_business" checked> Business</label>
+                                <label class="radio-label" for="account_personal"><input type="radio" name="account_type" id="account_personal"> Personal</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0 show" id="abn-details">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="mt-0">ABN Details</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Legal name of business</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>ABN Number</label>
+                            <input type="number" maxlength="11" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Phone</label>
+                            <input type="number" id="phone" style="width: calc(100% - 1em)">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Postal code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option>Indonesia</option>
+                                <option>Australia</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>State/Territory</label>
+                            <select>
+                                <option>East Java</option>
+                                <option>West Java</option>
+                                <option>Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0" id="personal-details">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6 class="m-0">Personal information</h6>
+                        <p>Only your address will be shown on receipts and in your Terms & Conditions. Personal information will no be visible to anyone but you.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">First name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Last name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="field-group">
+                          <label>Date of Birth</label>
+                          <div class="mdl-grid p-0">
+                              <div class="mdl-cell mdl-cell--4-col ml-0 mt-0">
+                                  <select class="w-100">
+                                      <option>Year</option>
+                                      <option>1995</option>
+                                      <option>1994</option>
+                                      <option>1993</option>
+                                      <option>1992</option>
+                                      <option>1991</option>
+                                      <option>1990</option>
+                                      <option>1989</option>
+                                      <option>1988</option>
+                                      <option>1987</option>
+                                      <option>1981</option>
+                                      <option>1986</option>
+                                      <option>1985</option>
+                                      <option>1984</option>
+                                      <option>1983</option>
+                                      <option>1982</option>
+                                      <option>1980</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--4-col mt-0">
+                                  <select class="w-100">
+                                      <option>Month</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                  </select>
+                              </div>
+                              <div class="mdl-cell mdl-cell--4-col mt-0">
+                                  <select class="w-100-cs">
+                                      <option>Day</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                      <option>13</option>
+                                      <option>14</option>
+                                      <option>15</option>
+                                      <option>16</option>
+                                      <option>17</option>
+                                      <option>18</option>
+                                      <option>19</option>
+                                      <option>20</option>
+                                      <option>21</option>
+                                      <option>22</option>
+                                      <option>23</option>
+                                      <option>24</option>
+                                      <option>25</option>
+                                      <option>26</option>
+                                      <option>27</option>
+                                      <option>28</option>
+                                      <option>29</option>
+                                      <option>30</option>
+                                      <option>31</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Postal code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>Country</label>
+                            <select>
+                                <option>Indonesia</option>
+                                <option>Australia</option>
+                                <option>Singapore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label>State/Territory</label>
+                            <select>
+                                <option>East Java</option>
+                                <option>West Java</option>
+                                <option>Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h6>Bank account &nbsp;&nbsp;<span class="f-13"><a href="#">Help</a></span></h6>
+                        <p>Connect the bank account you'd like to use for receiving payout.The account must be based in Australia. To receive payouts in AUD, your bank must be able to process payouts in that currency.</p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">BSB</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">&nbsp;</div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Account number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="title">Confirm account number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid">
+                        <button type="submit" class="btn btn-darker btn-solid btn-smaller">Submit</button>
+                        <a href="shop-payouts.html" class="btn btn-darker btn-smaller">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script src="assets/vendor/vendor.min.js"></script>
+<script src="assets/scripts/main.min.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

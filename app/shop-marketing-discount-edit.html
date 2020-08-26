@@ -1,0 +1,129 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="shop-marketing-discount.html">
+            <div class="wrap-center">
+                <h5>Edit Discount</h5>
+                <br>
+                <p><a href="#" class="btn-link"><i class="icon icon-trash icon-dark"></i> &nbsp;Delete discount</a></p>
+                <hr class="mv-2">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col m-0">
+                        <h6 class="m-0">General</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col m-0">
+                        <div class="field-group m-0">
+                            <label for="title"></label>Title</label>
+                            <input type="text" class="w-100-fit" name="title">
+                            <div class="field-agreement">
+                                <label class="label-check">
+                                    <input type="checkbox" class="promocode"> Require a promo code
+                                </label>
+                                <a href="help.html" class="btn-link ml-1"><span>Help</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid p-0 promogrid">
+                    <div class="mdl-cell mdl-cell--6-col m-0">
+                        <div class="field-group">
+                            <label for="promo_code" class="mt-0">Promo code</label>
+                            <input type="text" class="w-100-fit" name="promo_code" placeholder="E.g SUMMERSALE or 150FFDISCOUNT">
+                            <p>Promo codes are applied in checkout.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col m-0">
+                        <div class="field-group shrink">
+                            <label for="type">Type</label>
+                            <div class="wrap-flex">
+                                <label class="radio-label" for="percent"><input type="radio" name="type" id="percent-off"> Percent off</label>
+                                <label class="ml-1 radio-label" for="money"><input type="radio" name="type" id="money-off"> Money off</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col m-0">
+                        <div class="field-group shrink">
+                            <label for="amount">Amount <span>in <span id="amount-sign">%</span></span></label>
+                            <input type="number" name="amount" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--7-col m-0">
+                        <div class="field-group m-0">
+                            <label>Applies to</label>
+                            <div class="field-agreement">
+                                <label class="label-check">
+                                    <input type="checkbox"> Discount applies to all
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--2-col conditional m-0">
+                        <div class="field-group m-0">
+                            <label>Conditions</label>
+                            <p>Maximum number of uses</p>
+                            <input type="number" name="condition" placeholder="Unlimited"><br>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mv-2">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col m-0">
+                        <label>Time frame</label>
+                        <div class="field-group price-boxes">
+                            <div class="price-box">
+                                <label for="price">Start date</label>
+                                <input type="text" class="w-100-fit" data-type="date" id="date-start" placeholder="dd/mm/yyyy">
+                            </div>
+                            <div class="price-box field-agreement">
+                                <label class="label-check sale-on-check" for="onsale1">
+                                    <input type="checkbox" name="onsale" class="onsale" id="onsale1"> Expires
+                                </label>
+                            </div>
+                            <div class="price-box priceonsale disabled">
+                                <label for="priceonsale">End date</label>
+                                <input type="text" data-type="date" id="date-end" placeholder="dd/mm/yyyy" disabled>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--3-col m-0">
+                        <div class="field-group m-0">
+                            <div class="field-agreement">
+                                <label class="label-check">
+                                    <input type="checkbox"> Discount is active
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid">
+                        <button type="submit" class="btn btn-darker btn-solid btn-smaller">SAVE</button>
+                        <a href="shop-steps-1done.html" class="btn btn-darker btn-smaller">CANCEL</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

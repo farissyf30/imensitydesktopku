@@ -1,0 +1,126 @@
+h5{
+    .order-status{
+        padding: 1em 1.5em;
+        border: thin solid #e7e7e7;
+        border-radius: 5px;
+        float: right;
+        font-weight: initial;
+        font-size: 14px;
+        &.yellow{
+            border-color: $color-yellow;
+            color:$color-yellow;
+        }
+        &.brown{
+            border-color: $color-brown-darker;
+            color:$color-brown-darker;
+        }
+        &.red{
+            border-color: $color-red;
+            color:$color-red;
+        }
+        &.green{
+            border-color: $color-green;
+            color:$color-green;
+        }
+    }
+}
+
+.order-status{
+    padding: 1em 1.5em;
+    border: thin solid #e7e7e7;
+    border-radius: 5px;
+    font-weight: initial;
+    font-size: 14px;
+    &.yellow{
+        border-color: $color-yellow;
+        color:$color-yellow;
+    }
+    &.brown{
+        border-color: $color-brown-darker;
+        color:$color-brown-darker;
+    }
+    &.red{
+        border-color: $color-red;
+        color:$color-red;
+    }
+    &.green{
+        border-color: $color-green;
+        color:$color-green;
+    }
+}
+
+.order-userinfo{
+    h5{
+        margin-bottom: 1em
+    }
+    .btn-link{
+        font-weight: $font-regular;
+        margin-bottom: 1em;
+    }
+    .phone{
+        margin-top: .5em;
+    }
+}
+
+.table-product{
+    width: 100%;
+    border-spacing: 0;
+    text-align: left;
+    tr{
+        th, td{
+            border-bottom: thin solid #e7e7e7;
+            padding: 1em 0;
+        }
+        td{
+            vertical-align: top;
+            .product-img{
+                width: 70px;
+                height: 70px;
+                overflow: hidden;
+                border: thin solid $color-grey-light;
+                display: inline-table;
+                img{
+                    width: 100%;
+                }
+            }
+            .product-title{
+                display: inline-table;
+            }
+            &:last-child{
+                text-align: right;
+                width: 200px;
+            }
+            &:nth-last-child(2){
+                width: 150px;
+            }
+        }
+        &.row-total{
+            td{
+                padding: .5em 0;
+            }
+        }
+        &.no-border{
+            td{
+                border: 0;
+            }
+        }
+        &.order-list{
+            td:first-child{
+                width: 100px !important;
+            }
+        }
+        .product-meta{
+            font-size: 12px;
+        }
+    }
+}
+.row-detail{
+    label{
+        color: $color-black-text;
+        font-weight: $font-regular;
+    }
+}
+
+.mmt-12{
+    margin-top: 10px;
+}

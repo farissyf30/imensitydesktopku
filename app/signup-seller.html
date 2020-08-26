@@ -1,0 +1,57 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-before.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="auth-wrap wrap-center">
+    <div class="mdl-grid p-0">
+        <div class="mdl-cell mdl-cell--6-col m-0">
+            <div class="bg-side">
+                <h1 class="text-normal">Grow exeptional <br>online business</h1>
+                <ul>
+                    <li>Super simple to use</li>
+                    <li>All you need to run your business</li>
+                    <li>No monthly fees or hidden charges</li>
+                </ul>
+                <img src="./assets/images/bg-signup.png">
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col m-0">
+            <div class="form-side">
+                <h4>Start an online shop</h4>
+                <p>Getting started is easy, fun, and totally free.</p>
+                <a href="#" class="btn btn-solid btn-dark">
+                    <i class="fa fa-facebook"></i>
+                    <span>Continue with Facebook</span>
+                </a>
+                <a href="#" class="btn btn-solid btn-dark">
+                    <i class="fa fa-google-plus"></i>
+                    <span>Continue with Google</span>
+                </a>
+                <div class="or-divider"><span>or</span></div>
+                
+                <form class="auth-form" action="index-on-signup.html">
+                    <p><b>Create account with email</b></p>
+                    <div class="field-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password">
+                    </div>
+                    <input type="submit" value="Create" class="btn btn-solid btn-grey">
+                    <label>By signing up, I agree to the <a href="terms.html">Terms of Service</a> and the <a href="privacy.html">Privacy Policy</a>.</label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./layout/components/_footermenu.html')
+@@include('./layout/components/_foot.html')

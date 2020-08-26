@@ -1,0 +1,81 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <div class="wrap-center">
+            <h5>Orders</h5>
+            <hr class="mv-2">
+            <div class="table-bar mdl-grid p-0 m-grid">
+                <div class="mdl-cell"><a href="shop-talk.html" class="btn btn-smaller btn-darker">Inbox</a></div>
+                <div class="mdl-cell"><a href="orders.html" class="btn btn-smaller btn-darker">All orders</a></div>
+                <div class="mdl-cell for-search">
+                    <form id="table-search">
+                        <i class="icon icon-search"></i>
+                        <input placeholder="Search products">
+                    </form>
+                </div>
+                <div class="mdl-cell">
+                    <button class="btn btn-text btn-calendar" type="button"><i class="fa fa-calendar"></i></button>
+                    <input type="text" data-type="date" class="field-calendar">
+                </div>
+                <div class="mdl-cell">
+                    <button class="btn btn-text" type="button" show-for="export-option"><i class="fa fa-ellipsis-v"></i></button>
+                    <div class="h-dropdown" id="export-option">
+                        <h6>Export current view</h6>
+                        <ul>
+                            <li><a href="#">CSV</a></li>
+                            <li><a href="#">Excel</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <table class="table-list">
+                <tr>
+                    <th>Order</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr onclick="window.location='shop-order-detail.html'">
+                    <td>#12234</td>
+                    <td>Wahyu Setianto</td>
+                    <td>Feb 15, 2018, 12:20 PM</td>
+                    <td><span class="order-status yellow">Unfinished</span></td>
+                    <td>15.00 USD</td>
+                    <td class="text-right" style="padding-right: 35px;"><img src="./assets/images/special15.png"></td>
+                </tr>
+                <tr onclick="window.location='shop-order-detail.html'">
+                    <td>#12235</td>
+                    <td>Wahyu Setianto</td>
+                    <td>Feb 15, 2018, 12:20 PM</td>
+                    <td><span class="order-status brown">Refunded</span></td>
+                    <td>15.00 USD</td>
+                    <td class="text-right" style="padding-right: 35px;"><img src="./assets/images/special13.png"></td>
+                </tr>
+                <tr onclick="window.location='shop-order-detail.html'">
+                    <td>#12236</td>
+                    <td>Wahyu Setianto</td>
+                    <td>Feb 15, 2018, 12:20 PM</td>
+                    <td><span class="order-status red">Cancelled</span></td>
+                    <td>15.00 USD</td>
+                    <td class="text-right" style="padding-right: 35px;"><img src="./assets/images/special11.png"></td>
+                </tr>
+            </table>
+            <div class="table-pagination">
+                <div class="page-numbers">1 - 20 of 75</div>
+                <div class="page-arrows">
+                    <a href="#"><i class="icon icon-chevron-left"></i></a>
+                    <a href="#"><i class="icon icon-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+@@include('./layout/components/_foot.html')

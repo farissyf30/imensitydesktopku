@@ -1,0 +1,270 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-shop-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="shop-setting-shipping.html">
+            <div class="wrap-center">
+                <h5>Set up your shipping</h5>
+                <p>Now that shoppers know what you’re selling, help them figure out when and how they’ll receive their order.</p>
+                <hr class="mv-2">
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col m-0">
+                        <h6 class="mt-0">Shipping rate</h6>
+                        <div class="field-group">
+                            <label>Type</label>
+                            <div class="shipping-radios">
+                                <label class="radio-label" show-item="option-charge_flat" for="charge_flat"><input type="radio" name="ship_type" id="charge_flat" checked> Charge flat rate</label>
+                                <label class="radio-label" show-item="option-charge_product" for="charge_product"><input type="radio" name="ship_type" id="charge_product"> Charge per product</label>
+                                <label class="radio-label" show-item="option-charge_free" for="charge_free"><input type="radio" name="ship_type" id="charge_free"> Free pick up</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-option radio-target open" id="option-charge_flat">
+                    <p>By selecting <b>Charge flat rate</b>, a fixed shipping price will be applied to the entire order.</p>
+                    <div class="mdl-grid p-0">
+                        <div class="mdl-cell mdl-cell--2-col m-0">
+                            <div class="field-group">
+                                <label for="price">Price <span>in USD</span></label>
+                                <input type="text" name="price">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mv-2">
+                    <div class="mdl-grid p-0">
+                        <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                            <h6 class="mt-0">Delivery destinations</h6>
+                            <div class="field-group">
+                                <label for="available_to">Option available to :</label>
+                                <select class="w-100">
+                                    <option value="0">Select region or country</option>
+                                    <option value="1">Australia</option>
+                                    <option value="2">Indonesia</option>
+                                    <option value="3">Singapore</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mdl-grid p-0">
+                        <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                            <div class="field-group">
+                                <label for="available_to">Option not available to :</label>
+                                <select class="w-100">
+                                    <option value="0">Select region or country</option>
+                                    <option value="1">Australia</option>
+                                    <option value="2">Indonesia</option>
+                                    <option value="3">Singapore</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-option radio-target" id="option-charge_product">
+                    <p>Select <b>Charge per product</b> to change a custom rate for specific products.</p>
+                    <div class="mdl-grid p-0">
+                        <div class="mdl-cell mdl-cell--6-col ml-0">
+                            <div class="field-group">
+                                <label for="price">Price first product <span>in USD</span></label>
+                                <input type="text" class="w-100-fit" name="price">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col col-6-fit mr-0">
+                            <div class="field-group">
+                                <label for="price">Price additional product <span>in USD</span></label>
+                                <input type="text" class="w-100-fit" name="price">
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--7-col m-0">
+                            <h6 class="mt-0">Exceptions</h6>
+                            <a href="#" class="btn-link with-border mb-1 btn-dialog" show-dialog="dialog-exception">Add exceptions</a>
+                            <p>Select products that require a unique shipping price.</p>
+                        </div>
+                    </div>
+                    <div class="mdl-dialog-wrap" id="dialog-exception">
+                        <dialog class="mdl-dialog">
+                            <div class="dialog-title">
+                                <h3 class="align-center">Select products to add exceptions to</h3>
+                                <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                            </div>
+                            <div class="dialog-content">
+                                <form class="form-general">
+                                    <div class="exception-search">
+                                        <input type="search">
+                                        <button type="button"><i class="icon icon-search"></i></button>
+                                    </div>
+                                    <div class="exception-products">
+                                        <div class="exception-item wrap-flex justify-between">
+                                            <div class="p-item wrap-flex">
+                                                <div class="img-wrap">
+                                                    <img src="./assets/images/hot1.png">
+                                                </div>
+                                                <div class="img-name">
+                                                    <b>Rossie Glasses</b><br>
+                                                    <span>AUD 49.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="cta-box">
+                                                <label class="checkbox-label"><input type="checkbox" name="">
+                                            </div>
+                                        </div>
+                                        <div class="exception-item wrap-flex justify-between">
+                                            <div class="p-item wrap-flex">
+                                                <div class="img-wrap">
+                                                    <img src="./assets/images/hot2.png">
+                                                </div>
+                                                <div class="img-name">
+                                                    <b>Night Fury</b><br>
+                                                    <span>AUD 149.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="cta-box">
+                                                <label class="checkbox-label"><input type="checkbox" name="">
+                                            </div>
+                                        </div>
+                                        <div class="exception-item wrap-flex justify-between">
+                                            <div class="p-item wrap-flex">
+                                                <div class="img-wrap">
+                                                    <img src="./assets/images/hot3.png">
+                                                </div>
+                                                <div class="img-name">
+                                                    <b>Light Scarf</b><br>
+                                                    <span>AUD 9.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="cta-box">
+                                                <label class="checkbox-label"><input type="checkbox" name="">
+                                            </div>
+                                        </div>
+                                        <div class="exception-item wrap-flex justify-between">
+                                            <div class="p-item wrap-flex">
+                                                <div class="img-wrap">
+                                                    <img src="./assets/images/hot5.png">
+                                                </div>
+                                                <div class="img-name">
+                                                    <b>Roxanes Veil</b><br>
+                                                    <span>AUD 69.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="cta-box">
+                                                <label class="checkbox-label"><input type="checkbox" name="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="dialog-btns wrap-flex">
+                                <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                                <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-exception">Add</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <hr class="mv-2">
+                    <div class="mdl-grid p-0">
+                        <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                            <h6 class="mt-0">Delivery destinations</h6>
+                            <div class="field-group">
+                                <label for="available_to">Option available to :</label>
+                                <select class="w-100">
+                                    <option value="0">Select region or country</option>
+                                    <option value="1">Australia</option>
+                                    <option value="2">Indonesia</option>
+                                    <option value="3">Singapore</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mdl-grid p-0">
+                        <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                            <div class="field-group">
+                                <label for="available_to">Option not available to :</label>
+                                <select class="w-100">
+                                    <option value="0">Select region or country</option>
+                                    <option value="1">Australia</option>
+                                    <option value="2">Indonesia</option>
+                                    <option value="3">Singapore</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-option radio-target" id="option-charge_free">
+                    <p>Select <b>Free pick up</b> to allow shoppers to retrieve orders in person.</p>
+
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                        <h6 class="m-0">Details</h6>
+                        <div class="field-group">
+                            <label for="title">Title</label>
+                            <select name="title" class="w-100">
+                                <option value="0"></option>
+                                <option value="1">TNT Australia</option>
+                                <option value="2">JNE Indonesia</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                        <div class="field-group">
+                            <label>Delivery time <span>in days</span></label>
+                            <div class="wrap-flex">
+                                <input type="text" class="deliver" name="delivery_start">
+                                <span class="dash">-</span>
+                                <input type="text" class="deliver" name="delivery_end">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col ml-0 mr-0">
+                        <div class="field-group m-0">
+                            <label for="additional">Additional Information</label>
+                            <textarea rows="1" class="w-100-fit"></textarea>
+                            <p>What should shoppers know about this shipping option? This information will be visible at checkout.</p>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--7-col ml-0">
+                        <div class="field-agreement">
+                            <label class="label-check">
+                                <input type="checkbox"> Require shopper's phone number to complete checkout <a href="help.html" class="btn-link">Help</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--8-col ml-0">
+                        <div class="field-group">
+                            <label>Special offers</label>
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                                <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+                                <span class="mdl-switch__label">Offers free shipping</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid pl-0">
+                        <button type="submit" class="btn btn-darker btn-solid pl-4 pr-4 mr-1">SAVE</button>
+                        <a href="shop-steps-2done.html" class="btn btn-darker ">CANCEL</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')

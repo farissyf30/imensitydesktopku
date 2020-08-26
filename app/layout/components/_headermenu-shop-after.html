@@ -1,0 +1,233 @@
+<header>
+        <div class="main-header">
+            <div class="header-top">
+                <div class="wrap-center">
+                    <div class="mdl-grid m-grid justify-start">
+                        <div class="mdl-cell mdl-cell--3-col m-0 wrap-flex">
+                            <div class="menu-expander">
+                                <a href="#"><i class="icon icon-category"></i></a>
+                            </div>
+                            <div class="logo-wrap">
+                                <a href="index.html"><img src="./assets/images/logo-imensity-new.svg"></a>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--5-col m-0">
+                            <form class="main-search" autocomplete="off">
+                                <input type="search" name="search-input" id="search-main"  placeholder="Search for an item, user or store">
+                            </form>
+                            @@include('./layout/components/_search-dropdown.html')
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col m-0 wrap-flex">
+                                <div class="menu-icons">
+                                    <a href="#" show-for="auth-dropdown"><span class="user-photo"><img src="http://i.pravatar.cc/150"></span></a>
+                                    <a href="#" show-for="notif-dropdown"><i class="icon icon-notif"></i></a>
+                                    <a href="cart-empty.html"><i class="icon icon-cart"></i></a>
+                                </div>
+                                <a href="signup-seller.html" class="btn btn-sell" show-for="shop-dropdown"><span>Bootyswitch</span>
+                                    <span class="logo-seller"><img src="http://i.pravatar.cc/100"></span>
+                                </a>
+
+                                <div class="h-dropdown logged-in" id="auth-dropdown">
+                                    <p>Marketplace</p>
+                                    <div class="group-dropdown">
+                                        <a href="new-arrival.html">
+                                            <i class="icon icon-menu-star"></i>
+                                            <span>New</span>
+                                        </a>
+                                        <a href="profile-shop-owner.html">
+                                            <i class="icon icon-profile"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                        <a href="purchase.html">
+                                            <i class="icon icon-menu-purchase"></i>
+                                            <span>Purchase</span>
+                                        </a>
+                                        <a href="setting-profile.html">
+                                            <i class="icon icon-menu-setting"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                        <a href="logout.html">
+                                            <i class="icon icon-menu-logout"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="h-dropdown logged-in p-0" id="notif-dropdown">
+                                    <h6>Notifications</h6>
+                                    <div class="notif-tab">
+                                        <button type="button" class="btn-toggle active" to-show="notif-shopper">Shopper</button>
+                                        <button type="button" class="btn-toggle" to-show="notif-myshop">My Shop</button>
+                                    </div>
+                                    <div class="notif-wrapper">
+                                        <div class="notif-box toggled-item open" id="notif-shopper">
+                                            <div class="notif-item read">
+                                                <h6 class="notif-date">September 27</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/100"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Eksa</b></a> just made a purchase</p>
+                                                            <p>September 27, 2018</p>
+                                                            <div class="tiny-preview">
+                                                                <img src="./assets/images/special2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notif-item">
+                                                <h6 class="notif-date">September 25</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/50"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Yusup</b></a> just followed you</p>
+                                                            <p>September 25, 2018</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notif-box toggled-item" id="notif-myshop">
+                                            <div class="notif-item">
+                                                <h6 class="notif-date">September 28</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/50"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Vany</b></a> just followed you</p>
+                                                            <p>September 28, 2018</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notif-item read">
+                                                <h6 class="notif-date">September 27</h6>
+                                                <div class="notif-desc" onclick="window.location='shop-dashboard.html'">
+                                                    <div class="wrap-flex">
+                                                        <div class="notif-img">
+                                                            <span><img src="http://i.pravatar.cc/100"></span>
+                                                        </div>
+                                                        <div class="notif-info">
+                                                            <p><a href="profile.html"><b>Eksa</b></a> just made a purchase</p>
+                                                            <p>September 27, 2018</p>
+                                                            <div class="tiny-preview">
+                                                                <img src="./assets/images/special2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="h-dropdown" id="shop-dropdown">
+                                    <form>
+                                        <div class="field-group">
+                                            <h6>Preview</h6>
+                                            <p>Marketplace shop</p>
+                                            <input type="url" value="https://imensity.com.au/bootyswitch" readonly onclick="window.location='shop-preview.html'">
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <h6>Manage Bootyswitch</h6>
+                                    <div class="group-dropdown">
+                                        <a href="shop-preview.html">
+                                            <i class="icon icon-menu-home"></i>
+                                            <span>Home</span>
+                                        </a>
+                                        <a href="shop-orders.html">
+                                            <i class="icon icon-orders"></i>
+                                            <span>Orders</span>
+                                        </a>
+                                        <a href="shop-products.html">
+                                            <i class="icon icon-products"></i>
+                                            <span>Products</span>
+                                        </a>
+                                        <a href="shop-marketing-customer.html">
+                                            <i class="icon icon-customer"></i>
+                                            <span>Customer</span>
+                                        </a>
+                                        <a href="shop-analytics.html">
+                                            <i class="icon icon-analytic"></i>
+                                            <span>Analytic</span>
+                                        </a>
+                                        <a href="shop-marketing-discount.html">
+                                            <i class="icon icon-discount-coupon"></i>
+                                            <span>Discounts</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="wrap-center">
+                    <ul class="categories-list-main">
+                        <li><a href="shop-dashboard.html">Dashboard</a></li>
+                        <li><a href="shop-orders.html">Orders</a></li>
+                        <li><a href="shop-products.html">Products</a></li>
+                        <li><a href="shop-analytics.html">Analytics</a></li>
+                        <li><a href="shop-marketing-customer.html" show-for="marketing-dropdown">Marketing</a></li>
+                        <li><a href="shop-payouts.html">Payouts</a></li>
+                    </ul>
+                    <ul class="categories-list-main fl-right">
+                        <li><a href="shop-talk.html">Talk</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="shop-setting-general.html" show-for="setting-dropdown">Setting</a></li>
+                    </ul>
+
+                    <div class="h-dropdown" id="marketing-dropdown">
+                        <div class="group-dropdown">
+                            <a href="shop-marketing-customer.html">
+                                <i class="icon icon-customer"></i>
+                                <span>Customer</span>
+                            </a>
+                            <a href="shop-marketing-promotion.html">
+                                <i class="icon icon-menu-promotion"></i>
+                                <span>Promotion</span>
+                            </a>
+                            <a href="shop-marketing-discount.html">
+                                <i class="icon icon-discount-coupon"></i>
+                                <span>Discounts</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-dropdown" id="setting-dropdown">
+                        <div class="group-dropdown">
+                            <a href="shop-setting-general.html">
+                                <i class="icon icon-menu-setting"></i>
+                                <span>General</span>
+                            </a>
+                            <a href="shop-setting-shipping.html">
+                                <i class="icon icon-menu-shipping"></i>
+                                <span>Shipping</span>
+                            </a>
+                            <a href="shop-setting-location.html">
+                                <i class="icon icon-menu-location"></i>
+                                <span>Location</span>
+                            </a>
+                            <a href="shop-setting-staff.html">
+                                <i class="icon icon-menu-staff"></i>
+                                <span>Staff</span>
+                            </a>
+                            <a href="shop-setting-billing.html">
+                                <i class="icon icon-menu-billing"></i>
+                                <span>Billing</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+

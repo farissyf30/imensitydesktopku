@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px){
+    html, body{
+        min-width: 1024px;
+    }
+}
+
+.show-print{
+    display: none;
+}
+.hide-print{
+    display: block;
+}

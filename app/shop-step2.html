@@ -1,0 +1,935 @@
+@@include('./layout/components/_head.html')
+
+@@include('./layout/components/_headermenu-after.html')
+@@include('./layout/components/_sidemenu.html')
+
+<div class="shop-page">
+    <div class="steps-wrapper">
+        <form class="shop-step-form" action="shop-steps-2done.html">
+            <div class="wrap-center">
+                <h5>Upload your first product</h5>
+                <p>Add as many photos as you'd like, then fill shoppers in on details like price, color, sizing, and more.</p>
+                <hr class="mv-2">
+                <div class="mdl-container">
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <h6 class="mt-0">Images & videos</h6>
+                          <div class="field-group">
+                              <p>You can also drag and drop images and videos to upload.</p>
+                              <div class="product-photos">
+                                  <div class="photo-wrapper drop-photo" id="image-photo">
+                                      <!-- <button type="button" class="btn-photo show">
+                                          <i class="icon icon-upload"></i>
+                                      </button>
+                                      <input type="file" class="photo-file" id="product-file"> -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <h6 class="m-0 mt-2">Information</h6>
+                          <p>You can also drag and drop images and videos to upload.</p>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                              <label for="title">Title</label>
+                              <input type="text" class="w-100-fit2" name="title">
+                              <p>imensity.com/myshop/<span class="grey-text">your-product-url</span></p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="field-group">
+                          <label>Description</label>
+                          <div class="field-editor">
+                              <div class="rich-editor">
+                                  &nbsp;<br>&nbsp;
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <div class="field-group mt-2">
+                              <h6 class="m-0">Search & Visibility</h6>
+                              <p>Improve your product's visibility on Imensity's search and category pages by assigning a category and adding descriptive tags.</p>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col mb-0">
+                          <div class="field-group">
+                              <label>Category</label>
+                              <p>Select a category that best describes your product.</p>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col category-1-content">
+                          <div class="field-group">
+                              <select class="category-1 w-100">
+                                  <option>Unspecified</option>
+                                  <option>Womens Fashion</option>
+                                  <option>Mens Fashion</option>
+                                  <option>Electronics</option>
+                                  <option>Home & Decoration</option>
+                                  <option>Sports</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col category-2-content">
+                          <div class="field-group">
+                              <select class="category-2 w-100">
+                                  <option>Unspecified</option>
+                                  <option>Dresses</option>
+                                  <option>Bags</option>
+                                  <option>Accessories</option>
+                                  <option>Skirts</option>
+                                  <option>Shirts</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--4-col category-3-content">
+                          <div class="field-group">
+                              <select class="category-3 w-100">
+                                  <option>Unspecified</option>
+                                  <option>Dresses</option>
+                                  <option>Bags</option>
+                                  <option>Accessories</option>
+                                  <option>Skirts</option>
+                                  <option>Shirts</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--3-col category-4-content">
+                          <div class="field-group">
+                              <select class="category-4 w-100">
+                                  <option>Unspecified</option>
+                                  <option>Dresses</option>
+                                  <option>Bags</option>
+                                  <option>Accessories</option>
+                                  <option>Skirts</option>
+                                  <option>Shirts</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col mb-0">
+                          <div class="field-group">
+                              <label>Tags</label>
+                              <p>Add up to 13 descriptive tags that whill help shoppers find your product. <a href="#">Learn more</a>.</p>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group w-100">
+                            <select class="product-tag" name="states[]" multiple="multiple">
+                              <option value="AL">Alabama</option>
+                              <option value="AL">Alabama 2</option>
+                              <option value="AL">Alabama 3</option>
+                              <option value="WY">Wyoming</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col mb-0">
+                          <label>Condition</label>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                            <select class="w-100">
+                              <option></option>
+                              <option>New</option>
+                              <option>Used</option>
+                              <option>Preloved</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col mb-0">
+                          <div class="field-group">
+                              <label>Quality</label>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                            <div class="quality-container">
+                                <div id="quality"></div>
+                                <div class="quality-start">1</div>
+                                <div class="quality-end">10</div>
+                                <input type="text" id="amount" style="display: none">
+                            </div>
+
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--5-col">
+                          <div id="result-quality"></div>
+                      </div>
+
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--12-col">
+                      <hr>
+                      <h6 class="m-0 mt-2">Pricing</h6>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                      <div class="field-group price-boxes">
+                          <div class="price-box">
+                              <label for="price">Price <span>in USD</span></label>
+                              <input type="number" class="w-100-fit" name="price">
+                          </div>
+                          <div class="price-box field-agreement">
+                              <label class="label-check sale-on-check" for="onsale1">
+                                  <input type="checkbox" name="onsale" class="onsale" id="onsale1"> On sale
+                              </label>
+                          </div>
+                          <div class="price-box priceonsale disabled">
+                              <label for="priceonsale">Sale Price <span>in USD</span></label>
+                              <input type="number" class="w-100-fit priceonsale-input" disabled>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="date-sale">
+                      <div class="mdl-grid p-0">
+                          <div class="mdl-cell mdl-cell--6-col col-sale-date">
+                              <div class="mdl-grid p-0">
+                                  <div class="mdl-cell mdl-cell--6-col ml-0">
+                                      <div class="field-group datepicker-selector">
+                                          <label class="mt-0">Sale end date</label>
+                                          <input type="text" class="w-100-fit2" data-type="date" id="date-end" placeholder="dd/mm/yyyy">
+                                      </div>
+                                  </div>
+                                  <div class="mdl-cell mdl-cell--6-col mr-0">
+                                      <div class="field-group timepicker-selector">
+                                          <label class="mt-0">&nbsp;</label>
+                                          <select class="w-100 time-end">
+                                              <option>Time</option>
+                                              <option>01:00 AM</option>
+                                              <option>02:00 AM</option>
+                                              <option>03:00 AM</option>
+                                              <option>04:00 AM</option>
+                                              <option>05:00 AM</option>
+                                              <option>06:00 AM</option>
+                                              <option>07:00 AM</option>
+                                              <option>08:00 AM</option>
+                                              <option>09:00 AM</option>
+                                              <option>10:00 AM</option>
+                                              <option>11:00 AM</option>
+                                              <option>12:00 AM</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                               </div>
+
+                          </div>
+
+                        </div>
+                        <div class="mdl-grid p-0">
+                           <div class="mdl-cell mdl-cell--5-col col-sale-date date-end-col">
+                              <div class="field-group sale-start-action">
+                                <a href="#" class="btn-link with-border mb-1 mr-1" id="sale-start-date">Set sale start date</a>
+                                <p class="mt-0">Add a start date to your sale</p>
+                              </div>
+                              <div class="mdl-grid p-0 on-start-date">
+                                  <div class="mdl-cell mdl-cell--6-col ml-0 mt-0">
+                                      <div class="field-group datepicker-selector">
+                                          <label class="mt-0">Sale start date</label>
+                                          <input type="text" class="w-100-fit2" data-type="date" id="date-start" placeholder="dd/mm/yyyy">
+                                      </div>
+                                  </div>
+                                  <div class="mdl-cell mdl-cell--6-col mr-0 mt-0">
+                                      <div class="field-group timepicker-selector">
+                                          <label class="mt-0">&nbsp;</label>
+                                          <select class="w-100">
+                                              <option>Time</option>
+                                              <option>01:00 AM</option>
+                                              <option>02:00 AM</option>
+                                              <option>03:00 AM</option>
+                                              <option>04:00 AM</option>
+                                              <option>05:00 AM</option>
+                                              <option>06:00 AM</option>
+                                              <option>07:00 AM</option>
+                                              <option>08:00 AM</option>
+                                              <option>09:00 AM</option>
+                                              <option>10:00 AM</option>
+                                              <option>11:00 AM</option>
+                                              <option>12:00 AM</option>
+                                              <option>01:00 PM</option>
+                                              <option>02:00 PM</option>
+                                              <option>03:00 PM</option>
+                                              <option>04:00 PM</option>
+                                              <option>05:00 PM</option>
+                                              <option>06:00 PM</option>
+                                              <option>07:00 PM</option>
+                                              <option>08:00 PM</option>
+                                              <option>09:00 PM</option>
+                                              <option>10:00 PM</option>
+                                              <option>11:00 PM</option>
+                                              <option>12:00 PM</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+
+                  <div class="mdl-grid p-0 inventory-contain">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <h6 class="m-0 mt-2">Inventory</h6>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <div class="field-agreement">
+                              <label class="label-check" for="inventory">
+                                  <input type="checkbox" class="inventory-check" id="inventory" name="inventory"> The product has SKU and Barcode
+                              </label>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col field-inventory disabled">
+                          <div class="field-group mdl-cell mdl-cell--6-col m-0 col-asda">
+                              <label for="sku">SKU (Stock Keeping Unit)</label>
+                              <input type="text" class="sku-input w-100" name="sku" disabled>
+                              <p>Optional</p>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col field-inventory disabled">
+                          <div class="field-group mdl-cell mdl-cell--6-col m-0 col-asda">
+                              <label for="barcode">Barcode (ISBN, UPC, GTIN)</label>
+                              <input type="text" class="barcode-input" name="barcode" disabled>
+                              <p>Optional</p>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <div class="field-group mdl-cell mdl-cell--6-col m-0 col-asda">
+                              <label for="qty">Quantity</label>
+                              <input type="number">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mdl-grid p-0 select-with-sub">
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                              <label for="size">Size</label>
+                              <select class="select-for-sub w-100">
+                                  <optgroup label="Select a size type" data-i="1">
+                                      <option>Unspecified</option>
+                                      <option>Women's S/M/L</option>
+                                      <option>Women's IT</option>
+                                      <option>Women's FR</option>
+                                      <option>Women's US</option>
+                                      <option>Women's UK</option>
+                                      <option>Women's DE/DK/SE</option>
+                                  </optgroup>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                              <label>&nbsp;</label>
+                              <select class="select-sub w-100">
+                                  <optgroup label="Offer multiple variations" data-i="1">
+                                      <option>Unspecified</option>
+                                      <option>I offer more than one</option>
+                                  </optgroup>
+                                  <optgroup label="Select a size" data-i="2">
+                                      <option>XXXS</option>
+                                      <option>XXS</option>
+                                      <option>XS</option>
+                                      <option>S</option>
+                                      <option>M</option>
+                                      <option>L</option>
+                                      <option>XL</option>
+                                      <option>XXL</option>
+                                      <option>XXXL</option>
+                                  </optgroup>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                              <label for="color">Color</label>
+                              <select class="w-100">
+                                  <optgroup label="Offer multiple variations" data-i="1">
+                                      <option>Unspecified</option>
+                                      <option>I offer more than one</option>
+                                  </optgroup>
+                                  <optgroup label="Select a color" data-i="2">
+                                      <option>Black</option>
+                                      <option>Blue</option>
+                                      <option>Brown</option>
+                                      <option>Cream</option>
+                                      <option>Green</option>
+                                      <option>Grey</option>
+                                      <option>Multicolor</option>
+                                      <option>Orange</option>
+                                      <option>Pink</option>
+                                      <option>Purple</option>
+                                      <option>Red</option>
+                                      <option>White</option>
+                                      <option>Yellow</option>
+                                  </optgroup>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <h6 class="m-0 mt-2">Shipping</h6>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <div class="field-agreement">
+                              <label class="label-check" for="shipping">
+                                  <input type="checkbox" id="shipping" name="shipping"> This is a physical product
+                              </label>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--6-col">
+                          <div class="field-group">
+                              <label for="weight"> Weight </label>
+                              <div class="input-with-select">
+                                  <input type="text" class="decimal" placeholder="0.0" name="weight">
+                                  <select>
+                                    <option value="g">g</option>
+                                    <option value="kg">kg</option>
+                                    <option value="oz">oz</option>
+                                    <option value="oz">lb</option>
+                                  </select>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mdl-grid p-0">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="weight">Packaging </label>
+                            <select class="w-100 package-option">
+                              <option value="Own Packaging">Own Packaging</option>
+                              <option value="AutoPost Satchel">AutoPost Satchel</option>
+                              <option value="AutoPost Box">AutoPost Box</option>
+                          </select>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mdl-grid p-0 package-size">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="field-group">
+                            <label for="weight">Package Size </label>
+                            <p>When AutoPost Satchel or Boxes are selected</p>
+                            <select class="w-100">
+                              <option value="Small">Small</option>
+                              <option value="Medium">Medium</option>
+                              <option value="Large">Large</option>
+                              <option value="Extra Large">Extra Large</option>
+                          </select>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <h6 class="m-0 mt-2">Variations</h6>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <div class="field-group variation-wrapper">
+                              <table class="sortable">
+                                  <thead>
+                                      <tr>
+                                          <th colspan="2">Women's S/M/L</th>
+                                          <th>Color</th>
+                                          <th>Quantity</th>
+                                          <th class="field-table">SKU</th>
+                                          <th class="field-table">Barcode</th>
+                                          <th colspan="2" class="col-price">Price <span>in USD</span> &nbsp;<a href="#" class="btn-link with-border" id="pricing-toggle">Add Pricing</a></th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <div class="img-wrap"><a href="#" class="btn-dialog" show-dialog="dialog-select-image"><img src="./assets/images/img-default.svg"></a></div>
+                                          </td>
+                                          <td>
+                                              <select>
+                                                  <optgroup label="Offer multiple variations" data-i="1">
+                                                      <option>Unspecified</option>
+                                                      <option>I offer more than one</option>
+                                                  </optgroup>
+                                                  <optgroup label="Select a size" data-i="2">
+                                                      <option>XXXS</option>
+                                                      <option>XXS</option>
+                                                      <option>XS</option>
+                                                      <option>S</option>
+                                                      <option>M</option>
+                                                      <option>L</option>
+                                                      <option>XL</option>
+                                                      <option>XXL</option>
+                                                      <option>XXXL</option>
+                                                  </optgroup>
+                                              </select>
+                                          </td>
+                                          <td>
+                                              <select>
+                                                  <optgroup label="Offer multiple variations" data-i="1">
+                                                      <option>Unspecified</option>
+                                                      <option>I offer more than one</option>
+                                                  </optgroup>
+                                                  <optgroup label="Select a color" data-i="2">
+                                                      <option>Black</option>
+                                                      <option>Blue</option>
+                                                      <option>Brown</option>
+                                                      <option>Cream</option>
+                                                      <option>Green</option>
+                                                      <option>Grey</option>
+                                                      <option>Multicolor</option>
+                                                      <option>Orange</option>
+                                                      <option>Pink</option>
+                                                      <option>Purple</option>
+                                                      <option>Red</option>
+                                                      <option>White</option>
+                                                      <option>Yellow</option>
+                                                  </optgroup>
+                                              </select>
+                                          </td>
+                                          <td><input type="number" placeholder="Unlimited"></td>
+                                          <td class="field-table">a</td>
+                                          <td class="field-table">aa</td>
+                                          <td class="col-price">
+                                              <a href="#" class="btn-link btn-add-price btn-dialog" show-dialog="dialog-variation">Add price</a>
+                                          </td>
+                                          <td>
+                                              <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <div class="img-wrap"><a href="#" class="btn-dialog" show-dialog="dialog-select-image"><img src="./assets/images/img-default.svg"></a></div>
+
+                                          </td>
+                                          <td>
+                                              <select>
+                                                  <optgroup label="Offer multiple variations" data-i="1">
+                                                      <option>Unspecified</option>
+                                                      <option>I offer more than one</option>
+                                                  </optgroup>
+                                                  <optgroup label="Select a size" data-i="2">
+                                                      <option>XXXS</option>
+                                                      <option>XXS</option>
+                                                      <option>XS</option>
+                                                      <option>S</option>
+                                                      <option>M</option>
+                                                      <option>L</option>
+                                                      <option>XL</option>
+                                                      <option>XXL</option>
+                                                      <option>XXXL</option>
+                                                  </optgroup>
+                                              </select>
+                                          </td>
+                                          <td>
+                                              <select>
+                                                  <optgroup label="Offer multiple variations" data-i="1">
+                                                      <option>Unspecified</option>
+                                                      <option>I offer more than one</option>
+                                                  </optgroup>
+                                                  <optgroup label="Select a color" data-i="2">
+                                                      <option>Black</option>
+                                                      <option>Blue</option>
+                                                      <option>Brown</option>
+                                                      <option>Cream</option>
+                                                      <option>Green</option>
+                                                      <option>Grey</option>
+                                                      <option>Multicolor</option>
+                                                      <option>Orange</option>
+                                                      <option>Pink</option>
+                                                      <option>Purple</option>
+                                                      <option>Red</option>
+                                                      <option>White</option>
+                                                      <option>Yellow</option>
+                                                  </optgroup>
+                                              </select>
+                                          </td>
+                                          <td><input type="number" placeholder="Unlimited"></td>
+                                          <td class="field-table">a</td>
+                                          <td class="field-table">aa</td>
+                                          <td class="col-price">
+                                              <a href="#" class="btn-link btn-add-price btn-dialog" show-dialog="dialog-variation">Add price</a>
+                                          </td>
+                                          <td>
+                                              <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+
+                              </table>
+                          </div>
+                      </div>
+                      <div class="mdl-cell mdl-cell--7-col">
+                          <div class="field-group">
+                              <a href="#" class="btn-link with-border mb-1 mr-1" id="v-add-variation">Add variation</a>
+                              <p>Add a variation if you have a product available in different variations, e.g sizes or colors.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mdl-dialog-wrap" id="dialog-variation">
+                      <dialog class="mdl-dialog">
+                          <div class="dialog-title">
+                              <h3>Variation price</h3>
+                              <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                          </div>
+                          <div class="dialog-content">
+                              <form class="form-general">
+                                  <div class="field-group price-boxes">
+                                      <div class="price-box">
+                                          <label for="price">Price <span>in USD</span></label>
+                                          <input type="number" name="price">
+                                      </div>
+                                      <div class="price-box field-agreement">
+                                          <label class="label-check" for="onsale2">
+                                              <input type="checkbox" name="onsale" class="onsale" id="onsale2"> On sale
+                                          </label>
+                                      </div>
+                                      <div class="price-box priceonsale disabled">
+                                          <label for="priceonsale">Sale Price <span>in USD</span></label>
+                                          <input type="number" class="priceonsale-input" disabled>
+                                      </div>
+                                  </div>
+                                  <div class="field-group mt-2">
+                                      <a href="#" class="btn-link with-border" id="btn-saledate">Set sale dates</a>
+                                      <p>Add a start and end date to your sale.</p>
+                                  </div>
+                                  <div class="saledate-wrap">
+                                      <div class="mdl-grid m-grid2">
+                                          <div class="mdl-cell mdl-cell--5-col">
+                                              <div class="field-group datepicker-selector m-0">
+                                                  <label>Sale start date</label>
+                                                  <input type="text" data-type="date" id="date-start2" placeholder="dd/mm/yyyy">
+                                              </div>
+                                          </div>
+                                          <div class="mdl-cell mdl-cell--5-col">
+                                              <div class="field-group timepicker-selector m-0">
+                                                  <label>&nbsp;</label>
+                                                  <select>
+                                                      <option>Time</option>
+                                                      <option>01:00 AM</option>
+                                                      <option>02:00 AM</option>
+                                                      <option>03:00 AM</option>
+                                                      <option>04:00 AM</option>
+                                                      <option>05:00 AM</option>
+                                                      <option>06:00 AM</option>
+                                                      <option>07:00 AM</option>
+                                                      <option>08:00 AM</option>
+                                                      <option>09:00 AM</option>
+                                                      <option>10:00 AM</option>
+                                                      <option>11:00 AM</option>
+                                                      <option>12:00 AM</option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="mdl-grid m-grid2">
+                                          <div class="mdl-cell mdl-cell--5-col">
+                                              <div class="field-group datepicker-selector m-0">
+                                                  <label>Sale end date</label>
+                                                  <input type="text" data-type="date" id="date-end2" placeholder="dd/mm/yyyy">
+                                              </div>
+                                          </div>
+                                          <div class="mdl-cell mdl-cell--5-col">
+                                              <div class="field-group timepicker-selector m-0">
+                                                  <label>&nbsp;</label>
+                                                  <select>
+                                                      <option>Time</option>
+                                                      <option>01:00 AM</option>
+                                                      <option>02:00 AM</option>
+                                                      <option>03:00 AM</option>
+                                                      <option>04:00 AM</option>
+                                                      <option>05:00 AM</option>
+                                                      <option>06:00 AM</option>
+                                                      <option>07:00 AM</option>
+                                                      <option>08:00 AM</option>
+                                                      <option>09:00 AM</option>
+                                                      <option>10:00 AM</option>
+                                                      <option>11:00 AM</option>
+                                                      <option>12:00 AM</option>
+                                                      <option>01:00 PM</option>
+                                                      <option>02:00 PM</option>
+                                                      <option>03:00 PM</option>
+                                                      <option>04:00 PM</option>
+                                                      <option>05:00 PM</option>
+                                                      <option>06:00 PM</option>
+                                                      <option>07:00 PM</option>
+                                                      <option>08:00 PM</option>
+                                                      <option>09:00 PM</option>
+                                                      <option>10:00 PM</option>
+                                                      <option>11:00 PM</option>
+                                                      <option>12:00 PM</option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="dialog-btns wrap-flex">
+                              <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                              <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-variation-price">Add price</button>
+
+                          </div>
+                      </dialog>
+                  </div>
+                  <div class="mdl-dialog-wrap" id="dialog-option">
+                      <dialog class="mdl-dialog">
+                          <div class="dialog-title">
+                              <h3>Edit options</h3>
+                              <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                          </div>
+                          <div class="dialog-content">
+                              <form class="form-general">
+                                  <div class="field-group">
+                                      <table class="sortable" id="table-option-row">
+                                          <tbody>
+                                              <tr>
+                                                  <td>
+                                                      <label>Option #1</label>
+                                                      <select>
+                                                          <option>Custom</option>
+                                                          <option>Option 1</option>
+                                                          <option>Option 2</option>
+                                                      </select>
+                                                  </td>
+                                                  <td>
+                                                      <label>&nbsp;</label>
+                                                      <input type="text" placeholder="Option">
+                                                  </td>
+                                                  <td>
+                                                      <label>&nbsp;</label>
+                                                      <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <label>Option #2</label>
+                                                      <select>
+                                                          <option>Custom</option>
+                                                          <option>Option 1</option>
+                                                          <option>Option 2</option>
+                                                      </select>
+                                                  </td>
+                                                  <td>
+                                                      <label>&nbsp;</label>
+                                                      <input type="text" placeholder="Option">
+                                                  </td>
+                                                  <td>
+                                                      <label>&nbsp;</label>
+                                                      <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td>
+                                                      <label>Option #3</label>
+                                                      <select>
+                                                          <option>Custom</option>
+                                                          <option>Option 1</option>
+                                                          <option>Option 2</option>
+                                                      </select>
+                                                  </td>
+                                                  <td>
+                                                      <label>&nbsp;</label>
+                                                      <input type="text" placeholder="Option">
+                                                  </td>
+                                                  <td>
+                                                      <label>&nbsp;</label>
+                                                      <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <a href="#" class="btn-link with-border" id="v-add-option-row">Add option</a><br>
+                                  <p class="mt-1">Add an option if your variations has more than one option, e.g material and size.</p>
+                              </form>
+                          </div>
+                          <div class="dialog-btns wrap-flex">
+                              <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                              <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-options">Save</button>
+                          </div>
+                      </dialog>
+                  </div>
+                  <div class="mdl-dialog-wrap" id="dialog-select-image">
+                      <dialog class="mdl-dialog">
+                          <div class="dialog-title">
+                              <h3>Select variation image</h3>
+                              <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                          </div>
+                          <div class="dialog-content">
+                              <p>Select an image to displayed when a shopper chooses this variation.</p>
+                              <div class="steps-wrapper" current-step="step1">
+                                  <div class="signup-step open" id="step1">
+                                      <ul class="category-options m-0">
+                                          <li>
+                                              <input type="checkbox">
+                                              <div class="overlay">
+                                                  <i class="fa fa-check"></i>
+                                              </div>
+                                              <img src="./assets/images/special2.png">
+                                          </li>
+                                          <li>
+                                              <input type="checkbox">
+                                              <div class="overlay">
+                                                  <i class="fa fa-check"></i>
+                                              </div>
+                                              <img src="./assets/images/special3.png">
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="dialog-btns wrap-flex">
+                              <button type="button" class="btn btn-smaller btn-darker btn-close">Cancel</button>
+                              <button type="button" class="btn btn-smaller btn-darker btn-clear-select">Clear selection</button>
+                              <button type="button" class="btn btn-smaller btn-darker btn-close" id="btn-selector-image">Done</button>
+                          </div>
+                      </dialog>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <h6 class="m-0 mt-2">Navigation</h6>
+                      </div>
+                      <div class="mdl-cell mdl-cell--7-col">
+                          <a href="#" class="btn-link with-border mb-1 btn-dialog" show-dialog="dialog-navigation">Add navigation</a>
+                          <p>Select when in your store's menu that you want your customers to find your product</p>
+                      </div>
+                  </div>
+                  <div class="mdl-dialog-wrap" id="dialog-navigation">
+                      <dialog class="mdl-dialog">
+                          <div class="dialog-title">
+                              <div class="mdl-grid">
+                                  <div class="mdl-cell mdl-cell--6-col">
+                                      <h3 class="left-title">Main menu</h3>
+                                  </div>
+                                  <div class="mdl-cell mdl-cell--6-col">
+                                      <h3 class="right-title"><span id="mainmenu-title">Jewelry</span>&nbsp;&nbsp;&nbsp; Sub menu</h3>
+                                  </div>
+                              </div>
+                              <button type="button" class="btn-close btn-x-close"><i class="icon icon-close"></i></button>
+                          </div>
+                          <div class="dialog-content">
+                              <form class="form-general">
+                                  <div class="mdl-grid">
+                                      <div class="mdl-cell mdl-cell--6-col pr-2" style="border-right: thin solid #aaa;">
+                                          <div class="field-group navigation-wrapper">
+                                              <table class="sortable">
+                                                  <tbody>
+                                                      <tr class="" nav-for="sub-nav1">
+                                                          <td>
+                                                              <div class="field-agreement ml-1">
+                                                                  <label class="label-check">
+                                                                      <input type="checkbox" name="menu_state">
+                                                                  </label>
+                                                              </div>
+                                                          </td>
+                                                          <td><input type="text" class="" placeholder="Menu Title" value="Jewelry"></td>
+                                                          <td>
+                                                              <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                                          </td>
+                                                      </tr>
+                                                      <tr class="" nav-for="sub-nav2">
+                                                          <td>
+                                                              <div class="field-agreement ml-1">
+                                                                  <label class="label-check">
+                                                                      <input type="checkbox" name="menu_state">
+                                                                  </label>
+                                                              </div>
+                                                          </td>
+                                                          <td><input type="text" class="" placeholder="Menu Title" value="Accessories"></td>
+                                                          <td>
+                                                              <a href="#" class="btn-remove"><i class="icon icon-close-o"></i></a>
+                                                          </td>
+                                                      </tr>
+                                                  </tbody>
+                                              </table>
+                                              <br>
+                                              <a href="#" class="btn-link with-border" id="add-navigation">+ Add menu item</a><br>
+                                          </div>
+                                      </div>
+                                      <div class="mdl-cell mdl-cell--6-col pl-2" id="sub-navigation-groups">
+                                          <div class="field-group navigation-wrapper-sub" id="sub-nav1">
+                                              <table class="sortable">
+                                                  <tbody>
+                                                  </tbody>
+                                              </table>
+                                              <br>
+                                              <a href="#" class="btn-link with-border add-navigation-sub">+ Add submenu item</a><br>
+                                          </div>
+                                          <div class="field-group navigation-wrapper-sub" id="sub-nav2">
+                                              <table class="sortable">
+                                                  <tbody>
+                                                  </tbody>
+                                              </table>
+                                              <br>
+                                              <a href="#" class="btn-link with-border add-navigation-sub">+ Add submenu item</a><br>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                              </form>
+                          </div>
+                          <div class="dialog-btns wrap-flex">
+                              <button type="button" class="btn btn-smaller btn-close">Cancel</button>
+                              <button type="button" class="btn btn-smaller btn-solid btn-darker" id="btn-save-options">Save</button>
+                          </div>
+                      </dialog>
+                  </div>
+
+                  <div class="mdl-grid p-0">
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <hr>
+                          <div class="field-agreement">
+                              <label class="label-check" for="show_product">
+                                  <input type="checkbox" name="show_product"> Show product in shop
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="step-btns">
+                <div class="wrap-center">
+                    <div class="mdl-grid pl-0">
+                        <a href="shop-step3.html" class="btn btn-darker btn-solid mr-1">SAVE</a>
+                        <a href="shop-steps-1done.html" class="btn btn-darker">CANCEL</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@@include('./layout/components/_foot.html')
+<script>
+    $( function() {
+        var availableTags = [
+            "Australia",
+            "Bosch",
+            "Lemone",
+            "Longsleeves",
+            "Rolex",
+            "Krisbow",
+            "Skirt",
+            "Pastel"
+        ];
+        $( "#search-auto-tag" ).autocomplete({
+            source: availableTags
+        });
+    } );
+    </script>
